@@ -47,106 +47,6 @@
 
 ### 本批新增待验证条目（13 条）
 
-#### 费纸张：十种选择控件用法（原作版） (`detail-choice-controls`)
-
-```json
-{
-  "id": "detail-choice-controls",
-  "title": "费纸张：十种选择控件用法（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "控件选型",
-    "原作摘录",
-    "表单"
-  ],
-  "scenario": "表单/筛选界面不知道该用哪种选择控件时",
-  "prompt": "Choose form selection controls by these rules: checkbox for multiple independent options, toggle switch for instant on/off, radio group for one of few visible options, segmented control for one of a few modes, dropdown select for picking from a short list by browsing, combobox for picking from a long list by typing/searching, toggle button for a single binary state, filter chips for multi-select filtering, slider for approximate numeric ranges, stepper for precise small numeric adjustments. Decide by: when the change takes effect, how many options there are, browse vs search, and the precision needed.",
-  "prompt_zh": "费纸张原作：10 种选择控件（复选框/开关/单选组/分段控件/下拉框/组合框/切换按钮/筛选标签/滑块/步进器）按生效时机、选项数量、浏览或搜索、精度四维选型；长列表搜索用组合框，短列表浏览用下拉框。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：视觉对齐四项检查（原作版） (`detail-visual-alignment`)
-
-```json
-{
-  "id": "detail-visual-alignment",
-  "title": "费纸张：视觉对齐四项检查（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "对齐",
-    "视觉重心",
-    "原作摘录"
-  ],
-  "scenario": "界面几何对齐了但眼睛看着别扭时，做视觉对齐检查",
-  "prompt": "Alignment must obey the eye, not just geometry. Audit this UI's visual alignment while keeping the existing layout and interactions: check icon optical center (e.g. play triangles), whitespace balance inside icon+text buttons, the perceived size of circles versus squares, and hanging punctuation for quotes. Report the minimal fix and the reason for each; fix icon offsets inside the SVG itself rather than compensating with margins.",
-  "prompt_zh": "费纸张原作提示词：对齐要听眼睛的；逐项检查图标重心、按钮留白、圆形视觉大小、引号悬挂；给最小修改和理由；图标偏移优先在 SVG 内修正，别靠外边距补救。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：设置页三步排版（原作版） (`saas-settings-three-steps`)
-
-```json
-{
-  "id": "saas-settings-three-steps",
-  "title": "费纸张：设置页三步排版（原作版）",
-  "category": "SaaS后台",
-  "styles": [
-    "设置页",
-    "排版",
-    "原作摘录"
-  ],
-  "scenario": "AI 做的设置页杂乱、框套框时",
-  "prompt": "Lay out this settings page in three steps: 1) one setting per row — name on the left, control on the right; 2) remove the outermost frame — the page itself needs no extra card wrapper; 3) group settings under group titles with generous spacing between groups, tight spacing within groups and only hairline dividers between rows. Note: for registration/checkout forms instead put labels above full-width inputs, in fill order, leaving room for error messages and longer content.",
-  "prompt_zh": "费纸张第5集原作三步：一项一行（左名右控件）、去掉最外层框、分组加标题（组间多留白、组内少留白、行间细线）；并对比表单场景：名称在上、全宽输入。与待验证区 saas-settings-master-detail 同场景，入库时归同一风格组。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：苹果 HIG 落地清单（原作版） (`detail-apple-hig`)
-
-```json
-{
-  "id": "detail-apple-hig",
-  "title": "费纸张：苹果 HIG 落地清单（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "苹果规范",
-    "HIG",
-    "原作摘录"
-  ],
-  "scenario": "想让 AI 生成原生级 iOS/macOS 风格界面时",
-  "prompt": "Design this interface following Apple Human Interface Guidelines: principles — hierarchy, harmony, consistency; use system components; tap targets at least 44pt; body text contrast at least 4.5:1; support Dynamic Type and Dark Mode. Write the rules into a DESIGN.md, generate with system components, then self-check the result against the checklist (foundations, interaction patterns, components, platform differences).",
-  "prompt_zh": "费纸张原作：HIG 四大块（基础/交互模式/组件/平台差异）、三原则（层级/和谐/一致），落地标准 44pt 点击区、正文对比度 ≥4.5:1、动态字号与深色模式；规则写进 DESIGN.md 并按清单自查。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
 #### 费纸张：动效四技巧（原作版） (`detail-motion-four`)
 
 ```json
@@ -1660,3 +1560,261 @@
  "source": "the5krunner《How to Make A Garmin Watch Face With Claude》（2026-11-21 已打开核对原文，按要点改写，非逐字摘录）+ CapCut《AI Image for Wearables》表盘可读性要点"
 }
 ```
+
+## 2026-11-21 · 公开渠道收集（第二轮：菜谱详情/订阅追踪/三栏收件箱/先定设计方向/数据表格）
+
+来源核对：菜谱详情、订阅管理、数据表格见 GenDesigns《The Ultimate AI Design Prompt Library: 100+ Copy-Paste Prompts》（2026-11-21 已打开全文核对，#98 菜谱详情、#38 订阅管理、#58 数据表格）；个人订阅追踪见 Medium《Build your subscription tracker with AI in First.new》（搜索结果原文核对：循环付款、续费日历、费用汇总）；三栏收件箱见 Techpresso《30 Claude Prompts That Design UI Screens》Inbox / Messaging 节（搜索结果原文核对）；先定设计方向见 Nebula《Frontend prompt library》所摘 Anthropic 官方 frontend-design Skill（搜索结果原文核对）。以上 5 条均为库里没有的场景/角度（外卖点餐 mobile-food 是下单不是菜谱；mobile-fintech 是通用金融 App 不是订阅追踪；ai-chat-app 是 AI 对话不是三栏收件箱；detail-feizhang-deai-four 是视觉规则、先定方向是生成前的规划步骤；saas-admin-light 是整体管理系统不是数据表格单屏），提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。
+
+### 菜谱详情页：大图+配料勾选+步骤分签 (`mobile-recipe-detail`)
+
+```json
+{
+  "id": "mobile-recipe-detail",
+  "title": "菜谱详情页：大图+配料勾选+步骤分签",
+  "category": "移动端App",
+  "styles": [
+    "食谱",
+    "菜谱详情",
+    "美食"
+  ],
+  "scenario": "做菜谱/食谱 App 的菜品详情页，希望做菜时能边看边勾选配料时",
+  "prompt": "Design an iOS recipe detail screen: a large hero image of the dish at the top, recipe name, author with avatar, stats row (cooking time, servings, difficulty), rating with stars and review count. Tabs below: Ingredients, Instructions, Reviews. The Ingredients tab lists 8 ingredients with checkboxes so the cook can tick items off while shopping or cooking. Save/bookmark and share buttons in the header. Clean, food-focused design with warm appetizing colors, generous spacing, and large readable type for use in the kitchen.",
+  "prompt_zh": "菜谱详情页：菜品大图+作者+时长/份量/难度/评分，配料/步骤/评价三签切换，配料带勾选框可边做边打勾，厨房场景下字要大、间距要宽。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-21T09:14:00+08:00",
+  "source": "GenDesigns《The Ultimate AI Design Prompt Library》#98 菜谱详情节（2026-11-21 已打开核对原文，按要点改写，同类收集，非原作摘录）"
+}
+```
+
+### 订阅追踪：续费日历+月度支出汇总 (`mobile-subscription-tracker`)
+
+```json
+{
+  "id": "mobile-subscription-tracker",
+  "title": "订阅追踪：续费日历+月度支出汇总",
+  "category": "移动端App",
+  "styles": [
+    "订阅管理",
+    "续费日历",
+    "支出汇总"
+  ],
+  "scenario": "流媒体/会员/软件订阅太多，想一眼看清每月花多少、下一次续费是哪天时",
+  "prompt": "Design a personal subscription tracker app: a cost summary card at the top showing total monthly spend and total yearly spend, with a small breakdown by category (streaming, software, fitness, news). Below, a renewal calendar marking each upcoming renewal date with the service logo and amount. The subscription list shows each service with its icon, name, price, billing cycle (monthly/yearly), payment method and renewal date, plus a cancellation status. Include a prominent 'Add subscription' action and a filter by category or billing cycle. Clean, trustworthy design with one accent color; amounts in tabular numerals so totals line up.",
+  "prompt_zh": "个人订阅追踪：顶部月/年总支出汇总卡+分类小计，下方续费日历标出每次扣费日期，订阅列表含图标/价格/周期/付款方式/续费日，金额用等宽数字对齐。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-21T09:14:00+08:00",
+  "source": "Medium《Build your subscription tracker with AI in First.new》（循环付款、续费日历、费用汇总）+ GenDesigns #38 订阅管理节（搜索结果原文核对，2026-11-21；按主题原创改写，同类收集，非原作摘录）"
+}
+```
+
+### 三栏收件箱：文件夹+会话列表+阅读窗 (`saas-inbox-three-pane`)
+
+```json
+{
+  "id": "saas-inbox-three-pane",
+  "title": "三栏收件箱：文件夹+会话列表+阅读窗",
+  "category": "SaaS后台",
+  "styles": [
+    "收件箱",
+    "三栏布局",
+    "消息"
+  ],
+  "scenario": "做客服/团队收件箱或消息中心，希望文件夹、会话列表、阅读窗三栏并行时",
+  "prompt": "Design a three-pane inbox / messaging screen for a support or team workspace: a narrow left rail of folders and filters with unread counts (Inbox, Starred, Assigned to me, Archived), a middle conversation list where each row shows avatar, sender, subject, a one-line preview snippet, timestamp and an unread dot, and a right reading pane showing the selected thread as message bubbles with a reply composer at the bottom. The selected conversation is highlighted in the list; unread rows are bold. Include a search box above the list and a compose button. Clean, dense but scannable layout with subtle dividers, one accent color for the active selection.",
+  "prompt_zh": "三栏收件箱：左窄栏文件夹/筛选带未读数，中栏会话列表（头像/发件人/主题/摘要/时间/未读点），右栏阅读窗+底部回复框；选中会话高亮、未读加粗。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-21T09:14:00+08:00",
+  "source": "Techpresso《30 Claude Prompts That Design UI Screens》Inbox / Messaging 节（搜索结果原文核对，2026-11-21；按主题原创改写，同类收集，非原作摘录）"
+}
+```
+
+### 先定设计方向再写代码：主题+配色+字阶+线框 (`detail-design-direction-first`)
+
+```json
+{
+  "id": "detail-design-direction-first",
+  "title": "先定设计方向再写代码：主题+配色+字阶+线框",
+  "category": "细节优化",
+  "styles": [
+    "设计方向",
+    "去AI味",
+    "方法论"
+  ],
+  "scenario": "写代码前先让 AI 定设计方向，避免一上来就出通用模板脸时",
+  "prompt": "Before writing any code, act as a senior design director and first establish a unique design plan for this project: 1) confirm the core theme and audience; 2) set 4-6 core hex colors; 3) plan the typography and type scale (1-2 curated fonts); 4) describe the layout in one sentence plus a small ASCII wireframe; 5) state the design principles. Strictly avoid common AI default tropes: warm beige with terracotta, black backgrounds with acid green, newspaper-style columns, and SaaS cards with all rounded corners. Only after the plan is agreed, generate the interface from it.",
+  "prompt_zh": "生成前先让 AI 当设计总监定方向：主题与受众、4-6 个主色、1-2 款字体与字阶、一句话布局+ASCII 线框、设计原则；并点名避开暖米+陶土、黑底+荧光绿、报纸分栏、全圆角 SaaS 卡等 AI 默认脸。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-21T09:14:00+08:00",
+  "source": "Nebula《Frontend prompt library》所摘 Anthropic 官方 frontend-design Skill（搜索结果原文核对，2026-11-21；按主题原创改写，同类收集，非原作摘录）"
+}
+```
+
+### 数据表格：可排序筛选+多选批量操作 (`saas-data-table`)
+
+```json
+{
+  "id": "saas-data-table",
+  "title": "数据表格：可排序筛选+多选批量操作",
+  "category": "SaaS后台",
+  "styles": [
+    "数据表格",
+    "排序筛选",
+    "批量操作"
+  ],
+  "scenario": "后台需要一张能排序、筛选、多选批量处理的数据表时",
+  "prompt": "Design a web data table for an admin workspace: a table header with 5 column titles and 5 rows of realistic data. Columns are sortable by clicking the header; rows show a hover state; a checkbox column enables multi-select with a bulk-action bar appearing when rows are selected. Above the table, a search bar and column filters; below, pagination reading 'Showing 1-10 of 234' with page controls. Professional, data-dense design with tabular numerals, sticky header, generous row height for readability, and one accent color for sort indicators and selected states.",
+  "prompt_zh": "后台数据表格：5 列可点击表头排序、行悬停、复选框多选后出现批量操作栏，上方搜索+列筛选，下方“显示 1-10 / 共 234 条”分页；等宽数字、吸顶表头、信息密集但可读。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-21T09:14:00+08:00",
+  "source": "GenDesigns《The Ultimate AI Design Prompt Library》#58 数据表格节（2026-11-21 已打开核对原文，按要点改写，同类收集，非原作摘录）"
+}
+```
+
+## 2026-11-22 · 公开渠道收集（打车/天气/新闻/冥想/求职）
+
+### 打车 App：夜间叫车三态 (`mobile-ride-hailing-night`)
+
+```json
+{
+ "id": "mobile-ride-hailing-night",
+ "title": "打车 App：夜间叫车三态",
+ "category": "移动端App",
+ "styles": [
+  "深色",
+  "地图主导",
+  "底部面板"
+ ],
+ "scenario": "打车/共享出行 App 叫车主界面（选车→找司机→司机已接单）",
+ "prompt": "Design a night ride-hailing app screen (390x844): a near-black map fills the whole phone with a dashed acid-yellow route from a white ring pickup pin to a yellow square destination pin, and a small '18 MIN' trip-time tag on the drop pin. A flat dark bottom sheet holds two place rows in one box (Pickup / Destination) with a 44px swap button that rotates 180° when tapped, three ride options as a radio group (Moto 3 min · 1 seat $6.40, Car 5 min · 4 seats $11.80 selected, XL 9 min · 6 seats $17.20) each showing wait time, seats and price in monospace, a payment row (VISA ···· 4417 · Change), and one big acid-yellow button whose label names the selected ride ('Request Car' becomes 'Request XL' when XL is picked). Include the three states: plan, finding (radar rings spreading from the pickup pin, progress bar, 'Finding your driver', Cancel), and found (driver card with photo, name, 4.92 rating, trips count, plate in large mono like a real plate, Message/Call buttons). Industrial night look: near-black greys #0d0e0f/#121314, white type, one acid accent #d7ff2e, condensed caps for names, IBM Plex Mono for every number, 8px corners, 1px hairlines, no shadows, no glass. Hit targets 44px or larger.",
+ "prompt_zh": "夜间打车主界面：近黑地图+酸黄虚线路线、上下车点可互换、三档车型单选、主按钮文案跟着选中车型变，含选车/找司机/已接单三态与司机卡片车牌。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T08:10:00+08:00",
+ "source": "Design Lounge《Phone ride request》（https://www.designlounge.live/p/phone-ride-request，已打开页面核对原文全文；提示词按其设计简报要点原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 天气 App：全屏动态天空+玻璃数据卡 (`mobile-weather-app`)
+
+```json
+{
+ "id": "mobile-weather-app",
+ "title": "天气 App：全屏动态天空+玻璃数据卡",
+ "category": "移动端App",
+ "styles": [
+  "沉浸",
+  "玻璃拟态",
+  "数据可视化"
+ ],
+ "scenario": "天气 App 首页（当前天气+逐小时+10 日预报+指标网格）",
+ "prompt": "Design a polished native-style weather app home screen (390x844): a full-screen animated sky fills the background behind everything (rain streaks, sun glow, drifting clouds, snowflakes or a starry night, matched to the condition). Centered header with the city name, a huge thin temperature (100pt, e.g. 48°), the condition word and H/L range; the header collapses on scroll to a compact pinned line '48° | Rain'. Below, a glass Conditions card (20pt corners, thin white border) with a 24-column hourly row (hour, weather icon, precipitation % in blue when ≥30%, temperature), a next-hour precipitation bar chart when it is raining, a 10-day forecast card with one row per day (day, icon, low, a temperature-range bar filled with a cold-to-hot gradient, high), and a 2-column grid of square glass tiles: UV index, sunset curve, wind compass, precipitation, feels like, humidity, visibility, pressure — each with an icon header, one big value and a one-line caption. Bottom bar: a glass map circle left, a page-dot capsule in the centre, a glass list circle right. White text, glass cards over a sky-tinted background, one accent color per sky, springy 300ms transitions, pressed states scale 0.97. Include a locations list screen (live mini-sky cards per city with temperature and H/L) and a day-detail sheet with a 24-hour temperature line chart.",
+ "prompt_zh": "天气 App 首页：全屏动态天空背景、超大细体温度、玻璃质感逐小时卡片、10 日温度区间条、UV/日落/风速等指标玻璃格，滚动时标题收起。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T08:10:00+08:00",
+ "source": "Vibecode《Apple Weather Clone》（https://www.vibecodeapp.com/templates/apple-weather，已打开页面核对原文全文；原文为 2845 词 SwiftUI 专属构建提示词，本条按其结构与视觉要点改写为通用 UI 提示词，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 新闻资讯 App：纸感头版+离线收藏 (`mobile-news-reader`)
+
+```json
+{
+ "id": "mobile-news-reader",
+ "title": "新闻资讯 App：纸感头版+离线收藏",
+ "category": "移动端App",
+ "styles": [
+  "纸感",
+  "衬线标题",
+  "编辑排版"
+ ],
+ "scenario": "新闻资讯 App 首页（头条卡片+栏目筛选+文章列表+离线收藏）",
+ "prompt": "Design a news app front page (390x844) with a paper-toned editorial look: cream paper background #FAF6EE, a 30px serif masthead with the date, a horizontally scrolling row of section chips (Top stories, World, Climate, Technology, Culture, Sport) with the pressed chip filled dark ink and the rest outlined. A lead card with a CSS-drawn landscape illustration (gradient sky, sun disc, two hills, no photos), a red kicker, a 26px serif headline, a one-line dek, and a meta line with author, reading time and a green 'saved' mark. Below, a 'Latest' section label and a hairline-separated story list of six stories: 72px thumbnail, 17px serif headline, meta line with section and reading time, and a 40px round bookmark button on the right; saved stories show '· saved' in green inside the meta line (not a separate icon column) and update the badge on the Saved tab. Bottom nav with four items (Today, Sections, Saved with count badge, Me), 64px tall. Serif headlines (Newsreader/Georgia), Inter for UI text, one red accent #A83A2A plus one green #2F6B4F for saved state only, hairlines instead of cards, 280ms dip animation when switching sections, focus rings visible, no horizontal scroll.",
+ "prompt_zh": "新闻头版：米白纸感底、30px 衬线刊头、横滑栏目 chips、纯 CSS 风景头条卡、细线分隔的文章列表，收藏状态直接写进元信息行并同步更新 Saved 角标。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T08:10:00+08:00",
+ "source": "Design Lounge《PWA news reader》（https://www.designlounge.live/p/pwa-news-reader，已打开页面核对原文全文；提示词按其设计简报要点原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 冥想/正念 App：今日一课+呼吸播放器 (`mobile-meditation-app`)
+
+```json
+{
+ "id": "mobile-meditation-app",
+ "title": "冥想/正念 App：今日一课+呼吸播放器",
+ "category": "移动端App",
+ "styles": [
+  "治愈",
+  "低饱和",
+  "留白"
+ ],
+ "scenario": "冥想/正念 App（目标选择→今日推荐→播放→完成→进度）",
+ "prompt": "Design a 7-screen iOS meditation app (393x852): Welcome (one breathing animation and the line 'Let's take a minute for you'), Goal picker (4-6 large tappable goal chips: sleep, stress, focus, anxiety, habit), Home/Today (time-aware greeting, one hero 'Today's session' card with artwork, duration and a single play button, a small streak/minutes row, 3-5 quick picks like '1-minute breath', and a 'Day 4 of 10' continue-course card), Session detail (title, teacher, 5/10/20-minute duration selector, description, download), Player (one huge ≥64pt play/pause button centred and reachable without looking, a slow progress ring or breathing circle, skip back 15s, timer, ambient-sound volume slider in a sheet, no bright flashes), Completion (calm animation, minutes added, optional mood check-in), Progress (mindful days per week instead of punishing streaks, total minutes, calendar). Warm off-white #F7F4EE background, soft sage #E3EBE3 surfaces, muted teal #2F7D78 primary action, dark navy #0F1729 sleep theme; rounded humanist sans, 34pt large title, 22pt section titles, 17pt body; 20-24pt side margins, 16-24pt card radii, slow ease-in-out motion ≥400ms for ambient elements, breathing animation timed to real breath cycles, Reduce Motion fallback to gentle fades, 44pt minimum tap targets. Get the user into their first session within about a minute of opening the app; defer account creation, reminders and payment until after the first completed session.",
+ "prompt_zh": "冥想 App 全套 7 屏：呼吸欢迎页→目标选择→今日一课主卡+温和打卡→可闭眼操作的超大播放键呼吸播放器→完成心情签到→按周统计进度，暖白+鼠尾草+深夜藏青睡眠主题。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T08:10:00+08:00",
+ "source": "floow.design《Meditation App Design: Screens, Flows and UI Patterns》（https://www.floow.design/blog/how-to-design-a-meditation-app，已打开页面核对原文全文；提示词按其屏幕清单、三条流程与 MVP 规格原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 求职 App：薪资前置的职位列表首页 (`mobile-job-search-home`)
+
+```json
+{
+ "id": "mobile-job-search-home",
+ "title": "求职 App：薪资前置的职位列表首页",
+ "category": "移动端App",
+ "styles": [
+  "列表",
+  "信息层级",
+  "极简"
+ ],
+ "scenario": "求职/招聘 App 首页（搜索+筛选+最佳匹配+职位列表）",
+ "prompt": "Design a job search app home screen (390x844) built around one rule: the number candidates compare — pay — must be visible in the list, never hidden behind a tap. Top: wordmark and a line '12 new jobs for you', then ONE 44px search field (radius 10, #F2F2F2 fill) reading 'Product designer, remote' with a filter icon inside; category, part-time, entry-level and sort live behind that filter icon, not on screen. Below, a horizontally swiping row of 32px filter chips (Remote, Full-time, $100k+, Easy Apply) with the active filter filled in ink so the current state is obvious, the last chip cut off by the screen edge as the swipe cue. Then the best match gets its own block: 48px logo tile, 16px job title, company and place, the pay range in bold at the same weight as the title (e.g. $120k–$150k), a violet 96% match line, and one full-width Easy Apply button beside a Save bookmark. Every other job is a flat three-line row separated by a hairline: title, company and place, pay range in bold — one bookmark only, no Apply button per row. One margin (20px both sides), one violet accent #5D2EEA used for the wordmark, Easy Apply, the match line and the active tab only; no cards, no shadows, no photos; logos are plain letter tiles radius 8; a four-tab bar in one icon style with a hairline. The sale offer is a single text row under the list ('Try Premium, 50% off'), never a banner above the results.",
+ "prompt_zh": "求职首页：一个搜索框+横滑筛选 chips、最佳匹配单独成块带薪资与一键申请、其余职位三行扁平列表且每行都明码标薪，一个边距、一个紫色强调色、无卡片无阴影。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T08:10:00+08:00",
+ "source": "Brainy《Job Search App Design: Home Screen Before and After》（http://brainy.ink/paper/job-search-app-design，已打开页面核对原文全文；提示词按其改版前后四条规则与测量值原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+来源核对：打车三态见 Design Lounge《Phone ride request》、天气 App 见 Vibecode《Apple Weather Clone》、新闻头版见 Design Lounge《PWA news reader》、冥想 App 见 floow.design《Meditation App Design》、求职首页见 Brainy《Job Search App Design: Home Screen Before and After》，5 个来源页面均于 2026-11-22 已打开全文核对；提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。去重说明：记账/预算与正式库 mobile-fintech（钱包/记账/理财 App 首页）同场景已跳过；民宿预订与待验证区 mobile-travel-booking（旅行预订）场景相近已跳过；新闻头版与待验证区 content-blog-reading（单篇博客阅读页）场景不同、睡眠呼吸单屏与冥想 App 全套流程场景不同，均保留。

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -582,6 +582,11 @@
     "Cursor",
     "Lovable"
    ],
+   "group": {
+    "id": "settings-styles",
+    "name": "设置页 · 风格组"
+   },
+   "variant_label": "主从布局导航",
    "preview_img": "previews/saas-settings-master-detail.png",
    "preview_type": "static",
    "verified": {
@@ -1256,6 +1261,123 @@
     "method": "按提示词实际生成 UI 效果图并逐张目检",
     "result": "pass",
     "note": "生成视频为 Acme Corp 后台侧边栏（重验一次后通过）：首版视频机位漂移、标签串变；重验版机位固定，高亮先在 MAIN MENU 组内由 Dashboard 滑到 Analytics、Tasks，跨组到 TEAM 的 Settings 时淡出淡入；GIF（10 秒循环，80 帧，取自真实生成视频全程）呈现组内滑动与跨组淡入淡出，通过（过渡瞬间一帧 Team Chat 标签短暂串变为 Task: Chat，不影响动效规则呈现）"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-choice-controls",
+   "title": "费纸张：十种选择控件用法（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "控件选型",
+    "原作摘录",
+    "表单"
+   ],
+   "scenario": "表单/筛选界面不知道该用哪种选择控件时",
+   "prompt": "Choose form selection controls by these rules: checkbox for multiple independent options, toggle switch for instant on/off, radio group for one of few visible options, segmented control for one of a few modes, dropdown select for picking from a short list by browsing, combobox for picking from a long list by typing/searching, toggle button for a single binary state, filter chips for multi-select filtering, slider for approximate numeric ranges, stepper for precise small numeric adjustments. Decide by: when the change takes effect, how many options there are, browse vs search, and the precision needed.",
+   "prompt_zh": "费纸张原作：10 种选择控件（复选框/开关/单选组/分段控件/下拉框/组合框/切换按钮/筛选标签/滑块/步进器）按生效时机、选项数量、浏览或搜索、精度四维选型；长列表搜索用组合框，短列表浏览用下拉框。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-choice-controls.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-22",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 Acme 偏好设置页：复选框组、开关、单选组、分段控件、下拉框、搜索组合框（下拉列表展开）、切换按钮、筛选 chips、滑块 65%、步进器 10，十种控件齐全且标注清晰，通过"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-visual-alignment",
+   "title": "费纸张：视觉对齐四项检查（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "对齐",
+    "视觉重心",
+    "原作摘录"
+   ],
+   "scenario": "界面几何对齐了但眼睛看着别扭时，做视觉对齐检查",
+   "prompt": "Alignment must obey the eye, not just geometry. Audit this UI's visual alignment while keeping the existing layout and interactions: check icon optical center (e.g. play triangles), whitespace balance inside icon+text buttons, the perceived size of circles versus squares, and hanging punctuation for quotes. Report the minimal fix and the reason for each; fix icon offsets inside the SVG itself rather than compensating with margins.",
+   "prompt_zh": "费纸张原作提示词：对齐要听眼睛的；逐项检查图标重心、按钮留白、圆形视觉大小、引号悬挂；给最小修改和理由；图标偏移优先在 SVG 内修正，别靠外边距补救。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-visual-alignment.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-22",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为播客播放页：圆形播放按钮三角光学居中、方形专辑封面配圆形头像、Like/Save/Share/Download 图文按钮留白均衡、引用卡片引号悬挂式呈现，四项检查要素齐全，通过"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "saas-settings-three-steps",
+   "title": "费纸张：设置页三步排版（原作版）",
+   "category": "SaaS后台",
+   "styles": [
+    "设置页",
+    "排版",
+    "原作摘录"
+   ],
+   "scenario": "AI 做的设置页杂乱、框套框时",
+   "prompt": "Lay out this settings page in three steps: 1) one setting per row — name on the left, control on the right; 2) remove the outermost frame — the page itself needs no extra card wrapper; 3) group settings under group titles with generous spacing between groups, tight spacing within groups and only hairline dividers between rows. Note: for registration/checkout forms instead put labels above full-width inputs, in fill order, leaving room for error messages and longer content.",
+   "prompt_zh": "费纸张第5集原作三步：一项一行（左名右控件）、去掉最外层框、分组加标题（组间多留白、组内少留白、行间细线）；并对比表单场景：名称在上、全宽输入。与设置页主从布局同属设置页风格组。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "group": {
+    "id": "settings-styles",
+    "name": "设置页 · 风格组"
+   },
+   "variant_label": "三步排版",
+   "preview_img": "previews/saas-settings-three-steps.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-22",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 Acme 设置页：一项一行（左名右控件）、无最外层卡片框、Profile/Notifications/Billing 分组加标题且组间留白大于组内、行间细线分隔，三步全部呈现，通过（Timezone 一处拼写为 Tizezone，小瑕疵）"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-apple-hig",
+   "title": "费纸张：苹果 HIG 落地清单（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "苹果规范",
+    "HIG",
+    "原作摘录"
+   ],
+   "scenario": "想让 AI 生成原生级 iOS/macOS 风格界面时",
+   "prompt": "Design this interface following Apple Human Interface Guidelines: principles — hierarchy, harmony, consistency; use system components; tap targets at least 44pt; body text contrast at least 4.5:1; support Dynamic Type and Dark Mode. Write the rules into a DESIGN.md, generate with system components, then self-check the result against the checklist (foundations, interaction patterns, components, platform differences).",
+   "prompt_zh": "费纸张原作：HIG 四大块（基础/交互模式/组件/平台差异）、三原则（层级/和谐/一致），落地标准 44pt 点击区、正文对比度 ≥4.5:1、动态字号与深色模式；规则写进 DESIGN.md 并按清单自查。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-apple-hig.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-22",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为原生 iOS 设置页：大标题、分组圆角列表、系统图标、开关与 chevron 行、层级清晰，HIG 特征完整，通过"
    },
    "added_at": "2026-11-17T22:15:10+08:00",
    "source": "费纸张抖音（已登录核对原文，2026-11-17）"

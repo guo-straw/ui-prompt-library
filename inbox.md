@@ -47,80 +47,8 @@
 
 ### 本批新增待验证条目（13 条）
 
-#### 费纸张：动效四技巧（原作版） (`detail-motion-four`)
 
-```json
-{
-  "id": "detail-motion-four",
-  "title": "费纸张：动效四技巧（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "原作摘录",
-    "曲线"
-  ],
-  "scenario": "菜单/抽屉/图标动效显生硬时（动效类）",
-  "prompt": "Make UI motion natural with four techniques: 1) interruptible — animations can be interrupted at any moment by new input; 2) gentle exit — elements leave softly, slightly faster and fading; 3) soft switch — crossfade state changes with opacity + scale + blur instead of hard cuts (especially icons); 4) ease-out entrance — entrances decelerate with an ease-out curve. Apply to menus, drawers and icons.",
-  "prompt_zh": "费纸张原作四技巧：随时打断、轻轻退场、柔和切换（opacity·scale·blur）、入场缓出。动效类，验证需 GIF。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
 
-#### 费纸张：反光金属卡片五句（原作版） (`detail-metal-card-webgl`)
-
-```json
-{
-  "id": "detail-metal-card-webgl",
-  "title": "费纸张：反光金属卡片五句（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "金属质感",
-    "WebGL",
-    "原作摘录"
-  ],
-  "scenario": "想要可运行的反光金属质感卡片组件时",
-  "prompt": "Build a runnable React + WebGL2 reflective metal card, 320x500px, radius 24px, card number 0001 2345 6789, in five parts: 1) Environment — canvas with a blue board, warm sphere and white light bars as the reflection scene, upload as texture per frame, blur in two passes, desaturate samples. 2) Reflection — beveled micro-noise normal map N; with I = camera-to-surface and R = reflect(I, N), q = R.xy / max(R.z, 0.2), UV = vUv + 0.12 * q; planar texture only, no panorama or gradient fills. 3) Interaction — spring 120/16, tilt target ±12 degrees, CSS and normals share the same angle, ease back on leave. 4) Layers — canvas + HTML title and number + highlight border; no people, cameras or external images. 5) Delivery — component with complete GLSL/CSS and run command; check DPR/size per frame, redraw only on change, WebGL fallback, cleanup on unmount.",
-  "prompt_zh": "费纸张第2集原作五句：环境/反射/交互/图层/交付，React+WebGL2 金属卡片 320×500、圆角 24，含反射公式与弹簧参数 120/16、倾斜 ±12°。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：跟手纹理三条规则（原作版） (`detail-texture-follow`)
-
-```json
-{
-  "id": "detail-texture-follow",
-  "title": "费纸张：跟手纹理三条规则（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "纹理",
-    "原作摘录"
-  ],
-  "scenario": "想要指针跟随的纹理/十字高光特效时（动效类）",
-  "prompt": "Create a pointer-following texture effect from 420 thin strips clipped into small cells, using three rules and CSS math only, no libraries: 1) clip — each strip is clipped inside its small cell; 2) turn — every strip rotates toward the finger/pointer; 3) widen — strips aligned horizontally/vertically with the pointer widen, forming a bright cross.",
-  "prompt_zh": "费纸张原作三条规则：裁切、转向、变宽；420 根细条裁进小格、朝手指转向，横竖对齐的变宽形成亮十字，不用库。动效类，验证需 GIF。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
 
 ## 2026-11-17 夜 · SpicyTater 主页系统收集（用户指示关注并收集）
 
@@ -130,31 +58,6 @@
 
 ### 本批新增待验证条目（20 条）
 
-#### SpicyTater：App 交互动画 10 种 (`spt-app-animation-10`)
-
-```json
-{
-  "id": "spt-app-animation-10",
-  "title": "SpicyTater：App 交互动画 10 种",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "App交互",
-    "章节摘录"
-  ],
-  "scenario": "给 App/小程序加有质感的交互动画时（动效类）",
-  "prompt": "Implement these app interaction animations: theme switch expands in a circle from the tap point; drag-to-reorder where other rows yield space and the dragged row lifts out; batch check where checkmarks pop in sequence with a slight elastic scale; slider snap — after release the thumb glides with inertia then snaps to the nearest tick; text expand where container height animates with content and the arrow rotates 180°; stepper progress that overshoots slightly then settles with a soft rebound; linked switches giving visual feedback across the group without changing state; card delete where the card flies along a curve to the delete icon, shrinking, rotating and fading; card stacking where the top card pauses then is compressed by the next; tag selection where the chosen tag scales up and neighbours shift aside.",
-  "prompt_zh": "SpicyTater 第9集（1926赞/2230收藏）：主题圆形扩散、拖拽排序、批量勾选弹性、滑杆吸附、文本展开、步骤条回弹、开关联动、卡片删除飞出、卡片堆叠、标签选择等 10 种交互动画。动效类，验证需 GIF。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T23:11:51+08:00",
-  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7682010237578136858"
-}
-```
 
 #### SpicyTater：下拉组件 8 种选型 (`spt-dropdown-8`)
 
@@ -1818,3 +1721,259 @@
 ```
 
 来源核对：打车三态见 Design Lounge《Phone ride request》、天气 App 见 Vibecode《Apple Weather Clone》、新闻头版见 Design Lounge《PWA news reader》、冥想 App 见 floow.design《Meditation App Design》、求职首页见 Brainy《Job Search App Design: Home Screen Before and After》，5 个来源页面均于 2026-11-22 已打开全文核对；提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。去重说明：记账/预算与正式库 mobile-fintech（钱包/记账/理财 App 首页）同场景已跳过；民宿预订与待验证区 mobile-travel-booking（旅行预订）场景相近已跳过；新闻头版与待验证区 content-blog-reading（单篇博客阅读页）场景不同、睡眠呼吸单屏与冥想 App 全套流程场景不同，均保留。
+
+### 语言学习 App：游戏化课程路径+爱心/XP (`mobile-language-learning`)
+
+```json
+{
+ "id": "mobile-language-learning",
+ "title": "语言学习 App：游戏化课程路径+爱心/XP",
+ "category": "移动端App",
+ "styles": [
+  "游戏化",
+  "明亮活泼",
+  "圆润"
+ ],
+ "scenario": "语言学习 App 首页（课程路径+连胜+爱心/XP）与课堂练习（四选一+单词拼句）",
+ "prompt": "Design a gamified language learning app (390x844) with a bright, playful look and its own name, mascot, colours and logo — do not copy any existing brand. Home: a winding lesson path of five gold and green nodes down the screen, a bouncing START bubble on the current node, a locked chest and a trophy at the end; a top bar with a flame streak counter (e.g. 27 days), three hearts and an XP total. A daily goal ring at the top fills up as XP is earned today and resets each day. A lesson has eight exercises of two kinds only: pick the right translation from four choices, and build the sentence by tapping word tiles that fly from the bank to the answer line in 0.3s. After each answer show a full-width green or red feedback bar ('Nice job!' / correct answer) with a CHECK button; a wrong answer costs one heart, and losing all hearts opens a refill-and-retry screen instead of a dead end. Finish with a celebration screen: TOTAL XP, AMAZING and SPEEDY boxes, the flame lighting up as the streak rolls from 27 to 28. Rounded bold type (Nunito or similar), 52px minimum tap targets, lime green for correct, soft red for wrong, one purple for XP and one orange for streak — colour always means the same thing. Progress saves locally so a reload keeps streak, hearts and XP.",
+ "prompt_zh": "语言学习 App：蜿蜒金绿课程路径+连胜火焰+爱心/XP，每课 8 道四选一与单词拼句练习，词块 0.3 秒飞入答案行，答错扣爱心、通关点亮连胜火焰，附每日 XP 目标环。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T09:20:00+08:00",
+ "source": "Medium Ezzaky Ab.《I vibe coded my own Duolingo with one prompt》（https://medium.com/@ezzakyyy/i-vibe-coded-my-own-duolingo-with-one-prompt-streaks-hearts-and-a-party-at-the-end-for-6-cents-b00cd92d3929，已打开页面核对原文全文；提示词按其一句话提示词与三条生效要点原创改写为通用 UI 提示词，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 充电桩查找 App：三态应急/计划/旅途+可靠度优先 (`mobile-ev-charging-finder`)
+
+```json
+{
+ "id": "mobile-ev-charging-finder",
+ "title": "充电桩查找 App：三态应急/计划/旅途+可靠度优先",
+ "category": "移动端App",
+ "styles": [
+  "高对比",
+  "地图",
+  "应急优先"
+ ],
+ "scenario": "电动车充电桩查找 App（地图+列表：应急找桩/计划停靠/旅途规划）",
+ "prompt": "Design an EV charging finder app (390x844) built for high-stress outdoor use: one interface that adapts to three mental states. Emergency mode (battery 5-20%): the nearest WORKING charger wins — one huge 'Navigate to nearest available' action, distance and live availability first, decision in 5 seconds. Planned stop (20-50%): compare speed, price per kWh and reliability side by side, with a 'Recommended' badge that ends choice paralysis and a 'Filling fast' urgency note. Road trip (50%+): route integration with corridor fast chargers, amenities and ratings. Every charger shows reliability, not just location: live free/total port count (e.g. 3 of 4 free), connector types (CCS2, Type 2), price, and a four-lightning-bolt availability pattern (⚡⚡⚡⚡❌) readable in half a second. Map pins and list rows share one availability colour system; colour is reserved for meaning only — green safe, orange urgency, black action, nothing decorative. 56px tap targets, per-card actions instead of a sticky button (the sticky button wastes map space), high contrast for sunlight readability, filter by connector type so no one arrives at the wrong plug. Black/white/green/orange palette only, no decorative colour.",
+ "prompt_zh": "充电桩查找 App：应急 5 秒直达最近可用桩、计划停靠比价比可靠度、旅途规划看配套设施，可靠度（空闲桩数/接口/电价）优先于位置，56px 大触区、颜色只表意。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T09:20:00+08:00",
+ "source": "Anna Foltman《EV Charging Finder》（https://www.annafoltman.pl/projects/ev-charging.html，已打开页面核对原文全文；提示词按其三态用例、三条设计原则与关键决策原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 咖啡点单 App：自提卡+积分进度+行式菜单 (`mobile-coffee-order`)
+
+```json
+{
+ "id": "mobile-coffee-order",
+ "title": "咖啡点单 App：自提卡+积分进度+行式菜单",
+ "category": "移动端App",
+ "styles": [
+  "暖色",
+  "奶油底",
+  "行式列表"
+ ],
+ "scenario": "咖啡点单 App 首页（自提门店+积分进度+分类+热门单品）",
+ "prompt": "Design a coffee ordering app home screen (390x844) on a cream ground #F5EFE4 where one thing is read per block and one action per row. Top: a large 'Good morning, Leo' greeting with a round bell button, then ONE pickup card: 'Pickup at Downtown' as the title, one grey line '0.3 mi · Open until 9 pm' beneath it, and a blue 'Change' link at the right — the street address is not on the home screen. Below, one deep blue rewards card: 'Rewards' and '1,250 points' on top, the large line '250 points to a free drink', a butter progress bar filled 83% (1,250 of 1,500), and a small line 'A free drink at 1,500 points' — show the distance to the reward, not just the balance. Category row: exactly four chips that fit on screen (All, Coffee, Cold drinks, Bakery), the selected one filled cafe blue with white text; the rest of the menu lives one tap away in the Menu tab. Popular items are rows, not a grid: each row has a 60px photo, name, one grey line and price, with ONE round blue '+' button (44pt tap target) at the right — when every item has the same action, the action stays small and aligned so names and prices line up on one edge. One 20px side margin, 16px between blocks, iOS type scale 11-28pt, four-tab bar (Home, Menu, Rewards, Account). Palette of four only: cafe cobalt #2342A8, deep blue #15276B, butter #F3C77A, cream #F5EFE4; no gradients, no shouting banners.",
+ "prompt_zh": "咖啡点单首页：自提门店一张卡+积分进度讲清离免费饮品还差多少、恰好放得下的 4 个分类 chips、热门单品用 60px 图行式列表配单个圆形加号键，奶油底+钴蓝+黄油四色。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T09:20:00+08:00",
+ "source": "Brainy《Coffee App Design: Order Home Screen Before and After》（https://brainy.ink/paper/coffee-app-design，已打开页面核对原文全文；提示词按其四项改版规则与测量值原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 在线会议工具：主讲/网格视频+聊天/实时摘要/时间轴 (`saas-video-meeting`)
+
+```json
+{
+ "id": "saas-video-meeting",
+ "title": "在线会议工具：主讲/网格视频+聊天/实时摘要/时间轴",
+ "category": "SaaS后台",
+ "styles": [
+  "极简",
+  "浅色",
+  "圆角"
+ ],
+ "scenario": "在线会议工具主会议页（视频区+右侧聊天/摘要+底部时间轴）",
+ "prompt": "Design a modern online meeting tool main page (1440x900, responsive to mobile) in a minimalist light style: white and soft greys with one blue or green accent, soft shadows and rounded corners. Central area: the video feed, scalable between single-speaker view and a multi-participant tile grid; a floating control bar at the bottom of the video with mute/unmute, camera on/off, screen share and leave — the red leave button visually separated from the rest. Right side: a collapsible sidebar split into two tabs, Participants (avatar, name, mic state, per-person menu for mute/remove/roles, invited-but-not-joined listed separately) and Chat (message history with smooth scrolling, text, emoji and links). Directly below the chat, a live summary panel that updates in real time with the key points being discussed, expandable for detail and collapsible to keep the interface clean. Along the very bottom, a thin full-width timeline bar: a current-time marker draggable to rewind or fast-forward, a 'Now' button on the right to jump back to the live moment, small markers on key moments, and a hover tooltip showing time and the key event summary; scrubbing the timeline highlights the chat messages from that point in time. Non-intrusive toast notifications for new chat messages and important updates only. Every panel visually distinct, nothing competing with the video.",
+ "prompt_zh": "在线会议主页面：中央视频主讲/网格切换+底部悬浮控制条，右侧参与者/聊天双标签栏配实时要点摘要，底部可拖动时间轴带关键时刻标记与 Now 回到直播按钮。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T09:20:00+08:00",
+ "source": "PureCode《Online Meeting Tool》（https://purecode.ai/community/onlinemeetingtoolui-tailwind-meetingui，已打开页面核对原文全文；提示词按其视频区、聊天、摘要、时间轴四部分规格原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+### 深色模式：语义 token+三级亮面+去饱和强调色 (`detail-dark-mode-tokens`)
+
+```json
+{
+ "id": "detail-dark-mode-tokens",
+ "title": "深色模式：语义 token+三级亮面+去饱和强调色",
+ "category": "细节优化",
+ "styles": [
+  "深色模式",
+  "设计系统",
+  "无障碍"
+ ],
+ "scenario": "深色模式配色系统（语义 token 表 + 仪表盘示例，浅/深双主题切换）",
+ "prompt": "Design a dark mode analytics dashboard for a SaaS product (1440x900) that demonstrates a proper dark theme token system — dark mode is a second palette, never an inverted one. Base: dark grey #121212 page (never pure black — #fff on #000 hits 21:1 and causes halation), elevation tiers #1e1e1e cards and #2a2a2a dropdowns/modals; elevation comes from lighter surfaces, not shadows. Text: off-white #e6e6e6 primary (15.0:1), #a3a3a3 secondary (7.4:1); disabled text #6b6b6b (3.5:1) is reserved for genuinely disabled states and must never carry real content. One desaturated accent only — take the light-mode 500-weight brand colour and ship its 300-400 weight on dark (e.g. #8ab4f8, 8.9:1); fully saturated hues vibrate against dark surfaces. Borders are 1px rgba(255,255,255,0.12) instead of heavy shadows. Name colours by role, not value: components use --bg, --surface, --raised, --ink, --muted, --line, --accent, and each theme assigns values to those roles. Check contrast in BOTH themes (4.5:1 body text, 3:1 UI components) and test secondary text against the lightest elevated surface --surface-3, not the page background — opacity-based muted text silently fails on raised surfaces. Show the same dashboard in light and dark side by side with a theme toggle, and a small token sheet listing each token with its computed contrast ratio. Never ship filter: invert(1) as dark mode.",
+ "prompt_zh": "深色模式配色系统：#121212 底+三级亮面分层、#e6e6e6/#a3a3a3 两级文字、去饱和单一强调色、按角色命名的语义 token，双主题对照并附实测对比度数值表。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-22T09:20:00+08:00",
+ "source": "Superdesign《Dark Mode UI: Token Sheet With Computed Contrast, Examples and Limits》（https://superdesign.dev/styles/dark-mode，已打开页面核对原文全文；提示词按其 token 表、对比度数值与强调色规则原创改写，同类收集，非原作摘录，2026-11-22）"
+}
+```
+
+来源核对：语言学习见 Medium Ezzaky Ab.《I vibe coded my own Duolingo with one prompt》、充电桩查找见 Anna Foltman《EV Charging Finder》、咖啡点单见 Brainy《Coffee App Design》、在线会议见 PureCode《Online Meeting Tool》、深色模式见 Superdesign《Dark Mode UI》，5 个来源页面均于 2026-11-22 已打开全文核对；提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。去重说明：咖啡点单与正式库 mobile-food（外卖 App）场景不同（自提咖啡点单 vs 外卖点餐）保留；语言学习与正式库 edu-course-lesson-player（课程播放器）场景不同保留；深色模式与正式库 detail-contrast-a11y（对比度与可读性）角度不同（token 系统 vs 单项对比度）保留；充电桩与在线会议在正式库与待验证区均无同场景条目。
+
+## 2026-11-23 · 公开渠道收集（交友滑动/在线考试/生鲜配送/家政预约/共享单车）
+
+### 交友 App 滑动卡组与匹配页 (`mobile-dating-swipe`)
+
+```json
+{
+ "id": "mobile-dating-swipe",
+ "title": "交友 App 滑动卡组与匹配页",
+ "category": "移动端App",
+ "styles": [
+  "社交",
+  "卡片滑动",
+  "动效"
+ ],
+ "scenario": "做交友/婚恋 App 的滑动匹配卡片组时（动效类）",
+ "prompt": "Design the Discover tab of a dating app as a swipeable card deck (390x844): a stack of full-bleed profile photo cards, each with a cream info plate at the bottom holding name, age, job, distance and one personality prompt with its answer. Dragging the top card tilts it around a low pivot (up to ±16°), a LIKE or PASS stamp inks in with drag distance, and the next card grows from 0.95 to 1 beneath it. A fast flick flings the card off at release velocity; a slow short drag springs it home over 420ms. Tapping the right half of the photo steps to the next photo, the left half goes back. Liking the third profile opens a calm match screen: two round photos sliding in, 'It's mutual', a message field and a keep-browsing button — no countdowns, no likes-left counter. Below the deck, three round action buttons: Pass (64px), Super Like (52px), Like (64px). iOS-style language: 26px card radius, 44px round header buttons, spring motion, one sans family.",
+ "prompt_zh": "交友 App 滑动卡组：全幅照片卡+底部信息板，拖动倾斜±16°、LIKE/PASS 印章随距离显现、下一张卡由 0.95 放大，快甩按速度飞出、慢拖 420ms 回弹，点照片左右半区切换照片，第三张喜欢后开安静匹配页，底部 Pass/Super Like/Like 三钮。动效类，验证需 GIF。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T08:10:00+08:00",
+ "source": "Design Lounge《Dating swipe deck with match screen》（https://www.designlounge.live/p/app-dating-swipe-deck，已打开页面核对简报全文；提示词按其卡片物理、印章、匹配页规格原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 在线直播刷题 QuizFlix：房间码+分屏白板 (`edu-live-quiz`)
+
+```json
+{
+ "id": "edu-live-quiz",
+ "title": "在线直播刷题 QuizFlix：房间码+分屏白板",
+ "category": "移动端App",
+ "styles": [
+  "教育",
+  "直播答题",
+  "极简"
+ ],
+ "scenario": "做大学生直播刷题/考试练习 App 时",
+ "prompt": "Design QuizFlix, a mobile live-quiz app for university students: join a quiz by entering a room code, no host required. Timed multiple-choice questions with real-time scoring and a live leaderboard. Split-screen layout — the question on top, a personal whiteboard below for solving problems independently (pen, eraser, undo; local only, never shared), swiping up expands the whiteboard. Minimalist design to keep focus. Real-time sync via Firebase or WebSocket for rooms, questions, answers and scores. Target academic reinforcement and exam practice; keep the MVP to live participation, the whiteboard and the leaderboard.",
+ "prompt_zh": "大学生直播刷题 App：房间码入场、无主持人，计时选择题+实时计分与排行榜，上题下白板分屏（画笔/橡皮/撤销、仅本地、上滑展开），极简专注风。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T08:10:00+08:00",
+ "source": "Kaushik Sarkar《From One Prompt to a Live QuizFlix Mobile App Design for Uni》转引 prompts.chat 原提示词（https://www.kaushiksarkar.com/blog/from-one-prompt-to-a-live-quizflix-mobile-app-design-for-university-students-sit，已打开页面核对原文全文；提示词按原文要点改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 生鲜配送 App：多店+替换选择+小费 (`mobile-grocery-delivery`)
+
+```json
+{
+ "id": "mobile-grocery-delivery",
+ "title": "生鲜配送 App：多店+替换选择+小费",
+ "category": "电商零售",
+ "styles": [
+  "生鲜",
+  "多店铺",
+  "配送"
+ ],
+ "scenario": "做生鲜/超市配送 App 的选店到收货全流程时",
+ "prompt": "Design a grocery delivery app covering the full flow from choosing a store to groceries at the door: multi-store home with search across products, stores and recipes, an active-order banner, and store cards showing delivery times and pickup tags. Storefront with a delivery/pickup/in-store toggle, service fee stated up front, flyer deals and an aisle list from Produce to Pets. Search with brand, sale and sort filters; product pages with unit price, stock level and a nutrition panel. Cart where every line carries a replacement choice (Replace with best match, a specific item, or a refund) plus a note field, a fee summary and a spend-more offer for free delivery. Checkout with a dedicated tip screen ($1–$6 presets, the shopper keeps the whole tip), then order tracking with the shopper's profile. Clean, friendly, grocery-fresh visual language.",
+ "prompt_zh": "生鲜配送全流程：多店首页+按过道浏览+商品营养信息，每件商品带缺货替换选择，购物车含费用明细与免邮凑单，独立小费页，订单跟踪配采购员信息。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T08:10:00+08:00",
+ "source": "Whimsical《Grocery Delivery App Wireframe》（https://whimsical.com/templates/grocery-delivery-app-wireframe，已打开页面核对 15 屏线框图内容；提示词按其 Instacart 流程要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 家政保洁预约 App：冬季大扫除 (`mobile-home-cleaning-booking`)
+
+```json
+{
+ "id": "mobile-home-cleaning-booking",
+ "title": "家政保洁预约 App：冬季大扫除",
+ "category": "移动端App",
+ "styles": [
+  "家政",
+  "预约",
+  "暖色"
+ ],
+ "scenario": "做上门保洁/家政服务预约 App 时",
+ "prompt": "Design a mobile home-cleaning booking app screen (portrait phone, soft warm cream background): a deep teal header with the white title 'Book a Winter Cleaning' and a small snowflake icon, a search bar reading 'Search cleaning, laundry, tidying'. Below, a horizontal row of service chips — Deep Clean, Kitchen, Bathroom, Laundry — with Deep Clean selected in teal. A large featured card shows a bright photo of a tidy living room, 'Deep Clean · 2 hours', price '$59', and a teal 'Book Now' button. Below it, a time-slot row with 'Today 2:00 PM' selected, and a cleaner profile row with a friendly avatar, the name 'Ava', 4.9 stars and '128 jobs done'. Bottom navigation: Home, Bookings, Messages, Profile. Short readable English labels only, generous spacing, deep teal and warm cream palette, crisp modern UI.",
+ "prompt_zh": "家政保洁预约页：深青+暖米配色，服务 chips（深度清洁/厨房/浴室/洗衣），大卡片配 2 小时 $59 与 Book Now，时间段选择+保洁员 Ava 4.9 星 128 单，底部四栏导航。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T08:10:00+08:00",
+ "source": "MyPrompt《Winter Home Cleaning Booking App Interface Prompt》（https://myprompt.cc/en/prompt/winter-home-cleaning-booking-app-interface-prompt-cmwfqp5e，已打开页面核对提示词原文全文；提示词按原文要点改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 共享单车 App：站点地图+扫码开锁 (`mobile-bike-sharing`)
+
+```json
+{
+ "id": "mobile-bike-sharing",
+ "title": "共享单车 App：站点地图+扫码开锁",
+ "category": "移动端App",
+ "styles": [
+  "出行",
+  "地图",
+  "扫码"
+ ],
+ "scenario": "做共享单车/城市骑行 App 的找车开锁还车流程时",
+ "prompt": "Design a bike-sharing app around the rider's journey: a map home screen showing nearby stations, highlighting only stations with available bikes when location is shared, and hiding empty ones. Tapping a station shows the number of available bikes and the rate per minute so riders can compare by proximity, price and availability. Accepting a rate reserves a bike at that station (no need to pick a specific bike yet, and no need to be at the station to start). To unlock, the rider scans the QR code on the station hardware to prove presence; the station then assigns and unlocks a specific bike. During the ride show live time, distance and cost. To end, the rider returns the bike to a station slot, the hardware locks it and the ride stops, price is calculated and credits deducted, with clear feedback at every step (unlock success/failure, return confirmation) and graceful handling when a lock fails or a bike is defective. Clean map-first design with strong availability and price transparency.",
+ "prompt_zh": "共享单车全流程：地图首页只显示有车站点、点站看余量与每分钟价，接受价格即预留，到站扫码开锁，骑行中显示时间里程费用，还车落锁计费扣款，全程状态反馈明确。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T08:10:00+08:00",
+ "source": "Gistly《Deep Dive into Bike Sharing App User Flow & Domain Model》（https://gist.ly/youtube-summarizer/deep-dive-into-bike-sharing-app-user-flow-domain-model，已打开页面核对用户旅程全文；提示词按其找车/预留/扫码开锁/还车计费流程原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+来源核对：交友滑动见 Design Lounge 卡片滑动简报、在线考试见 Kaushik Sarkar 转引 prompts.chat 的 QuizFlix 全文提示词、生鲜配送见 Whimsical Instacart 15 屏线框图、家政预约见 MyPrompt 冬季保洁预约提示词原文、共享单车见 Gistly 单车用户旅程深挖，5 个来源页面均于 2026-11-23 已打开全文核对；提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。去重说明：交友滑动与待验证区 mobile-pet-adoption-swipe 同为滑动卡片但场景不同（交友 vs 宠物领养）保留；在线考试与正式库 edu-course-lesson-player（课程播放页）场景不同保留；生鲜配送与正式库 mobile-food（外卖点餐）场景不同（多店生鲜采购 vs 单店外卖）保留；家政预约与共享单车在正式库与待验证区均无同场景条目。

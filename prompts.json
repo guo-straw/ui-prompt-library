@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -1381,6 +1381,122 @@
    },
    "added_at": "2026-11-17T22:15:10+08:00",
    "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-motion-four",
+   "title": "费纸张：动效四技巧（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "动效",
+    "原作摘录",
+    "曲线"
+   ],
+   "scenario": "菜单/抽屉/图标动效显生硬时（动效类）",
+   "prompt": "Make UI motion natural with four techniques: 1) interruptible — animations can be interrupted at any moment by new input; 2) gentle exit — elements leave softly, slightly faster and fading; 3) soft switch — crossfade state changes with opacity + scale + blur instead of hard cuts (especially icons); 4) ease-out entrance — entrances decelerate with an ease-out curve. Apply to menus, drawers and icons.",
+   "prompt_zh": "费纸张原作四技巧：随时打断、轻轻退场、柔和切换（opacity·scale·blur）、入场缓出。动效类，验证需 GIF。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-motion-four.png",
+   "preview_gif": "previews/detail-motion-four.gif",
+   "preview_type": "motion",
+   "verified": {
+    "date": "2026-11-23",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成视频为 FlowDash 轻量 SaaS 后台：下拉菜单以缓出曲线展开、轻快淡出关闭，左侧抽屉滑入，图标状态切换带淡入淡出，背景遮罩随之明暗；GIF（10 秒循环，80 帧，取自真实生成视频全程）呈现菜单/抽屉的入场与退场动效，通过（演示中个别小字标签有 AI 生成视频的乱码，不影响动效技巧呈现；四技巧以组合演示呈现，未逐条单独成片）"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-metal-card-webgl",
+   "title": "费纸张：反光金属卡片五句（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "金属质感",
+    "WebGL",
+    "原作摘录"
+   ],
+   "scenario": "想要可运行的反光金属质感卡片组件时",
+   "prompt": "Build a runnable React + WebGL2 reflective metal card, 320x500px, radius 24px, card number 0001 2345 6789, in five parts: 1) Environment — canvas with a blue board, warm sphere and white light bars as the reflection scene, upload as texture per frame, blur in two passes, desaturate samples. 2) Reflection — beveled micro-noise normal map N; with I = camera-to-surface and R = reflect(I, N), q = R.xy / max(R.z, 0.2), UV = vUv + 0.12 * q; planar texture only, no panorama or gradient fills. 3) Interaction — spring 120/16, tilt target ±12 degrees, CSS and normals share the same angle, ease back on leave. 4) Layers — canvas + HTML title and number + highlight border; no people, cameras or external images. 5) Delivery — component with complete GLSL/CSS and run command; check DPR/size per frame, redraw only on change, WebGL fallback, cleanup on unmount.",
+   "prompt_zh": "费纸张第2集原作五句：环境/反射/交互/图层/交付，React+WebGL2 金属卡片 320×500、圆角 24，含反射公式与弹簧参数 120/16、倾斜 ±12°。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-metal-card-webgl.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-23",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为竖版拉丝深色金属卡：圆角 24、芯片、浮雕银色卡号 0001 2345 6789，卡面映出蓝色板面、暖色光球与白色灯条三处反射，略带倾斜，金属质感与环境反射特征完整，通过"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "detail-texture-follow",
+   "title": "费纸张：跟手纹理三条规则（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "动效",
+    "纹理",
+    "原作摘录"
+   ],
+   "scenario": "想要指针跟随的纹理/十字高光特效时（动效类）",
+   "prompt": "Create a pointer-following texture effect from 420 thin strips clipped into small cells, using three rules and CSS math only, no libraries: 1) clip — each strip is clipped inside its small cell; 2) turn — every strip rotates toward the finger/pointer; 3) widen — strips aligned horizontally/vertically with the pointer widen, forming a bright cross.",
+   "prompt_zh": "费纸张原作三条规则：裁切、转向、变宽；420 根细条裁进小格、朝手指转向，横竖对齐的变宽形成亮十字，不用库。动效类，验证需 GIF。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-texture-follow.png",
+   "preview_gif": "previews/detail-texture-follow.gif",
+   "preview_type": "motion",
+   "verified": {
+    "date": "2026-11-23",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成视频为深色细条纹理面板：发光指针自左向右移动，细条朝指针转向，横竖对齐处变宽变亮形成亮十字并跟随指针；GIF（5 秒循环，40 帧，取自真实生成视频前 5 秒）呈现裁切/转向/变宽三规则与亮十字跟随，通过（画面另带 SCAN/TRACK 刻度装饰，非提示词内容，不影响纹理规则呈现）"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
+  },
+  {
+   "id": "spt-app-animation-10",
+   "title": "SpicyTater：App 交互动画 10 种",
+   "category": "细节优化",
+   "styles": [
+    "动效",
+    "App交互",
+    "章节摘录"
+   ],
+   "scenario": "给 App/小程序加有质感的交互动画时（动效类）",
+   "prompt": "Implement these app interaction animations: theme switch expands in a circle from the tap point; drag-to-reorder where other rows yield space and the dragged row lifts out; batch check where checkmarks pop in sequence with a slight elastic scale; slider snap — after release the thumb glides with inertia then snaps to the nearest tick; text expand where container height animates with content and the arrow rotates 180°; stepper progress that overshoots slightly then settles with a soft rebound; linked switches giving visual feedback across the group without changing state; card delete where the card flies along a curve to the delete icon, shrinking, rotating and fading; card stacking where the top card pauses then is compressed by the next; tag selection where the chosen tag scales up and neighbours shift aside.",
+   "prompt_zh": "SpicyTater 第9集（1926赞/2230收藏）：主题圆形扩散、拖拽排序、批量勾选弹性、滑杆吸附、文本展开、步骤条回弹、开关联动、卡片删除飞出、卡片堆叠、标签选择等 10 种交互动画。动效类，验证需 GIF。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/spt-app-animation-10.png",
+   "preview_gif": "previews/spt-app-animation-10.gif",
+   "preview_type": "motion",
+   "verified": {
+    "date": "2026-11-23",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成视频为深色设置页 App：主题切换由浅变深、拖拽排序列表、批量勾选弹性弹出、滑杆吸附、卡片删除飞出配 Item deleted 提示；GIF（10 秒循环，80 帧，取自真实生成视频全程）呈现其中 5 种交互动画，通过（10 种动画未在 10 秒内逐一呈现，GIF 采样其中 5 种；个别行标签重复为 Dark Mode，不影响动效呈现）"
+   },
+   "added_at": "2026-11-17T23:11:51+08:00",
+   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+   "source_video": "https://www.douyin.com/video/7682010237578136858"
   }
  ]
 }

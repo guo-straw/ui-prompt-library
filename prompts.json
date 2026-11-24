@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -11,7 +11,8 @@
   "细节优化",
   "落地页官网",
   "金融",
-  "智能家居"
+  "智能家居",
+  "车机出行"
  ],
  "prompts": [
   {
@@ -1497,6 +1498,128 @@
    "added_at": "2026-11-17T23:11:51+08:00",
    "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
    "source_video": "https://www.douyin.com/video/7682010237578136858"
+  },
+  {
+   "id": "style-neumorphism-player",
+   "title": "新拟态音乐播放器",
+   "category": "内容社交",
+   "styles": [
+    "新拟态",
+    "柔和立体",
+    "音乐播放器"
+   ],
+   "scenario": "音乐播放器/控制面板想要柔和立体触感时",
+   "prompt": "Create a neumorphism music player dashboard on a #e0e5ec background. Build raised circular play/pause buttons using dual box-shadows: box-shadow: 6px 6px 12px #b8bec7, -6px -6px 12px #ffffff. Add pressed (active) state with inset shadows: inset 4px 4px 8px #b8bec7, inset -4px -4px 8px #ffffff. Include a volume slider and a track progress bar in the same neumorphic style; album art sits in a soft recessed well, track title and artist in dark gray. Keep every element the same #e0e5ec tone so depth comes only from shadows, and keep text contrast readable.",
+   "prompt_zh": "新拟态音乐播放器：#e0e5ec 同色底、双向阴影做出凸起与按压、圆形播放键+音量滑杆+进度条，深度只靠阴影，文字对比度要可读。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/style-neumorphism-player.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-24",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为新拟态音乐播放器：#e0e5ec 同色底、双向阴影凸起圆形播放键（暂停为按压态）、凹陷专辑区含黑胶波形线稿、曲名/艺人、进度条 2:14/3:42、音量滑杆 68%、随机/循环/列表键齐全，通过"
+   },
+   "added_at": "2026-11-18T08:20:00+08:00",
+   "source": "Vibe Coder《Web Design Guide》1.2 新拟态节（搜索结果原文核对，2026-11-18）"
+  },
+  {
+   "id": "landing-memphis",
+   "title": "孟菲斯撞色落地页",
+   "category": "落地页官网",
+   "styles": [
+    "孟菲斯",
+    "撞色",
+    "几何"
+   ],
+   "scenario": "创意/潮流品牌落地页想要 80 年代孟菲斯活力时",
+   "prompt": "Design a landing page in Memphis style, the 80s Italian design movement: bold geometric shapes (circles, triangles, squiggles, grids), vivid contrasting colors (hot pink, yellow, teal, black), irregular playful patterns that break the grid, thick black outlines, oversized geometric headline type. Hero with a big geometric composition, feature cards as tilted color blocks with hard shadows, playful scattered shapes across sections. Keep the copy short and the layout energetic but readable; one clear primary CTA.",
+   "prompt_zh": "孟菲斯风落地页：大胆几何图形+高饱和撞色+不规则图案+粗黑描边，活力十足但文案要短、主按钮唯一。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Framer"
+   ],
+   "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+   },
+   "variant_label": "孟菲斯撞色几何",
+   "preview_img": "previews/landing-memphis.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-24",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为孟菲斯风落地页：粉/黄/青撞色、圆/三角/波浪/网格几何图形、粗黑描边、超大几何标题 MAKE IT LOUD、倾斜色块功能卡配硬阴影、单一主 CTA，通过"
+   },
+   "added_at": "2026-11-18T08:20:00+08:00",
+   "source": "StyleKit 151 风格库 + ByteMint UI 提示词库孟菲斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
+  },
+  {
+   "id": "landing-bauhaus",
+   "title": "包豪斯几何官网",
+   "category": "落地页官网",
+   "styles": [
+    "包豪斯",
+    "几何",
+    "现代主义"
+   ],
+   "scenario": "设计/建筑/文化机构官网想要包豪斯现代主义时",
+   "prompt": "Design a website in Bauhaus style: functionalist modernism built only from circles, squares and triangles, thick black borders, hard offset shadows, and pure Bauhaus primaries (red, blue, yellow) plus black and off-white. Asymmetric architectural layout, oversized geometric headline, grid-based sections, no gradients, no rounded corners, no decoration beyond geometry. Form follows function — every shape earns its place.",
+   "prompt_zh": "包豪斯风官网：只用圆/方/三角+粗黑边+硬偏移阴影+红蓝黄三原色，非对称建筑感布局，无渐变无圆角。",
+   "tools": [
+    "v0",
+    "Framer",
+    "Cursor"
+   ],
+   "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+   },
+   "variant_label": "包豪斯几何原色",
+   "preview_img": "previews/landing-bauhaus.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-24",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为包豪斯风官网：只用圆/方/三角、粗黑边+硬偏移阴影、红蓝黄三原色+黑与米白、非对称布局、超大几何标题、无渐变无圆角，通过"
+   },
+   "added_at": "2026-11-18T08:20:00+08:00",
+   "source": "StyleKit 151 风格库 + ByteMint UI 提示词库包豪斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
+  },
+  {
+   "id": "car-infotainment-tesla",
+   "title": "车机中控屏：特斯拉风",
+   "category": "车机出行",
+   "styles": [
+    "车机",
+    "深色",
+    "信息娱乐"
+   ],
+   "scenario": "车机/中控大屏 UI 设计时",
+   "prompt": "Design a Tesla-style car infotainment screen, 1280x720 landscape touchscreen, plain HTML/CSS/JS, no photos: left third shows a top-down car in inline SVG, gear selector P R N D, large speed readout, battery percentage and range; right panel shows a stylised city map with a blue route line, next-turn card and ETA; bottom dock holds driver temperature, music controls, fan speed and seat controls. Colors: base #0B0D10, glass panels #15181D, borders #262B33, accent cyan #2FD3FF, text #E8ECF1. Big touch targets, glanceable while driving, no small text.",
+   "prompt_zh": "特斯拉风车机中控：1280×720 横屏、左车况+中地图+下快捷坞，深色玻璃面板+青色强调色，驾驶时一眼可读。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/car-infotainment-tesla.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-24",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为特斯拉风车机中控：左 P R N D 档位+俯视线稿车+大字时速 72 MPH+电量 72%/续航 210 mi，右城市地图+蓝色路线+右转 Oak St 提示卡与 ETA，下坞温度/音乐/风速/座椅齐全，深色底+青色强调色，通过（小瑕疵：档位显示 PARKED 但时速表为 72 MPH，不影响布局特征）"
+   },
+   "added_at": "2026-11-18T08:20:00+08:00",
+   "source": "YouTube《How to Vibe Code a Car Dashboard with Claude》（据视频简介的计划提示词摘要改写，同类收集，2026-11-18）"
   }
  ]
 }

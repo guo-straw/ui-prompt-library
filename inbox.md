@@ -81,7 +81,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7680742171204439296"
+  "source_video": "https://www.douyin.com/video/7680742171204439296",
+  "verify_note": "2026-11-24 尝试验证：浏览器实测来源视频可正常播放，内容与提示词要点逐条一致，但抖音网页未提供下载途径、无法取得视频文件或直接播放地址（Argus 签名拦截），无法截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -107,7 +108,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7699199951179418907"
+  "source_video": "https://www.douyin.com/video/7699199951179418907",
+  "verify_note": "2026-11-24 尝试验证：浏览器实测来源视频可正常播放，内容与提示词要点逐条一致，但抖音网页未提供下载途径、无法取得视频文件或直接播放地址（Argus 签名拦截），无法截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -133,7 +135,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7682010730085862696"
+  "source_video": "https://www.douyin.com/video/7682010730085862696",
+  "verify_note": "2026-11-24 尝试验证：浏览器实测来源视频可正常播放，内容与提示词要点逐条一致，但抖音网页未提供下载途径、无法取得视频文件或直接播放地址（Argus 签名拦截），无法截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -159,7 +162,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7682681851068026152"
+  "source_video": "https://www.douyin.com/video/7682681851068026152",
+  "verify_note": "2026-11-24 尝试验证：浏览器实测来源视频可正常播放，内容与提示词要点逐条一致，但抖音网页未提供下载途径、无法取得视频文件或直接播放地址（Argus 签名拦截），无法截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -530,116 +534,6 @@
 ## 2026-11-18 · 公开渠道收集（StyleKit / ByteMint / Superdesign / YouTube 车机教程）
 
 来源核对：新拟态提示词见 Vibe Coder《Web Design Guide》1.2 节（搜索结果原文）；孟菲斯/包豪斯风格定义见 StyleKit 151 风格库与 ByteMint UI 提示词库（搜索结果原文），提示词按风格定义原创改写；交易邮件提示词见 Superdesign《UI Design Prompts》(2026) 第 8 节（已打开页面核对原文）；车机提示词据 YouTube《How to Vibe Code a Car Dashboard with Claude》简介中的计划提示词摘要改写。以上 5 条均为库里没有的风格/场景（新拟态、孟菲斯、包豪斯、车机 UI、邮件模板），只进待验证区。
-
-#### 新拟态音乐播放器 (`style-neumorphism-player`)
-
-```json
-{
-  "id": "style-neumorphism-player",
-  "title": "新拟态音乐播放器",
-  "category": "内容社交",
-  "styles": [
-    "新拟态",
-    "柔和立体",
-    "音乐播放器"
-  ],
-  "scenario": "音乐播放器/控制面板想要柔和立体触感时",
-  "prompt": "Create a neumorphism music player dashboard on a #e0e5ec background. Build raised circular play/pause buttons using dual box-shadows: box-shadow: 6px 6px 12px #b8bec7, -6px -6px 12px #ffffff. Add pressed (active) state with inset shadows: inset 4px 4px 8px #b8bec7, inset -4px -4px 8px #ffffff. Include a volume slider and a track progress bar in the same neumorphic style; album art sits in a soft recessed well, track title and artist in dark gray. Keep every element the same #e0e5ec tone so depth comes only from shadows, and keep text contrast readable.",
-  "prompt_zh": "新拟态音乐播放器：#e0e5ec 同色底、双向阴影做出凸起与按压、圆形播放键+音量滑杆+进度条，深度只靠阴影，文字对比度要可读。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T08:20:00+08:00",
-  "source": "Vibe Coder《Web Design Guide》1.2 新拟态节（搜索结果原文核对，2026-11-18）"
-}
-```
-
-#### 孟菲斯撞色落地页 (`landing-memphis`)
-
-```json
-{
-  "id": "landing-memphis",
-  "title": "孟菲斯撞色落地页",
-  "category": "落地页官网",
-  "styles": [
-    "孟菲斯",
-    "撞色",
-    "几何"
-  ],
-  "scenario": "创意/潮流品牌落地页想要 80 年代孟菲斯活力时",
-  "prompt": "Design a landing page in Memphis style, the 80s Italian design movement: bold geometric shapes (circles, triangles, squiggles, grids), vivid contrasting colors (hot pink, yellow, teal, black), irregular playful patterns that break the grid, thick black outlines, oversized geometric headline type. Hero with a big geometric composition, feature cards as tilted color blocks with hard shadows, playful scattered shapes across sections. Keep the copy short and the layout energetic but readable; one clear primary CTA.",
-  "prompt_zh": "孟菲斯风落地页：大胆几何图形+高饱和撞色+不规则图案+粗黑描边，活力十足但文案要短、主按钮唯一。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Framer"
-  ],
-  "group": {
-    "id": "landing-styles",
-    "name": "落地页官网 · 风格组"
-  },
-  "variant_label": "孟菲斯撞色几何",
-  "added_at": "2026-11-18T08:20:00+08:00",
-  "source": "StyleKit 151 风格库 + ByteMint UI 提示词库孟菲斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
-}
-```
-
-#### 包豪斯几何官网 (`landing-bauhaus`)
-
-```json
-{
-  "id": "landing-bauhaus",
-  "title": "包豪斯几何官网",
-  "category": "落地页官网",
-  "styles": [
-    "包豪斯",
-    "几何",
-    "现代主义"
-  ],
-  "scenario": "设计/建筑/文化机构官网想要包豪斯现代主义时",
-  "prompt": "Design a website in Bauhaus style: functionalist modernism built only from circles, squares and triangles, thick black borders, hard offset shadows, and pure Bauhaus primaries (red, blue, yellow) plus black and off-white. Asymmetric architectural layout, oversized geometric headline, grid-based sections, no gradients, no rounded corners, no decoration beyond geometry. Form follows function — every shape earns its place.",
-  "prompt_zh": "包豪斯风官网：只用圆/方/三角+粗黑边+硬偏移阴影+红蓝黄三原色，非对称建筑感布局，无渐变无圆角。",
-  "tools": [
-    "v0",
-    "Framer",
-    "Cursor"
-  ],
-  "group": {
-    "id": "landing-styles",
-    "name": "落地页官网 · 风格组"
-  },
-  "variant_label": "包豪斯几何原色",
-  "added_at": "2026-11-18T08:20:00+08:00",
-  "source": "StyleKit 151 风格库 + ByteMint UI 提示词库包豪斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
-}
-```
-
-#### 车机中控屏：特斯拉风 (`car-infotainment-tesla`)
-
-```json
-{
-  "id": "car-infotainment-tesla",
-  "title": "车机中控屏：特斯拉风",
-  "category": "车机出行",
-  "styles": [
-    "车机",
-    "深色",
-    "信息娱乐"
-  ],
-  "scenario": "车机/中控大屏 UI 设计时",
-  "prompt": "Design a Tesla-style car infotainment screen, 1280x720 landscape touchscreen, plain HTML/CSS/JS, no photos: left third shows a top-down car in inline SVG, gear selector P R N D, large speed readout, battery percentage and range; right panel shows a stylised city map with a blue route line, next-turn card and ETA; bottom dock holds driver temperature, music controls, fan speed and seat controls. Colors: base #0B0D10, glass panels #15181D, borders #262B33, accent cyan #2FD3FF, text #E8ECF1. Big touch targets, glanceable while driving, no small text.",
-  "prompt_zh": "特斯拉风车机中控：1280×720 横屏、左车况+中地图+下快捷坞，深色玻璃面板+青色强调色，驾驶时一眼可读。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T08:20:00+08:00",
-  "source": "YouTube《How to Vibe Code a Car Dashboard with Claude》（据视频简介的计划提示词摘要改写，同类收集，2026-11-18）"
-}
-```
 
 #### 交易邮件模板：欢迎/验证 (`email-transactional`)
 
@@ -1977,3 +1871,286 @@
 ```
 
 来源核对：交友滑动见 Design Lounge 卡片滑动简报、在线考试见 Kaushik Sarkar 转引 prompts.chat 的 QuizFlix 全文提示词、生鲜配送见 Whimsical Instacart 15 屏线框图、家政预约见 MyPrompt 冬季保洁预约提示词原文、共享单车见 Gistly 单车用户旅程深挖，5 个来源页面均于 2026-11-23 已打开全文核对；提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。去重说明：交友滑动与待验证区 mobile-pet-adoption-swipe 同为滑动卡片但场景不同（交友 vs 宠物领养）保留；在线考试与正式库 edu-course-lesson-player（课程播放页）场景不同保留；生鲜配送与正式库 mobile-food（外卖点餐）场景不同（多店生鲜采购 vs 单店外卖）保留；家政预约与共享单车在正式库与待验证区均无同场景条目。
+
+## 2026-11-23 · 公开渠道收集（第二轮：停车找位/航班动态/用药提醒/商品详情页/语音助手/团队权限）
+
+来源核对：停车找位见 Lovable Prompts 智能停车预约系统提示词（搜索/筛选/地图/预约/二维码通行）与 Pramod Mani《Smart Parking Solution》iPARK 案例（搜索结果原文核对）；航班动态见 webdevpuneet《Flight Status Tracker》卡片片段附带的“Prompt to recreate it”原文（航班号/航线/状态 pill/计划与实际时间/航站楼登机口座位、data-status 单一状态源，搜索结果原文核对）与 DesignCode 登机牌模块说明；用药提醒见 mejba.me《Claude/ChatGPT Prompt to Design a Medication Reminder App UI》全文模板（今日时间线/一键确认/余量追踪/照护者视图，搜索结果原文核对）；商品详情页见 aiwebstyle《Product Detail Page》配方（八段顺序、诚实占位规则，搜索结果原文核对）；语音助手见 mobileappdesign.io《Voice assistant UI: how 19 AI apps put a microphone on the chat screen》（19 款 App 三层语音结构，搜索结果原文核对）+ shadcn.io AI 语音助手块（四态 Idle/Listening/Thinking/Speaking、波形只在聆听/说话时动）+ Stream 语音代理视觉指南；团队权限见 justfigma《Team Roles & Permissions UI》与 Humbleteam《B2B SaaS roles and permissions UX》（成员列表/邀请流程/权限矩阵/自定义角色，搜索结果原文核对）。以上 6 条均为库里没有的场景（停车找位与 mobile-ride-hailing-night 打车场景不同；航班动态与 mobile-travel-booking 预订流程不同，是出行当天的状态与登机牌；用药提醒与 mobile-health 日常活动圆环不同，是按时服药管理；商品详情页与 ecom-checkout-flow 结账、ecom-ar-tryon-product 试穿不同，是购买决策页本身；语音助手与 ai-chat-app 文字对话不同，是语音四态界面；团队权限与 saas-settings-master-detail 设置页布局不同，是成员/角色/权限管理功能），提示词均按主题原创改写，标注「同类收集，非原作摘录」，只进待验证区。已与正式库 57 条 + 待验证区 73 条去重，无重复。
+
+### 停车找位 App：地图找位+预约+扫码进出 (`mobile-parking-finder`)
+
+```json
+{
+ "id": "mobile-parking-finder",
+ "title": "停车找位 App：地图找位+预约+扫码进出",
+ "category": "移动端App",
+ "styles": [
+  "停车",
+  "地图",
+  "出行"
+ ],
+ "scenario": "做停车找位/预约 App，希望开车时一眼看清最近最便宜的空位时",
+ "prompt": "Design a mobile parking finder app: a map-first home screen showing nearby parking facilities as pins with live availability and price per hour, searchable and filterable by location, distance, price and availability; tapping a pin shows the facility card (spots left, rate, walking distance, open hours) and lets the driver reserve a slot for a date and time with no double bookings; after payment the driver gets a unique QR parking pass for entry and exit; a 'Find my car' view guides the driver back to the parked spot. Keep it driver-safe: minimal text, big touch targets, voice input for the vehicle, icons over words, and only the closest lots shown while driving. Light theme, one blue accent (#1978E5), Inter type, 8px radii, clean minimalist layout.",
+ "prompt_zh": "停车找位 App：地图首页显示附近停车场空位与时价、可按位置距离价格筛选，点图钉看余量费率并预约时段，支付后得二维码通行证进出，另有「找回我的车」导航；驾驶场景下字少键大、可语音输入。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "Lovable Prompts 智能停车预约系统提示词 + Pramod Mani《Smart Parking Solution》iPARK 案例（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 航班动态/登机牌：状态卡片+登机牌 (`mobile-flight-status`)
+
+```json
+{
+ "id": "mobile-flight-status",
+ "title": "航班动态/登机牌：状态卡片+登机牌",
+ "category": "移动端App",
+ "styles": [
+  "航班",
+  "登机牌",
+  "出行"
+ ],
+ "scenario": "做航班动态查询或登机牌界面，希望延误、登机口变化一眼可读时",
+ "prompt": "Design a flight status tracker card plus a boarding pass: the status card shows the flight number, two airport codes with city names on either end of a route line with an inline SVG plane icon between two dots, and a status pill in the top-right (On Time / Delayed / Boarding / Departed). Below the route, departure and arrival times in two columns, each showing scheduled and actual time — the scheduled time gets a strikethrough and the actual time recolors when the flight is delayed. A meta row shows terminal, gate and seat; the gate value can change independently (reassigned when boarding starts). Drive all state from a single data-status attribute on the outer card so every color change keys off it. The boarding pass below is a clean card: passenger name, flight, gate, seat, date and times, a perforated dotted tear line and a scannable barcode strip. Dark-mode ready, high contrast, tabular numerals for times.",
+ "prompt_zh": "航班动态卡+登机牌：航线两端机场代码与城市、飞机图标航线、右上状态 pill（准点/延误/登机/已出发），计划与实际时间并列（延误时计划时间划线、实际时间变色），航站楼/登机口/座位行可独立变更；下方登机牌带虚线撕口与条码，深色模式可用。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "webdevpuneet《Flight Status Tracker》片段附带的复现提示词原文 + DesignCode 登机牌模块说明（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 用药提醒 App：今日时间线+一键确认+余量追踪 (`mobile-medication-reminder`)
+
+```json
+{
+ "id": "mobile-medication-reminder",
+ "title": "用药提醒 App：今日时间线+一键确认+余量追踪",
+ "category": "移动端App",
+ "styles": [
+  "用药提醒",
+  "健康",
+  "无障碍"
+ ],
+ "scenario": "做用药提醒/服药管理 App，用户多为长辈或需同时管多种药时",
+ "prompt": "Design a medication reminder app for elderly patients and caregivers managing complex regimens: the home screen is today's schedule as a timeline, color-coded by time of day (morning / noon / evening / night), each dose showing a photo of the pill for visual identification plus name and dosage. One-tap confirmation: large Take / Skip / Snooze buttons (minimum 48px targets) with a satisfying confirmation animation and timestamp logging. Medication setup asks name, dosage, photo, schedule and refill count; a refill tracker counts pills remaining, warns when low and offers a pharmacy quick-call; an interaction checker warns when a new medication conflicts with existing ones. A caregiver view shares adherence reports and missed-dose alerts; history shows an adherence calendar (taken / missed / skipped) exportable as a PDF for doctor visits. Maximum clarity, minimum cognitive load: 18px+ body type, 24px+ headings, high contrast, no thin fonts, no complex setup wizards, no social or gamification features — this is medical, not a game.",
+ "prompt_zh": "用药提醒 App：今日时间线按早中晚夜配色、药片照片识别，一键服药/跳过/稍后（≥48px 大按钮、带时间戳记录），余量倒数+药房快捷拨打、药物相互作用警告、照护者视图与可导出 PDF 的服药日历；大字高对比、无游戏化。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "mejba.me《Claude/ChatGPT Prompt to Design a Medication Reminder App UI》全文模板（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### 电商商品详情页：图库+购买盒+信任条+评价 (`ecom-product-detail`)
+
+```json
+{
+ "id": "ecom-product-detail",
+ "title": "电商商品详情页：图库+购买盒+信任条+评价",
+ "category": "电商零售",
+ "styles": [
+  "商品详情",
+  "电商",
+  "转化"
+ ],
+ "scenario": "做电商商品详情页，希望购买决策链路一屏讲清、不靠编造的好评撑场时",
+ "prompt": "Build a product detail page for one physical product, in exactly this section order — the order is the argument: 1) Breadcrumb, three levels maximum, current page as text not a link. 2) Gallery: four images minimum, including one in use and one showing scale; never auto-advance — a carousel that moves while someone reads is a carousel they will misread; on desktop a sticky left column of stacked images with the buy box scrolling independently on the right, on mobile a horizontal swipe strip with visible dots. 3) Buy box: name, price with tax basis, variant control (size and colour — changing the variant changes the photograph too), quantity stepper, Add to cart, and a delivery date (name the date, not '3-5 business days'); all of it above the fold on a phone. 4) Trust strip, four items maximum, each answerable in one sentence: shipping cost, return window (30 days), warranty, payment methods. 5) Description that absorbs the doubts the buy box could not. 6) Reviews: a summary with a real count, then three reviews with dates — show the three-star review first; never invent a 4.8 average from thousands of reviews, use an honest placeholder instead. 7) Cross-sell. Mobile sticky buy bar past the main CTA fold; accessible custom selectors with visible focus and keyboard routes.",
+ "prompt_zh": "商品详情页：面包屑→图库（≥4 张含使用与比例图、不自动轮播）→购买盒（名称/含税价/规格/数量/加购/具体送达日期，手机首屏可见）→信任条（运费/30 天退货/质保/支付方式最多四项）→描述→评价（真实数量、三星评价放第一，不编造高分）→关联推荐。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "aiwebstyle《Product Detail Page》配方（八段顺序与诚实占位规则，搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### AI 语音助手：四态波形+实时转写 (`ai-voice-assistant`)
+
+```json
+{
+ "id": "ai-voice-assistant",
+ "title": "AI 语音助手：四态波形+实时转写",
+ "category": "AI产品",
+ "styles": [
+  "语音助手",
+  "波形",
+  "对话"
+ ],
+ "scenario": "做 AI 语音对话界面，希望听着/想着/说着三种状态一眼分清时",
+ "prompt": "Design an AI voice assistant screen: a large state word (Idle, Listening, Thinking, Speaking) beside a waveform that moves only while it is listening or the assistant is speaking aloud; a transcript log that fills word by word as speech is recognised, so mistakes can be caught and followed in noisy places. The microphone button lights up unmistakably while listening; Mute keeps the reply on screen but still; a speed control sets the speaking rate from 0.75x to 1.5x; an End session button sits in the same place as Start. Support barge-in: speaking while the assistant talks stops its audio immediately. Ask for microphone access only when the user taps the button, explain why first, and show how to allow it if denied; always keep a text input available as an alternative. The waveform is decorative and hidden from assistive technology — the state word and one polite status line carry the meaning; under reduced motion the waveform stops and each line appears whole. When the session ends, show a short summary of turns, length and words.",
+ "prompt_zh": "AI 语音助手屏：Idle/Listening/Thinking/Speaking 四态大字+波形（只在聆听与说话时动）、实时逐词转写可纠错，麦克风按钮点亮态明显、可随时打断插话、支持静音与 0.75–1.5 倍语速；仅在点按时请求麦克风权限、始终保留文字输入，减动效时波形静止整行显示。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "mobileappdesign.io《Voice assistant UI: how 19 AI apps put a microphone on the chat screen》+ shadcn.io AI 语音助手块 + Stream 语音代理视觉指南（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+### SaaS 团队角色与权限：成员列表+邀请+权限矩阵 (`saas-team-roles`)
+
+```json
+{
+ "id": "saas-team-roles",
+ "title": "SaaS 团队角色与权限：成员列表+邀请+权限矩阵",
+ "category": "SaaS后台",
+ "styles": [
+  "团队权限",
+  "角色",
+  "后台设置"
+ ],
+ "scenario": "做 B2B SaaS 的团队成员与权限管理，希望谁能干什么一目了然时",
+ "prompt": "Design a B2B SaaS team roles and permissions area under Settings → Team: a member list where each row shows avatar (initials), name and email, a role badge (Owner / Admin / Member / Viewer / Billing), status (Active / Pending with 'Invited 3d ago' / Suspended) and last active, with actions Change role, Resend invite and Remove in an overflow menu. An invite flow in four steps — email(s), role picker with a one-line description per role (default Member), optional message, then a seat check ('Using 8 of 10 seats') that blocks or upsells at the limit. A permissions matrix as a live screen: one row per permission worded as a customer would say it ('Export customer data'), grouped by product area, one column per role with the number of people assigned; cell values in words — Allowed, Not allowed, Own items only, Assigned projects only — never colour alone. Offer custom roles (built on a default role, with grouped permission toggles and search) and preset templates (Billing Admin, Content Editor, Auditor) to duplicate; system roles are view-only. Gate destructive actions (remove member, change to Admin, transfer ownership) with confirmation and re-authentication; add a per-person view answering 'why can she do this?' and log every change to an audit log.",
+ "prompt_zh": "团队角色与权限：成员列表（头像/姓名邮箱/角色徽章/待激活与上次活跃/操作菜单）+四步邀请（邮箱/带说明的角色选择/可选留言/席位占用检查）+权限矩阵（按产品区分组、单元格用文字而非仅颜色）+自定义角色与预设模板，危险操作需确认与二次验证并记审计日志。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-23T09:15:00+08:00",
+ "source": "justfigma《Team Roles & Permissions UI in Figma》+ Humbleteam《B2B SaaS roles and permissions UX: a design guide》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-23）"
+}
+```
+
+## 2026-11-24 · 公开渠道收集（协作文档/电子签名/餐厅扫码点单/表单构建器/播客后期）
+
+来源核对：5 条原文均已打开核对、提示词按要点原创改写（同类收集，非原作摘录）；与正式库 57 条 + 待验证区 79 条逐一去重，无重复（协作文档编辑器与三栏收件箱/数据表格场景不同；电子签名与简历模板场景不同，是签署流程本身；餐厅扫码点单与外卖点餐场景不同，是到店扫码+同桌合单+分账；表单构建器与数据表格/设置页场景不同，是拖拽搭建表单；播客后期制作与播客播放器场景不同，是录音剪辑/去填充词/响度归一/出片流程）。added_at 统一记本轮时间 2026-11-24T08:10:00+08:00。
+
+### 协作文档编辑器：工作区/文件夹/富文本+实时协作 (`saas-doc-editor-collab`)
+
+```json
+{
+  "id": "saas-doc-editor-collab",
+  "title": "协作文档编辑器：工作区/文件夹/富文本+实时协作",
+  "category": "SaaS后台",
+  "styles": [
+    "极简",
+    "协作",
+    "文档"
+  ],
+  "scenario": "10 人小团队的协作文档/知识库，Notion 风格",
+  "prompt": "Design a collaborative document editor for a 10-person team, clean and minimal like Notion: workspaces containing folders containing pages, shown as a collapsible sidebar tree; a rich text editor with H1/H2/H3 headings, bullet and numbered lists, bold, italic, code blocks and blockquotes, plus a slash-command menu and floating format toolbar; live cursors and presence avatars when teammates edit the same page; search across all pages by title and content; page sharing set to private (team only) or public link; each page shows last-edited timestamp and editor name. White background, soft gray text, one restrained accent color, generous whitespace.",
+  "prompt_zh": "协作文档编辑器：工作区→文件夹→页面的侧边树+富文本（标题/列表/代码块/引用）+斜杠菜单+实时光标与在线头像，全文搜索、私有/公开链接分享，Notion 式极简。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T08:10:00+08:00",
+  "source": "Blink《How to Build a Document Editor with AI (Notion Alternative in a Weekend)》全文提示词核对改写（工作区/文件夹/页面层级、富文本、搜索、分享、侧边导航、最后编辑信息，2026-11-24）；https://blink.new/blog/how-to-build-document-editor"
+}
+```
+
+### 电子签名工具：上传 PDF 拖字段发签署 (`saas-esignature-send-sign`)
+
+```json
+{
+  "id": "saas-esignature-send-sign",
+  "title": "电子签名工具：上传 PDF 拖字段发签署",
+  "category": "SaaS后台",
+  "styles": [
+    "极简",
+    "效率",
+    "商务"
+  ],
+  "scenario": "自由职业者/小团队每月发少量合同的轻量签署工具",
+  "prompt": "Design a lightweight e-signature tool for freelancers who send a handful of contracts each month: a calm dashboard with one bold 'New Contract' button; after uploading a PDF, drag signature, date and text fields onto the document preview with snapping guides; below the preview, a signer list showing each signer's email and a status pill (Sent, Viewed, Signed); a signing view for recipients that is stripped down to the contract preview, highlighted fields and one big button to sign by typing or drawing. Notion/Linear-inspired style: white space, soft grays, clean typography, subtle shadows, rounded buttons; big tap targets on mobile. Every step should feel obvious and stress-free.",
+  "prompt_zh": "轻量电子签名：上传 PDF 后拖签名/日期字段到预览上，签署人列表带已发送/已查看/已签署状态；对方签署页只留合同预览+高亮字段+一个大签署按钮，Notion/Linear 式冷静清晰。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T08:10:00+08:00",
+  "source": "ProvenStartups《DocuSign Forgot the Freelancers》UI Prompt 原文核对改写（New Contract、拖字段、签署人状态列表、极简签署页，2026-11-24）；https://provenstartups.substack.com/p/docusign-forgot-the-freelancers"
+}
+```
+
+### 餐厅扫码点单：桌码认桌+合单+分账 (`ecom-restaurant-qr-order`)
+
+```json
+{
+  "id": "ecom-restaurant-qr-order",
+  "title": "餐厅扫码点单：桌码认桌+合单+分账",
+  "category": "电商零售",
+  "styles": [
+    "移动端",
+    "点餐",
+    "暖色"
+  ],
+  "scenario": "早午餐店/餐厅到店扫码点单，18 张桌",
+  "prompt": "Design a mobile table QR ordering flow for an 18-table brunch cafe: guests scan the QR code on their table, the screen confirms the table number first, then shows the menu in sticky category tabs with dish photos, prices, allergen tags and a sold-out state that greys dishes out; each dish has modifiers (size, spice level, extra toppings, remove an ingredient); orders go to one shared table tab so guests can keep adding items in waves, and the kitchen sees each order with its table number; at the end guests split the bill and pay from their phones. Soft yellow and white design, big tap targets for one-handed use, prices right-aligned in one consistent format.",
+  "prompt_zh": "餐厅扫码点单：扫桌码先确认桌号，分类菜单+菜品图/过敏原标签/售罄置灰，配菜选项齐全；同一桌共用一个合单、厨房按桌号出票，最后分账付款，淡黄暖色、大触控目标。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T08:10:00+08:00",
+  "source": "Gappsy《Restaurant Ordering App Prompts》第 4 条 Table QR ordering 原文核对改写（桌码认桌、合单、分账、淡黄配色，2026-11-24）；https://www.gappsy.com/prompts/restaurant-ordering-app/"
+}
+```
+
+### 在线表单构建器：拖拽字段+条件逻辑 (`saas-form-builder`)
+
+```json
+{
+  "id": "saas-form-builder",
+  "title": "在线表单构建器：拖拽字段+条件逻辑",
+  "category": "SaaS后台",
+  "styles": [
+    "效率",
+    "拖拽",
+    "模块化"
+  ],
+  "scenario": "个人/小团队用的类 JotForm 表单搭建工具",
+  "prompt": "Design a personal form builder app that rivals JotForm: a three-column workspace — left sidebar with draggable field types (text input, textarea, checkbox, radio, dropdown, date, file upload, rating), center canvas where fields are dropped, reordered and resized, right properties panel for label, placeholder, required and validation rules; templates gallery to start from; conditional logic that shows or hides fields based on earlier answers; live preview toggle (desktop/mobile) and a responses view with a simple table; local-first storage with clear privacy wording. Modern, modular design: clean neutrals, one accent color, clear drag handles and drop indicators, fully responsive and keyboard-accessible.",
+  "prompt_zh": "表单构建器：左侧字段库拖拽到中间画布、右侧属性面板改校验与必填，模板库起步、按答案显示/隐藏字段的条件逻辑，实时预览+回收数据表，本地优先、隐私明确。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T08:10:00+08:00",
+  "source": "Kaushik Sarkar《Personal Form Builder App Design: Drag-and-Drop Editor》（转引 prompts.chat 全文提示词）核对改写（拖拽编辑器、模板、条件逻辑、隐私，2026-11-24）；https://www.kaushiksarkar.com/blog/personal-form-builder-app-design-drag-and-drop-editor-with-conditional-logic-mas"
+}
+```
+
+### 播客后期制作：录音进、成片出（波形剪口+章节+示范文案） (`content-podcast-postproduction`)
+
+```json
+{
+  "id": "content-podcast-postproduction",
+  "title": "播客后期制作：录音进、成片出（波形剪口+章节+示范文案）",
+  "category": "内容社交",
+  "styles": [
+    "深色",
+    "音频",
+    "工作室"
+  ],
+  "scenario": "独立播客主每周一期的后期制作：去填充词、响度归一、出成片资料包",
+  "prompt": "Design PodcastPilot, an audio production app for indie podcasters — audio production, not a video editor: upload a raw recording and get a cleaned master plus a publish kit. Episode page centers on a dark studio waveform with cut markers for detected filler words and silences over 1.2 seconds, a bulk 'Accept fillers' button, per-cut accept/reject, and loudness normalization to the show target; the right panel holds the publish kit — show notes, 8-12 chapters, 3 title options and 5 pull quotes, with a Regenerate notes button that does not re-run the audio; episode status flows upload → processing → review → published. Dark studio background, off-white text, one lime accent, mono type for timestamps, Geist-style clean interface.",
+  "prompt_zh": "播客后期制作：上传原始录音，波形上标出填充词/静音剪口可批量接受，响度归一出成片；右侧出 show notes、8-12 章节、3 个标题、5 条金句，深色录音棚风+青柠强调色。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T08:10:00+08:00",
+  "source": "Weekend MVP《Raw recording to polished episode — PodcastPilot》AI Prompts to Build This（项目搭建/核心功能两节）核对改写（波形剪口、填充词检测、响度归一、章节与示范文案，2026-11-24）；https://www.weekendmvp.app/ideas/ai-podcast-producer"
+}
+```

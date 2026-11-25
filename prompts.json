@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -12,7 +12,9 @@
   "落地页官网",
   "金融",
   "智能家居",
-  "车机出行"
+  "车机出行",
+  "游戏娱乐",
+  "邮件模板"
  ],
  "prompts": [
   {
@@ -1620,6 +1622,120 @@
    },
    "added_at": "2026-11-18T08:20:00+08:00",
    "source": "YouTube《How to Vibe Code a Car Dashboard with Claude》（据视频简介的计划提示词摘要改写，同类收集，2026-11-18）"
+  },
+  {
+   "id": "email-transactional",
+   "title": "交易邮件模板：欢迎/验证",
+   "category": "邮件模板",
+   "styles": [
+    "邮件",
+    "交易邮件",
+    "极简"
+   ],
+   "scenario": "欢迎/验证类交易邮件模板设计时",
+   "prompt": "Design a welcome / email-verification transactional email. Single-column layout, max 600px wide, works in dark and light mail clients. Structure: small logo at top, a clear headline, one short paragraph of context, one prominent primary button (the single action), a plain-text fallback link under it, and a simple footer (company, address, unsubscribe). Visual system: minimal, high-contrast, one brand color on the button only, system fonts, generous padding. Tone: warm and human, one sentence of personality. Avoid image-only emails, multiple competing CTAs, and tiny tap targets.",
+   "prompt_zh": "交易邮件（欢迎/验证）：单栏 600px、一个主按钮+纯文本备用链接、系统字体、品牌色只用在按钮上，深浅邮件客户端都可用。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/email-transactional.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-25",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为交易验证邮件：单栏、顶部小 Logo、标题'You're almost in — just verify your email'、一段说明、一个青绿色主按钮'Verify my email'、按钮下纯文本备用链接、底部公司地址+退订齐全，通过"
+   },
+   "added_at": "2026-11-18T08:20:00+08:00",
+   "source": "Superdesign《UI Design Prompts: A Copy-Paste Library for Real Interfaces (2026)》第 8 节（已打开页面核对原文，括号占位按通用版整理，2026-11-18）"
+  },
+  {
+   "id": "mobile-travel-booking",
+   "title": "旅行预订 App：沉浸式搜索+预订",
+   "category": "移动端App",
+   "styles": [
+    "旅行预订",
+    "沉浸式",
+    "图片主导"
+   ],
+   "scenario": "做机票/酒店预订 App，想要图片主导的沉浸式预订流程时",
+   "prompt": "Design a mobile travel booking app: home opens with a large immersive destination photo and a clean search bar (destination, dates, travellers) overlaid at the bottom; below, horizontally scrolling destination cards with price-from labels and a 'Trending now' row. Tapping a destination opens a detail screen with a photo gallery, a date picker, guest stepper and a sticky bottom bar showing total price and a single 'Book now' button. Flight results show a glowing route line on a small map, departure/arrival times and one clear cheapest-fastest toggle. Use elegant serif headlines with clean sans-serif body text, warm neutral palette with one terracotta accent, generous whitespace, 16px corner radius on cards. Every step must answer in one tap — no dead-end screens.",
+   "prompt_zh": "旅行预订 App：大图沉浸式首页+底部搜索条、目的地横滑卡片、详情页含日期选择与常驻总价预订栏，航班结果带路线图与最便宜/最快切换，衬线标题+陶土强调色。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/mobile-travel-booking.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-25",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为三屏旅行预订：首页大图+底部搜索条（目的地/日期/人数）+目的地横滑卡片含起价+Trending now 行；详情页照片墙+日期选择+人数步进+底部常驻总价 $1,640 与 Book now；航班页发光路线图 JFK→JTR+最便宜/最快切换，衬线标题+陶土强调色齐全，通过（小瑕疵：详情页日历星期缩写有个别拼写错乱，不影响功能特征）"
+   },
+   "added_at": "2026-11-18T09:30:00+08:00",
+   "source": "HitPaw《GPT Image 2 Prompts for UI Design》第 8 节旅行预订 + aiarty 旅行预订条目（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+  },
+  {
+   "id": "game-hud-scifi",
+   "title": "科幻射击游戏 HUD：血条/弹药/小地图",
+   "category": "游戏娱乐",
+   "styles": [
+    "游戏UI",
+    "HUD",
+    "科幻",
+    "全息"
+   ],
+   "scenario": "做科幻射击游戏，需要血条、弹药、小地图一目了然的全息 HUD 时",
+   "prompt": "Design a sci-fi shooter HUD. Include health bar in top-left, ammunition counter in bottom-right, minimap radar in top-right corner. Holographic blue style with glowing edges, transparent panels, futuristic sans-serif typography. Clean and readable against dark backgrounds.",
+   "prompt_zh": "科幻射击 HUD：左上血条、右下弹药、右上雷达小地图，全息蓝发光边缘+透明面板，未来感无衬线字体，深色背景上清晰可读。",
+   "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+   ],
+   "preview_img": "previews/game-hud-scifi.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-25",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为科幻射击 HUD：左上血条 92%+护甲 75%、右上雷达小地图、右下弹药 48/120，全息蓝发光边缘+透明面板+未来感无衬线字体，深色星空背景清晰可读，通过（小瑕疵：血条面板底部'SUIT INTEGRITY: STABLE'一行有 faint 重影，不影响主体）"
+   },
+   "added_at": "2026-11-19T08:10:00+08:00",
+   "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》HUD 一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
+  },
+  {
+   "id": "game-main-menu-cozy",
+   "title": "休闲农场模拟游戏主菜单",
+   "category": "游戏娱乐",
+   "styles": [
+    "游戏UI",
+    "主菜单",
+    "休闲",
+    "手绘"
+   ],
+   "scenario": "做休闲模拟经营游戏，需要温暖治愈的主菜单时",
+   "prompt": "Create a main menu for a cozy farming simulation game. Centered game logo at top, vertical button stack below: New Game, Continue, Settings, Quit. Soft pastel colors, rounded corners, hand-painted style with watercolor textures. Warm and inviting atmosphere.",
+   "prompt_zh": "休闲农场游戏主菜单：顶部居中 Logo，下方竖排新游戏/继续/设置/退出，柔和粉彩+圆角+手绘水彩质感，温暖治愈。",
+   "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+   ],
+   "preview_img": "previews/game-main-menu-cozy.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-25",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为休闲农场游戏主菜单：顶部居中'COZY ACRES / Farming Simulation' Logo，下方竖排 New Game/Continue/Settings/Quit 四键，柔和粉彩+圆角+手绘水彩质感，农舍/母鸡/向日葵田园场景温暖治愈，通过"
+   },
+   "added_at": "2026-11-19T08:10:00+08:00",
+   "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》主菜单一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
   }
  ]
 }

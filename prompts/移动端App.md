@@ -59,3 +59,21 @@ Design a 4-step mobile onboarding flow: each screen has one full-bleed illustrat
 ```
 
 **中文说明**：4 步新手引导：每屏一图一标题（≤6 词）一短文案（≤20 词、只讲用户收益）、常驻跳过入口、进度点+最后一屏落到关键设置动作，可中途退出续做。
+
+## 旅行预订 App：沉浸式搜索+预订 (`mobile-travel-booking`)
+
+![生成验证效果图](../previews/mobile-travel-booking.png)
+
+生成验证：✅ 2026-11-25 通过 — 生成图为三屏旅行预订：首页大图+底部搜索条（目的地/日期/人数）+目的地横滑卡片含起价+Trending now 行；详情页照片墙+日期选择+人数步进+底部常驻总价 $1,640 与 Book now；航班页发光路线图 JFK→JTR+最便宜/最快切换，衬线标题+陶土强调色齐全，通过（小瑕疵：详情页日历星期缩写有个别拼写错乱，不影响功能特征）
+
+- 风格：旅行预订 / 沉浸式 / 图片主导
+- 场景：做机票/酒店预订 App，想要图片主导的沉浸式预订流程时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Design a mobile travel booking app: home opens with a large immersive destination photo and a clean search bar (destination, dates, travellers) overlaid at the bottom; below, horizontally scrolling destination cards with price-from labels and a 'Trending now' row. Tapping a destination opens a detail screen with a photo gallery, a date picker, guest stepper and a sticky bottom bar showing total price and a single 'Book now' button. Flight results show a glowing route line on a small map, departure/arrival times and one clear cheapest-fastest toggle. Use elegant serif headlines with clean sans-serif body text, warm neutral palette with one terracotta accent, generous whitespace, 16px corner radius on cards. Every step must answer in one tap — no dead-end screens.
+```
+
+**中文说明**：旅行预订 App：大图沉浸式首页+底部搜索条、目的地横滑卡片、详情页含日期选择与常驻总价预订栏，航班结果带路线图与最便宜/最快切换，衬线标题+陶土强调色。

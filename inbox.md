@@ -535,115 +535,17 @@
 
 来源核对：新拟态提示词见 Vibe Coder《Web Design Guide》1.2 节（搜索结果原文）；孟菲斯/包豪斯风格定义见 StyleKit 151 风格库与 ByteMint UI 提示词库（搜索结果原文），提示词按风格定义原创改写；交易邮件提示词见 Superdesign《UI Design Prompts》(2026) 第 8 节（已打开页面核对原文）；车机提示词据 YouTube《How to Vibe Code a Car Dashboard with Claude》简介中的计划提示词摘要改写。以上 5 条均为库里没有的风格/场景（新拟态、孟菲斯、包豪斯、车机 UI、邮件模板），只进待验证区。
 
-#### 交易邮件模板：欢迎/验证 (`email-transactional`)
-
-```json
-{
-  "id": "email-transactional",
-  "title": "交易邮件模板：欢迎/验证",
-  "category": "邮件模板",
-  "styles": [
-    "邮件",
-    "交易邮件",
-    "极简"
-  ],
-  "scenario": "欢迎/验证类交易邮件模板设计时",
-  "prompt": "Design a welcome / email-verification transactional email. Single-column layout, max 600px wide, works in dark and light mail clients. Structure: small logo at top, a clear headline, one short paragraph of context, one prominent primary button (the single action), a plain-text fallback link under it, and a simple footer (company, address, unsubscribe). Visual system: minimal, high-contrast, one brand color on the button only, system fonts, generous padding. Tone: warm and human, one sentence of personality. Avoid image-only emails, multiple competing CTAs, and tiny tap targets.",
-  "prompt_zh": "交易邮件（欢迎/验证）：单栏 600px、一个主按钮+纯文本备用链接、系统字体、品牌色只用在按钮上，深浅邮件客户端都可用。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T08:20:00+08:00",
-  "source": "Superdesign《UI Design Prompts: A Copy-Paste Library for Real Interfaces (2026)》第 8 节（已打开页面核对原文，括号占位按通用版整理，2026-11-18）"
-}
-```
 
 ## 2026-11-18 · 公开渠道收集（第二轮：旅行/引导/智能家居/仪表盘可读性/播客）
 
 来源：HitPaw《GPT Image 2 Prompts for UI Design》旅行与智能家居节、Lovable UI prompts（新手引导流程、空/加载状态）、Medium《Dashboard UI Design: 12 Real App Examples》（仪表盘可读性九项检查）、Design Lounge《Slow Archive podcast player》（章节波形播客播放器）、UXCharan《216 AI Prompts for UX/UI Designers》（新手引导文案）。以上均为搜索结果原文核对；提示词按主题原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 29 条 + 待验证区去重：空/加载状态与正式库 detail-states-complete 同主题已跳过，深色渐变落地页与 landing-ai-product（深色科技渐变 variant）同风格已跳过。
 
-### 旅行预订 App：沉浸式搜索+预订 (`mobile-travel-booking`)
-
-```json
-{
-  "id": "mobile-travel-booking",
-  "title": "旅行预订 App：沉浸式搜索+预订",
-  "category": "移动端App",
-  "styles": [
-    "旅行预订",
-    "沉浸式",
-    "图片主导"
-  ],
-  "scenario": "做机票/酒店预订 App，想要图片主导的沉浸式预订流程时",
-  "prompt": "Design a mobile travel booking app: home opens with a large immersive destination photo and a clean search bar (destination, dates, travellers) overlaid at the bottom; below, horizontally scrolling destination cards with price-from labels and a 'Trending now' row. Tapping a destination opens a detail screen with a photo gallery, a date picker, guest stepper and a sticky bottom bar showing total price and a single 'Book now' button. Flight results show a glowing route line on a small map, departure/arrival times and one clear cheapest-fastest toggle. Use elegant serif headlines with clean sans-serif body text, warm neutral palette with one terracotta accent, generous whitespace, 16px corner radius on cards. Every step must answer in one tap — no dead-end screens.",
-  "prompt_zh": "旅行预订 App：大图沉浸式首页+底部搜索条、目的地横滑卡片、详情页含日期选择与常驻总价预订栏，航班结果带路线图与最便宜/最快切换，衬线标题+陶土强调色。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T09:30:00+08:00",
-  "source": "HitPaw《GPT Image 2 Prompts for UI Design》第 8 节旅行预订 + aiarty 旅行预订条目（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
-}
-```
 
 ## 2026-11-19 · 公开渠道收集（Visualizee.ai 游戏 UI / Carat 简历设计）
 
 来源：Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》（HUD、主菜单、背包三节）、Carat《Resume Design Prompts》（极简双栏、信息图简历两条）。以上均为已打开页面核对原文，提示词为原文摘录；库里此前没有游戏 UI 与简历/文档类条目，已与正式库 37 条 + 待验证区去重，无重复。
 
-### 科幻射击游戏 HUD：血条/弹药/小地图 (`game-hud-scifi`)
 
-```json
-{
-  "id": "game-hud-scifi",
-  "title": "科幻射击游戏 HUD：血条/弹药/小地图",
-  "category": "游戏娱乐",
-  "styles": [
-    "游戏UI",
-    "HUD",
-    "科幻",
-    "全息"
-  ],
-  "scenario": "做科幻射击游戏，需要血条、弹药、小地图一目了然的全息 HUD 时",
-  "prompt": "Design a sci-fi shooter HUD. Include health bar in top-left, ammunition counter in bottom-right, minimap radar in top-right corner. Holographic blue style with glowing edges, transparent panels, futuristic sans-serif typography. Clean and readable against dark backgrounds.",
-  "prompt_zh": "科幻射击 HUD：左上血条、右下弹药、右上雷达小地图，全息蓝发光边缘+透明面板，未来感无衬线字体，深色背景上清晰可读。",
-  "tools": [
-    "即梦",
-    "Midjourney",
-    "v0"
-  ],
-  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》HUD 一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
-  "added_at": "2026-11-19T08:10:00+08:00"
-}
-```
-
-### 休闲农场模拟游戏主菜单 (`game-main-menu-cozy`)
-
-```json
-{
-  "id": "game-main-menu-cozy",
-  "title": "休闲农场模拟游戏主菜单",
-  "category": "游戏娱乐",
-  "styles": [
-    "游戏UI",
-    "主菜单",
-    "休闲",
-    "手绘"
-  ],
-  "scenario": "做休闲模拟经营游戏，需要温暖治愈的主菜单时",
-  "prompt": "Create a main menu for a cozy farming simulation game. Centered game logo at top, vertical button stack below: New Game, Continue, Settings, Quit. Soft pastel colors, rounded corners, hand-painted style with watercolor textures. Warm and inviting atmosphere.",
-  "prompt_zh": "休闲农场游戏主菜单：顶部居中 Logo，下方竖排新游戏/继续/设置/退出，柔和粉彩+圆角+手绘水彩质感，温暖治愈。",
-  "tools": [
-    "即梦",
-    "Midjourney",
-    "v0"
-  ],
-  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》主菜单一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
-  "added_at": "2026-11-19T08:10:00+08:00"
-}
-```
 
 ### RPG 背包/装备界面：网格物品栏+角色剪影 (`game-inventory-rpg`)
 
@@ -2152,5 +2054,263 @@
   ],
   "added_at": "2026-11-24T08:10:00+08:00",
   "source": "Weekend MVP《Raw recording to polished episode — PodcastPilot》AI Prompts to Build This（项目搭建/核心功能两节）核对改写（波形剪口、填充词检测、响度归一、章节与示范文案，2026-11-24）；https://www.weekendmvp.app/ideas/ai-podcast-producer"
+}
+```
+
+## 2026-11-24 · 公开渠道收集（AI With Ghost / Lovable Prompts）
+
+来源：两页原文均已打开核对，按统一格式改写，非逐字摘录；与正式库 61 条及待验证区去重（避开已有空状态/骨架屏、设置页、数据看板、登录页、AI 聊天等同场景条目）。本批 5 条先进待验证区，验证通过才进正式库。
+
+### 开发者工具落地页：Identity/Structure/Content/Motion/Never 五段式简报 (`landing-devtool-tracebit-brief`)
+
+```json
+{
+  "id": "landing-devtool-tracebit-brief",
+  "title": "开发者工具落地页：Identity/Structure/Content/Motion/Never 五段式简报",
+  "category": "落地页官网",
+  "styles": [
+    "深色",
+    "开发者工具",
+    "克制"
+  ],
+  "scenario": "面向后端开发者的日志搜索工具单页落地页（以 Tracebit 为示例产品）",
+  "prompt": "Build a single-page landing page for \"Tracebit\", a log search tool for backend developers. Stack: React + Tailwind CSS, one file, responsive down to 360px. IDENTITY: background #0A0A0B, text near-white at 92%, secondary text at 60%; one accent only, #FF5A1F, used for the primary CTA, one highlight per section and focus rings; font Inter, weights 400 and 600 only, JetBrains Mono for code; radius 12px; borders 1px white at 8% opacity. STRUCTURE: (1) sticky nav, wordmark left, 3 links plus accent Start free button right, adds backdrop blur and bottom border after 24px scroll; (2) left-aligned hero, headline clamp(2.75rem, 6vw, 4.75rem), tracking -0.03em, max 8 words, subline max-width 34rem at 60% opacity, primary plus ghost CTA, right side a terminal window showing 6 lines of a log query with one matched line highlighted in the accent; (3) logo row of 6 grey placeholder wordmarks at 40% opacity; (4) features as 3 rows alternating text and visual sides, each visual a bordered panel with a faint 24px grid background; (5) one large testimonial quote in display type with placeholder name clearly marked [CUSTOMER NAME]; (6) pricing with 3 tiers, middle tier elevated with accent border and Most popular tag; (7) FAQ accordion, one item open at a time, 5 questions; (8) final CTA band, then a minimal 2-row footer. CONTENT RULES: use the placeholder copy in [BRACKETS] where real content is needed; do not invent customer names, logos, numbers or reviews. MOTION: sections fade up 16px over 500ms on first entry into view, children stagger 60ms; cards lift 3px on hover; respect prefers-reduced-motion. NEVER: no gradient text, no emoji in headings, no three-icon feature row, no stock illustrations, no carousel, no more than one accent colour, no centred hero.",
+  "prompt_zh": "开发者工具落地页按 Identity/结构/文案规则/动效/Never 五段写简报：深底单强调色、左对齐大标题配终端窗口、交替特性行与三档定价，结尾用禁令兜底不跑偏成通用模板页。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T09:20:00+08:00",
+  "source": "AI With Ghost《How to Prompt Any AI Builder for a Landing Page That Doesn't Look AI-Generated》Tracebit 全文示例提示词核对改写（五段式结构、#0A0A0B/#FF5A1F、Inter 400/600、终端窗口、NEVER 禁令，2026-11-24）；https://aiwithghost.com/news/news-how-to-prompt-any-ai-builder-for-a-landing-page-that-doesnt-look-ai-generated-fu/"
+}
+```
+
+### 弹窗与对话框系统：三种尺寸底座+确认框+移动端底部抽屉 (`saas-modal-dialog-system`)
+
+```json
+{
+  "id": "saas-modal-dialog-system",
+  "title": "弹窗与对话框系统：三种尺寸底座+确认框+移动端底部抽屉",
+  "category": "SaaS后台",
+  "styles": [
+    "系统化",
+    "弹窗",
+    "无障碍"
+  ],
+  "scenario": "已有应用里第一次出现确认、编辑或删除弹窗之前，先统一弹窗系统",
+  "prompt": "Design one modal and dialog system for the whole app, before the first confirm, edit or delete dialog is built: a base modal in 3 sizes (small, medium, large) with a shared header, body and footer layout, plus a confirm dialog variant with a clear destructive action; shared rules for focus trapping, Escape to dismiss, click-outside behaviour, and what happens to unsaved input when the dialog closes; on mobile the same dialogs become bottom sheets. Every dialog states its purpose in the title, keeps one primary action, and returns focus to the element that opened it. Clean, calm style: neutral surfaces, one accent colour, 12px radius, subtle shadow, generous padding; no decorative illustration inside dialogs.",
+  "prompt_zh": "全应用只用一套弹窗系统：三种尺寸底座+确认框变体，统一焦点、关闭与未保存输入规则，移动端变底部抽屉，标题说清目的、只留一个主操作。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T09:20:00+08:00",
+  "source": "Lovable Prompts《Lovable UI prompts: 14 for screens, empty states and dashboards》Modal & Dialog Component System 卡片核对改写（三种尺寸底座、确认框、焦点/关闭/未保存规则、移动端底部抽屉，2026-11-24）；https://Lovable-prompts.com/prompts/ui-ux"
+}
+```
+
+### 响应式导航栏：单配置模块+768px 以下抽屉+键盘无障碍 (`saas-responsive-navbar`)
+
+```json
+{
+  "id": "saas-responsive-navbar",
+  "title": "响应式导航栏：单配置模块+768px 以下抽屉+键盘无障碍",
+  "category": "SaaS后台",
+  "styles": [
+    "导航",
+    "响应式",
+    "无障碍"
+  ],
+  "scenario": "新项目先搭的页面框架：服务端渲染导航，之后所有功能页继承它",
+  "prompt": "Build a responsive navbar for a web app from one config module, as the first piece of the app shell before any feature screen: desktop shows the logo left, navigation links centre and user actions right, with the active page shown by underline and heavier weight; below 768px it becomes a mobile Sheet drawer with the same links and actions; the navbar is server-rendered, sticky, and fully keyboard and screen-reader accessible with visible focus states and proper aria labels. Clean minimal style: neutral background, one accent colour, 8px spacing grid, 48px bar height on desktop; no hamburger on desktop, no duplicated navigation in the footer.",
+  "prompt_zh": "先搭响应式导航再做功能页：单配置模块驱动桌面导航与 768px 以下抽屉，当前页以下划线+加粗标示，全键盘与读屏无障碍。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T09:20:00+08:00",
+  "source": "Lovable Prompts《Lovable UI prompts: 14 for screens, empty states and dashboards》Responsive Navbar Builder 卡片核对改写（单配置模块、768px 以下 Sheet、当前态下划线+加粗、键盘与读屏支持，2026-11-24）；https://Lovable-prompts.com/prompts/ui-ux"
+}
+```
+
+### 文件上传+打标签：拖拽上传、五种文件状态、可检索标签库 (`saas-file-upload-tagging`)
+
+```json
+{
+  "id": "saas-file-upload-tagging",
+  "title": "文件上传+打标签：拖拽上传、五种文件状态、可检索标签库",
+  "category": "SaaS后台",
+  "styles": [
+    "文件",
+    "拖拽",
+    "标签"
+  ],
+  "scenario": "用户把自己的文件带进应用的个人资料库/素材库",
+  "prompt": "Design a file upload and tagging UI for a personal library: drag-and-drop uploads into a private per-user bucket, with five named file states shown clearly — queued, uploading with progress, processing, ready, and failed with a retry action; server-side checks for file type and size with plain-language error messages; after upload, files get normalised tags from a shared tag list so the library can be filtered by tag, type and date; a list view shows thumbnail, name, size, upload date and tags, with search across file names and tags. Clean, calm style: neutral surfaces, one accent colour, clear drop zone with a dashed border, generous spacing; no fake sample files.",
+  "prompt_zh": "文件上传加标签：拖拽进个人私有空间，五种状态（排队/上传中/处理中/就绪/失败可重试）一目了然，服务端校验类型大小，统一标签库供筛选检索。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T09:20:00+08:00",
+  "source": "Lovable Prompts《Lovable UI prompts: 14 for screens, empty states and dashboards》File Upload + Tagging UI 卡片核对改写（拖拽上传、私有空间、五种文件状态、服务端类型大小校验、规范化标签筛选，2026-11-24）；https://Lovable-prompts.com/prompts/ui-ux"
+}
+```
+
+### SEO 元标签编辑器：导入站点地图+实时搜索结果预览+重复标记 (`saas-seo-meta-editor`)
+
+```json
+{
+  "id": "saas-seo-meta-editor",
+  "title": "SEO 元标签编辑器：导入站点地图+实时搜索结果预览+重复标记",
+  "category": "SaaS后台",
+  "styles": [
+    "SEO",
+    "编辑器",
+    "效率"
+  ],
+  "scenario": "上线前给待发布页面写标题与描述的内部工具",
+  "prompt": "Design an internal SEO meta tag editor for page titles and meta descriptions: import pages from a sitemap, edit title and description per page with live character and pixel-width clipping shown against a realistic search-result preview; flag duplicate titles and descriptions across pages, warn when a title is too long or too short, and keep a revision history per page so earlier versions can be restored; export the finished set as CSV or JSON. Clean, efficient style: two-column layout with the page list left and the editor plus live preview right, neutral surfaces, one accent colour, mono type for pixel counts, clear save state; no invented rankings or traffic numbers.",
+  "prompt_zh": "SEO 元标签内部编辑器：导入站点地图逐页改标题描述，实时搜索结果预览+像素宽度截断提示，重复标题标记、可回滚修订历史，导出 CSV/JSON。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-24T09:20:00+08:00",
+  "source": "Lovable Prompts《Lovable UI prompts: 14 for screens, empty states and dashboards》SEO Meta Tag Generator UI 卡片核对改写（站点地图导入、实时搜索结果预览、像素宽度截断、重复标记、修订历史、CSV/JSON 导出，2026-11-24）；https://Lovable-prompts.com/prompts/ui-ux"
+}
+```
+
+## 2026-11-25 · 公开渠道收集（Lovable Prompts / VibeFather / DocsBot / Taskade / Vibecode）
+
+来源：五页原文均已打开核对，按统一格式改写，非逐字摘录；与正式库 65 条及待验证区去重（客服工单、婚礼邀请、儿童早教、面试安排、学生规划均为库里没有的新场景；学生规划与待验证区单日程/单番茄钟条目场景不同，已在来源行注明）。本批 5 条先进待验证区，验证通过才进正式库。
+
+### 客服工单系统：表单+邮件进线、四态流转、一键认领 (`saas-support-ticketing`)
+
+```json
+{
+ "id": "saas-support-ticketing",
+ "title": "客服工单系统：表单+邮件进线、四态流转、一键认领",
+ "category": "SaaS后台",
+ "styles": [
+  "客服",
+  "工单",
+  "系统化"
+ ],
+ "scenario": "2-15 人客服团队处理来自表单与邮件的客户请求，需要每单有人负责、不丢失时",
+ "prompt": "Build a customer support ticketing tool for a team of 2 to 15 agents. Intake: requests arrive from a web form and a forwarded email address and become tickets with a status and an owner — no request gets lost between agents. Lifecycle: new, open, waiting on customer, resolved; replying changes status automatically and waiting on customer pauses the response clock; replying to a resolved ticket reopens it. Assignment: one owner per ticket, an unassigned queue visible to all, one-click Claim. Replies and internal notes: replies email the requester; internal notes render in a separate yellow block and can never be sent to the requester. Metrics: first-response and resolution time per agent and overall, with a soft target per priority highlighted on breach. Clean, calm style: neutral surfaces, one accent colour, clear status chips, generous spacing; the ticket list, the ticket detail with its reply thread, and the metrics view must all read from the same ticket records.",
+ "prompt_zh": "客服工单系统：表单与邮件进线自动成单、新建/处理中/等客户/已解决四态流转、一单一人+待认领队列一键认领、内部备注黄色块永不外发、首响与解决时长按优先级设目标并标出超期。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-25T08:15:00+08:00",
+ "source": "Lovable Prompts《Lovable App Builder Prompts: 30 Full Apps and the Best Practices》Customer Support Ticketing Tool 卡片核对改写（表单+邮件进线、四态流转、一键认领、内部备注不外发、首响/解决时长指标，2026-11-25）；https://Lovable-prompts.com/prompts/app-builder"
+}
+```
+
+### 婚礼邀请与 RSVP 单页：象牙底+衬线名+倒计时+四章故事 (`landing-wedding-rsvp`)
+
+```json
+{
+ "id": "landing-wedding-rsvp",
+ "title": "婚礼邀请与 RSVP 单页：象牙底+衬线名+倒计时+四章故事",
+ "category": "落地页官网",
+ "styles": [
+  "婚礼",
+  "邀请",
+  "优雅衬线"
+ ],
+ "scenario": "做婚礼邀请单页：宾客从群聊点开链接，三分钟内知道时间地点并完成 RSVP 时",
+ "prompt": "Build a single-page wedding invitation and RSVP website. Hero: the couple's names in an elegant serif over an ivory background with a live countdown to the wedding date. Sections: a four-chapter love story, the schedule of the day as a vertical timeline, travel and stay notes for guests, an RSVP form (attending, party size, meal choice, dietary notes, one song request) that saves a thank-you card in the browser with a change-your-answer link, a guest FAQ, and registry placeholder cards. Palette: ivory and warm paper with sage and deep olive accents and one blush tone for hearts and highlights; Gilda Display for names and headings, Jost for body. All copy lives in one content file so the couple, venue, city and date can be swapped without touching layout. Mobile-first: most guests open the link from a group chat on a phone; within ten seconds a visitor knows who, where and when, and within two minutes they have answered the RSVP. Warm, personal, lightly funny tone; short paragraphs with concrete details (times, walking minutes, menu names).",
+ "prompt_zh": "婚礼邀请单页：象牙底+优雅衬线大名+实时倒计时、四章爱情故事、当日流程竖时间线、交通住宿、RSVP 表单（出席/人数/餐食/忌口/点歌）本地保存感谢卡可改答案、FAQ 与礼单占位卡，文案集中一处可换新人场地日期。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-25T08:15:00+08:00",
+ "source": "VibeFather《Wedding Invitation and RSVP Website》模板全文核对改写（象牙底、Gilda Display 衬线、倒计时、四章故事、竖时间线、RSVP 本地保存感谢卡，2026-11-25）；https://vibefather.ai/templates/wedding-invitation-and-rsvp-website"
+}
+```
+
+### 儿童早教学习 App：拼音/数学/阅读游戏+星球按钮+家长面板 (`mobile-kids-learning`)
+
+```json
+{
+ "id": "mobile-kids-learning",
+ "title": "儿童早教学习 App：拼音/数学/阅读游戏+星球按钮+家长面板",
+ "category": "移动端App",
+ "styles": [
+  "儿童早教",
+  "游戏化",
+  "太空"
+ ],
+ "scenario": "给 7-11 岁孩子做拼音、数学、拼写、阅读练习 App，学起来像游戏、家长能看进度时",
+ "prompt": "Design a fun, colorful, mobile-first kids learning app for ages 7-11, covering math, phonics, spelling, writing and reading comprehension, where learning feels like a game. Home screen: a playful mascot squad in a space setting with four big star-shaped subject buttons. Grade selector: four planet-shaped buttons for grades 2 to 5 leading to rocket-shaped subject buttons. Practice screens: math missions with space-themed quizzes (e.g. count-the-planets multiplication), phonics quizzes with read-aloud pronunciation, spelling games, sentence building and reading logs. Progress: a space travel-log calendar and a mastery galaxy chart; badges unlock rewards. Parent dashboard (password-protected) shows the same progress. Visual system: bright blue main colour with pink, sunshine yellow and grass green accents on a light lavender starry background; rounded playful fonts; every touch target big enough for small fingers; cheerful sound feedback for correct and wrong answers. Use only original mascot characters, no copyrighted characters.",
+ "prompt_zh": "儿童早教 App：7-11 岁数学/拼音/拼写/阅读游戏化练习，星形科目键+星球年级键+火箭科目键、太空旅行日志与掌握星系进度、徽章奖励、密码保护家长面板，大按钮+圆润字体+亮蓝粉黄绿配色。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "即梦"
+ ],
+ "added_at": "2026-11-25T08:15:00+08:00",
+ "source": "DocsBot《Stitch-Inspired Kids Learning Website》全文提示词核对改写（原提示词为 Stitch 风格灵感、明确不使用迪士尼原角色，本条按通用太空小伙伴形象改写；星形/星球/火箭按钮、拼音发音、家长面板，2026-11-25）；https://docsbot.ai/prompts/education/stitch-inspired-kids-learning-website"
+}
+```
+
+### 面试安排：候选人选时段锁定+确认+面试官简报+评分卡 (`saas-interview-scheduling`)
+
+```json
+{
+ "id": "saas-interview-scheduling",
+ "title": "面试安排：候选人选时段锁定+确认+面试官简报+评分卡",
+ "category": "SaaS后台",
+ "styles": [
+  "招聘",
+  "日程",
+  "自动化"
+ ],
+ "scenario": "招聘协调员不用邮件来回约面试：给候选人几个面试官已确认的时段、选定即锁定并自动通知时",
+ "prompt": "Build an interview scheduling app. For each candidate and stage, offer a short list of times the interview panel has confirmed they can make, let the candidate pick one, and lock that slot while releasing the others. Send confirmations with the meeting link to the candidate and the panel; email each interviewer their brief (the candidate's CV and the stage-specific questions) the evening before, and prompt them for a scorecard an hour after the interview. Views: a board moving candidates through Slots Offered, Confirmed, Interviewed, Decided; a calendar of every confirmed interview across all open roles; a table of stage, panel, slot and scorecard status side by side. Automations: choosing a slot confirms to all parties and creates calendar entries; a candidate who has not chosen within 48 hours gets a nudge; a 'none of these work' option returns their constraints instead of starting an email thread. Clean, professional style: neutral surfaces, one accent colour, clear status chips, readable tables; every record carries its role, stage, panel and time zone.",
+ "prompt_zh": "面试安排：每位候选人每轮只给面试官已确认的几个时段、选定即锁定其余释放、自动发确认与会议链接、前一晚发面试官简报（简历+本轮问题）、面后一小时催评分卡，看板/日历/表格三视图，48 小时未选自动提醒。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-25T08:15:00+08:00",
+ "source": "Taskade《Interview Slot Scheduling Prompt for 2026》全文核对改写（候选人选时段锁定、自动确认、面试官简报、面后评分卡、看板/日历/表格三视图，2026-11-25）；https://www.taskade.com/prompts/booking-and-scheduling/interview-slot-confirmation-scheduler"
+}
+```
+
+### 学生课表规划 App：今日课程+周课表+作业考试+番茄钟+成绩 (`mobile-student-planner`)
+
+```json
+{
+ "id": "mobile-student-planner",
+ "title": "学生课表规划 App：今日课程+周课表+作业考试+番茄钟+成绩",
+ "category": "移动端App",
+ "styles": [
+  "学生规划",
+  "课表",
+  "学习"
+ ],
+ "scenario": "给中学生做课表+作业+考试+专注+成绩一体化的学习规划 App 时",
+ "prompt": "Design a student planner app for high-school students. Home: a greeting with the student's name and date, pill chips switching between Classes, Exams and Tasks Due, today's classes as photo cards with subject in coloured condensed caps, topic, time and an Up Next / Tasks Due pill, plus a tickable daily study plan with a progress bar. Calendar: a day timeline (hour grid with a now-line), a month grid, and a Monday-Friday timetable of solid coloured blocks. Activities: tasks grouped Overdue / Today / Tomorrow / This Week / Later with a progress line and subtasks, exams with countdowns and scores, clubs and events. Focus: a dark screen with a glowing ring timer (focus and break modes) that logs sessions. Profile: stats tiles, a weekly focus bar chart, subjects with letter grades and a grade calculator. An AI study coach reads the planner and proposes study blocks on the calendar. Visual system: light pale-blue UI with white cards, brand blue #1E5BFF, bright cyan #1CE3F0 for selected chips and progress, navy #14197A headings; subject names in heavy condensed caps in the subject's colour.",
+ "prompt_zh": "学生规划 App：首页今日课程照片卡+待办药丸+可勾选学习计划、日历（日时间线/月视图/周一至周五课表）、作业按截止分组+考试倒计时与分数、深色番茄钟、成绩计算器、AI 学习教练排学习块，浅蓝底+品牌蓝+亮青。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-25T08:15:00+08:00",
+ "source": "Vibecode《MyStudyLife Clone: Student planner App Template》全文提示词核对改写（今日课程卡、周课表、作业分组、考试倒计时、番茄钟、成绩计算器、AI 教练，2026-11-25）；https://www.vibecodeapp.com/templates/mystudylife — 与待验证区 mobile-calendar-schedule（单日程）、mobile-pomodoro-timer（单番茄钟）不同，本条为课表+作业+考试+专注+成绩一体化学生规划 App"
 }
 ```

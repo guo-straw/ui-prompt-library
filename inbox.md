@@ -47,9 +47,6 @@
 
 ### 本批新增待验证条目（13 条）
 
-
-
-
 ## 2026-11-17 夜 · SpicyTater 主页系统收集（用户指示关注并收集）
 
 作者：SpicyTater（抖音号 xinxinyaokuaileo，湖南，独立开发者），作品 62 条，设计相关 38 条；已关注（粉丝 6056→6057）。其第22集《后台菜单交互》即 2026-11-17 用户最早分享的那条链接（7695264996816620863）。
@@ -57,7 +54,6 @@
 **重要局限**：本次浏览器里视频无法播放（播放器一直 00:00 加载），要点来自页面文案 + 抖音「章节要点」AI 摘要，**不是视频逐字原文**；条目已在 source 里如实标注「章节摘录」。8 条无章节要点且文案为模板/错贴，未能提取：Vibe 第33集（查数据）、第27集粒子交互、第23集高级布局、第19集编辑工具、第18集任务反馈、第17集标题动效、第8集图表动画、第4集展开面板——只在来源档案中记录，暂不立条目，待能播放时补。另有 12 条已摘录但本批未立条目（图片材质、电影感、触感、5种导航、命令面板、脱模板方法论、官网滚动、加载7种、弹窗7种、术语库、设置页以外的 Vibe 集数等），要点已在本节档案中保留，可后续提升为条目。作者称其 Skills 已开源在 GitHub 仓库 `spt-ui-interaction-skills`（文案说法，本次未核到确切网址），若后续取得仓库原文，可据原文升级这些条目。
 
 ### 本批新增待验证条目（20 条）
-
 
 #### SpicyTater：下拉组件 8 种选型 (`spt-dropdown-8`)
 
@@ -189,7 +185,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7680037853694381327"
+  "source_video": "https://www.douyin.com/video/7680037853694381327",
+  "verify_note": "2026-11-26 复核：仍留待验证——与 2026-11-24 同批 4 条同一阻塞（抖音网页可播放、内容一致，但无下载途径、无法取得视频文件或直接播放地址，无法截取 GIF/关键帧）；本轮未重复尝试下载，待用户从手机抖音 App 保存视频文件后补验；不许用生成图冒充。"
 }
 ```
 
@@ -215,7 +212,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7687151464640220456"
+  "source_video": "https://www.douyin.com/video/7687151464640220456",
+  "verify_note": "2026-11-26 复核：仍留待验证——与 2026-11-24 同批 4 条同一阻塞（抖音网页可播放、内容一致，但无下载途径、无法取得视频文件或直接播放地址，无法截取 GIF/关键帧）；本轮未重复尝试下载，待用户从手机抖音 App 保存视频文件后补验；不许用生成图冒充。"
 }
 ```
 
@@ -241,7 +239,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7678886080376098086"
+  "source_video": "https://www.douyin.com/video/7678886080376098086",
+  "verify_note": "2026-11-26 复核：仍留待验证——与 2026-11-24 同批 4 条同一阻塞（抖音网页可播放、内容一致，但无下载途径、无法取得视频文件或直接播放地址，无法截取 GIF/关键帧）；本轮未重复尝试下载，待用户从手机抖音 App 保存视频文件后补验；不许用生成图冒充。"
 }
 ```
 
@@ -267,7 +266,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7679648378807979305"
+  "source_video": "https://www.douyin.com/video/7679648378807979305",
+  "verify_note": "2026-11-26 复核：仍留待验证——与 2026-11-24 同批 4 条同一阻塞（抖音网页可播放、内容一致，但无下载途径、无法取得视频文件或直接播放地址，无法截取 GIF/关键帧）；本轮未重复尝试下载，待用户从手机抖音 App 保存视频文件后补验；不许用生成图冒充。"
 }
 ```
 
@@ -535,124 +535,17 @@
 
 来源核对：新拟态提示词见 Vibe Coder《Web Design Guide》1.2 节（搜索结果原文）；孟菲斯/包豪斯风格定义见 StyleKit 151 风格库与 ByteMint UI 提示词库（搜索结果原文），提示词按风格定义原创改写；交易邮件提示词见 Superdesign《UI Design Prompts》(2026) 第 8 节（已打开页面核对原文）；车机提示词据 YouTube《How to Vibe Code a Car Dashboard with Claude》简介中的计划提示词摘要改写。以上 5 条均为库里没有的风格/场景（新拟态、孟菲斯、包豪斯、车机 UI、邮件模板），只进待验证区。
 
-
 ## 2026-11-18 · 公开渠道收集（第二轮：旅行/引导/智能家居/仪表盘可读性/播客）
 
 来源：HitPaw《GPT Image 2 Prompts for UI Design》旅行与智能家居节、Lovable UI prompts（新手引导流程、空/加载状态）、Medium《Dashboard UI Design: 12 Real App Examples》（仪表盘可读性九项检查）、Design Lounge《Slow Archive podcast player》（章节波形播客播放器）、UXCharan《216 AI Prompts for UX/UI Designers》（新手引导文案）。以上均为搜索结果原文核对；提示词按主题原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 29 条 + 待验证区去重：空/加载状态与正式库 detail-states-complete 同主题已跳过，深色渐变落地页与 landing-ai-product（深色科技渐变 variant）同风格已跳过。
-
 
 ## 2026-11-19 · 公开渠道收集（Visualizee.ai 游戏 UI / Carat 简历设计）
 
 来源：Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》（HUD、主菜单、背包三节）、Carat《Resume Design Prompts》（极简双栏、信息图简历两条）。以上均为已打开页面核对原文，提示词为原文摘录；库里此前没有游戏 UI 与简历/文档类条目，已与正式库 37 条 + 待验证区去重，无重复。
 
-
-
-### RPG 背包/装备界面：网格物品栏+角色剪影 (`game-inventory-rpg`)
-
-```json
-{
-  "id": "game-inventory-rpg",
-  "title": "RPG 背包/装备界面：网格物品栏+角色剪影",
-  "category": "游戏娱乐",
-  "styles": [
-    "游戏UI",
-    "背包",
-    "RPG",
-    "暗黑奇幻"
-  ],
-  "scenario": "做 RPG 游戏，需要物品栏+装备栏的背包界面时",
-  "prompt": "Design an RPG inventory interface. Grid-based item slots on the left, character equipment panel on the right showing equipped items on a character silhouette. Dark fantasy style with stone textures, metallic borders, subtle glow on magical items. Include tabs for Weapons, Armor, Consumables, Quest Items.",
-  "prompt_zh": "RPG 背包界面：左侧网格物品栏、右侧角色剪影装备栏，暗黑奇幻风石材质+金属边框，魔法物品微光，含武器/防具/消耗品/任务物品四个页签。",
-  "tools": [
-    "即梦",
-    "Midjourney",
-    "v0"
-  ],
-  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》背包/装备一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
-  "added_at": "2026-11-19T08:10:00+08:00"
-}
-```
-
-### 极简双栏简历模板：照片+技能条+时间线 (`doc-resume-minimal`)
-
-```json
-{
-  "id": "doc-resume-minimal",
-  "title": "极简双栏简历模板：照片+技能条+时间线",
-  "category": "简历文档",
-  "styles": [
-    "简历",
-    "双栏",
-    "极简",
-    "模板"
-  ],
-  "scenario": "做求职简历模板，需要专业干净的双栏 A4 版式时",
-  "prompt": "A single A4 resume template design viewed from directly above on a light gray marble surface. Clean two-column layout: left sidebar with circular profile photo placeholder, skill bars, and contact icons; right main area with section headers and timeline entries. Professional navy blue and white color scheme with thin gold accent lines. Modern sans-serif typography placeholder blocks. Crisp flat lay photography with even studio lighting and subtle paper shadow. No readable text, no watermark.",
-  "prompt_zh": "极简双栏简历模板：A4 平铺俯拍，左侧圆形照片占位+技能条+联系方式，右侧标题区+时间线条目，藏青白配色+细金线，现代无衬线字体占位块。",
-  "tools": [
-    "即梦",
-    "Midjourney",
-    "GPT Image"
-  ],
-  "source": "Carat《Resume Design Prompts》Minimal Resume Template（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
-  "added_at": "2026-11-19T08:10:00+08:00"
-}
-```
-
-### 信息图风格简历：环形技能图+时间线 (`doc-resume-infographic`)
-
-```json
-{
-  "id": "doc-resume-infographic",
-  "title": "信息图风格简历：环形技能图+时间线",
-  "category": "简历文档",
-  "styles": [
-    "简历",
-    "信息图",
-    "创意",
-    "模板"
-  ],
-  "scenario": "做创意岗简历，想要信息图风格一页讲清经历与技能时",
-  "prompt": "A creative infographic-style resume design on a single A4 page, viewed from above on a concrete desk surface. Visual elements include circular progress charts for skills, timeline graphics for work experience, and icon-based contact section. Modern color palette of teal, charcoal, and soft coral. Clean geometric layout with generous white space. Thin lines connecting sections. Flat lay photography with directional lighting creating soft shadow on one edge. No readable text, no watermark.",
-  "prompt_zh": "信息图风格简历：A4 一页，技能环形进度图+经历时间线+图标联系区，青/炭/珊瑚配色，几何布局大留白，细线连接各区。",
-  "tools": [
-    "即梦",
-    "Midjourney",
-    "GPT Image"
-  ],
-  "source": "Carat《Resume Design Prompts》Infographic Resume Design（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
-  "added_at": "2026-11-19T08:10:00+08:00"
-}
-```
-
 ## 2026-11-19 · 公开渠道收集（登录页/日历/结账/个人主页）
 
 来源核对：登录页见 Superdesign 登录页提示词库（搜索结果原文：社交登录优先、单密码框、单主按钮、找回链接、具体报错）；日历/日程与个人主页见 Techpresso《30 Claude Prompts That Design UI Screens》对应节（搜索结果原文）；结账见 Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文）。以上 4 条均为库里没有的页面类型（登录页、日历、结账、个人主页），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」。
-
-#### 登录页：社交登录优先+单主按钮 (`auth-login-page`)
-
-```json
-{
-  "id": "auth-login-page",
-  "title": "登录页：社交登录优先+单主按钮",
-  "category": "SaaS后台",
-  "styles": [
-    "登录",
-    "表单",
-    "极简"
-  ],
-  "scenario": "做登录页、默认模板总把注册和登录混在一起时",
-  "prompt": "Design a login page for a SaaS product: sign-in providers first — Google, Apple and GitHub buttons plus a passkey/magic-link option above an 'or with email' divider, so most returning users never type a password. The form: email and one password field with a show-password toggle; no confirm-password field. One primary action: a single solid Log in button; demote sign up to a quiet 'New here? Create an account' link. A 'Forgot password?' link right beside the password field. Specific error copy ('That password is not right. Reset it') and a loading state on the button. Style: neutral base, one accent color on the primary button only, named headline/body typefaces, no purple gradient. A short privacy note under the button and a clear path back to the marketing site.",
-  "prompt_zh": "登录页：社交/密钥登录放最前、邮箱+单个密码框带显示切换、一个 Log in 主按钮、注册降级为链接、密码旁放找回链接、写清具体报错与加载态，中性底+单强调色。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T08:18:05+08:00",
-  "source": "Superdesign 登录页提示词库（搜索结果原文核对；提示词按模板要点原创改写，同类收集，2026-11-19）"
-}
-```
 
 #### 日历/日程：月周切换+彩色事件 (`mobile-calendar-schedule`)
 
@@ -2312,5 +2205,268 @@
  ],
  "added_at": "2026-11-25T08:15:00+08:00",
  "source": "Vibecode《MyStudyLife Clone: Student planner App Template》全文提示词核对改写（今日课程卡、周课表、作业分组、考试倒计时、番茄钟、成绩计算器、AI 教练，2026-11-25）；https://www.vibecodeapp.com/templates/mystudylife — 与待验证区 mobile-calendar-schedule（单日程）、mobile-pomodoro-timer（单番茄钟）不同，本条为课表+作业+考试+专注+成绩一体化学生规划 App"
+}
+```
+
+## 2026-11-25 · 公开渠道收集（直播电商/医生预约/投资组合/外卖追踪/心情日记）
+
+来源核对：直播电商见 Vibefather《Live Shopping Stream Page》模板简报与 GPT Image Hub 直播间 UI 提示词（搜索结果原文）；医生预约见 GenDesigns《The Ultimate AI Design Prompt Library》第 90 条（搜索结果原文）；投资组合见 Design Lounge《Portfolio dashboard》构建简报（搜索结果原文）；外卖追踪见 Design Lounge《Phone order tracking》构建简报（搜索结果原文）；心情日记见 Mejba《Claude Prompt to Design a Mood & Diary Journal App Interface》（搜索结果原文）。以上 5 条均为库里没有的场景（直播带货、医生挂号、投资组合仪表盘、外卖订单追踪、私密心情日记），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 65 条 + 待验证区去重：医生预约与 mobile-health（运动记录/健康数据）不同，是选科室-医生-时段的挂号流程；外卖追踪与 mobile-food（点餐首页）不同，是下单后的地图+ETA 追踪屏；投资组合与 mobile-fintech（钱包/记账首页）及 banking-web（银行门户）不同，是持仓/配置/调仓的券商仪表盘；心情日记与 mobile-meditation-app（冥想）不同，是情绪记录+日历+趋势洞察。
+
+### 直播电商：主播画面+商品卡+聊天同屏 (`ecom-live-shopping-stream`)
+
+```json
+{
+  "id": "ecom-live-shopping-stream",
+  "title": "直播电商：主播画面+商品卡+聊天同屏",
+  "category": "电商零售",
+  "styles": [
+    "直播电商",
+    "直播间",
+    "带货"
+  ],
+  "scenario": "做直播带货/直播购物界面，需要主播画面+商品卡+聊天同屏时",
+  "prompt": "Design a mobile live-shopping stream interface (9:16): a full-bleed host video stage with the host presenting the product; top bar with host avatar, name, follower count, a Follow button, live viewer count and a ranking badge; floating gift hearts and a red-envelope countdown chip; a scrolling chat column bottom-left with short viewer messages and purchase alerts ('user_6789 just bought'); two stacked product cards bottom-right — the featured product with a 'Now presenting' badge, price, discount and Buy button, plus a secondary product; a bottom input bar ('Say something…') with emoji, cart, gift, share and more icons. Keep text legible over video with scrim gradients, make the Buy action thumb-reachable, and keep chat from covering the product cards.",
+  "prompt_zh": "直播带货界面：全屏主播画面+顶栏主播信息与观看人数、礼物红包浮层、左下滚动聊天与下单提醒、右下双商品卡（正在讲解+次推）、底部输入栏与购物车，文字用渐变罩保证可读、购买按钮在拇指区。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-25T09:30:00+08:00",
+  "source": "Vibefather《Live Shopping Stream Page》模板简报 + GPT Image Hub 直播间 UI 提示词（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-25）；https://vibefather.ai/templates/live-shopping-stream-page 与 https://www.gptimagehub.com/library/e-commerce-livestream-shopping-ui-mockup"
+}
+```
+
+### 医生预约挂号：选科室+医生卡+7 天时段网格 (`mobile-doctor-appointment`)
+
+```json
+{
+  "id": "mobile-doctor-appointment",
+  "title": "医生预约挂号：选科室+医生卡+7 天时段网格",
+  "category": "移动端App",
+  "styles": [
+    "医疗",
+    "预约",
+    "挂号"
+  ],
+  "scenario": "做医生预约/挂号 App，需要选科室、医生、日期时段时",
+  "prompt": "Design an iOS doctor appointment booking app: a specialty dropdown at the top, then a doctor list of cards — photo, name, specialty, star rating and next available time. Tapping a doctor opens a booking sheet: a 7-day calendar strip, a time-slot grid where available slots are tinted and booked ones are gray, and a summary line of the selected doctor, date and time. One primary 'Book Appointment' button, an insurance note below it, and a confirmation state with Add to calendar. Professional blue and white palette, large tap targets, clear empty-day handling when no slots are free.",
+  "prompt_zh": "医生预约 App：顶部选科室、医生卡（照片/姓名/科室/评分/最近可约时间）、7 天日历条+时段网格（可约着色、已约置灰）、选中汇总行+预约主按钮与保险提示、确认态可加入日历，专业蓝白、大点击区。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-25T09:30:00+08:00",
+  "source": "GenDesigns《The Ultimate AI Design Prompt Library: 100+ Copy-Paste Prompts for Mobile & Web UI (2026)》第 90 条医生预约提示词（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-25）；https://gendesigns.ai/blog/ai-design-prompt-library-100-prompts"
+}
+```
+
+### 投资组合仪表盘：总资产+可 scrub 走势+配置环+调仓卡 (`fin-portfolio-dashboard`)
+
+```json
+{
+  "id": "fin-portfolio-dashboard",
+  "title": "投资组合仪表盘：总资产+可 scrub 走势+配置环+调仓卡",
+  "category": "金融",
+  "styles": [
+    "投资组合",
+    "仪表盘",
+    "深色"
+  ],
+  "scenario": "做券商/基金投资组合仪表盘，需要总资产、走势、持仓与调仓时",
+  "prompt": "Design a calm investment portfolio dashboard for a brokerage account: a 64px serif total portfolio value at the top, range tabs (1D, 1W, 1M, 3M, YTD, 1Y, ALL) over a scrubbable value chart with a hover readout of date, value and change since range start, and a dashed baseline at the range start value; an allocation ring with a legend that dims other segments on hover; a rebalance card naming the exact dollar move with a 'Preview the trade' toggle that previews the after-trade mix in place; below, a holdings table with weight bars, quantities and gain/loss. Sage-grey ground, one deep-pine accent, green for gains and red only when something actually fell — the mood of a private bank statement, not a trading terminal.",
+  "prompt_zh": "投资组合仪表盘：64px 衬线总资产大数字、可 scrub 的走势图+区间切换与虚线基线、配置环形图+图例悬停联动、写明具体金额的调仓卡（预览交易后配比）、持仓表带权重条，鼠尾草灰底+深松绿单强调色，私人银行对账单气质而非交易终端。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-25T09:30:00+08:00",
+  "source": "Design Lounge《Portfolio dashboard》构建简报（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-25）；https://www.designlounge.live/p/fintech-portfolio-dashboard"
+}
+```
+
+### 外卖订单追踪：地图骑手+42px 大字 ETA+四步进度 (`mobile-delivery-tracking`)
+
+```json
+{
+  "id": "mobile-delivery-tracking",
+  "title": "外卖订单追踪：地图骑手+42px 大字 ETA+四步进度",
+  "category": "移动端App",
+  "styles": [
+    "外卖",
+    "配送追踪",
+    "地图"
+  ],
+  "scenario": "做外卖/快递订单追踪页，需要地图+骑手位置+ETA 倒计时时",
+  "prompt": "Design a food delivery order-tracking screen: the top half is a flat stylized map with a thick frame, a courier dot riding a route from restaurant to home — driven part solid, remaining part dotted; the courier dot glides forward and the ETA counts down in real time. Below the map, the answer is the biggest thing on screen in 42px type: arrival clock time on one line, minutes remaining in the brand color on the next. A four-step progress bar — Confirmed, Preparing, On the way, Delivered — with the current step pulsing; a courier card with avatar initials, name, call and message buttons; a folding order summary and a 'Help with this order' link. Loud food-packaging look: cream paper, tomato red, near-black ink, heavy rounded type, 20px corners, no glass or blur.",
+  "prompt_zh": "外卖订单追踪页：上半扁平地图+骑手圆点沿路线滑行（已走实线、未走虚线）、42px 大字 ETA（到达时刻+剩余分钟）、四步进度条当前步脉冲、骑手卡（电话/消息）+可折叠订单小票，奶油纸+番茄红+近黑墨水的包装风大字设计。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-25T09:30:00+08:00",
+  "source": "Design Lounge《Phone order tracking》构建简报（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-25）；https://www.designlounge.live/p/phone-order-tracking"
+}
+```
+
+### 心情日记 App：每日提示+情绪选择+情绪日历+趋势洞察 (`mobile-mood-journal`)
+
+```json
+{
+  "id": "mobile-mood-journal",
+  "title": "心情日记 App：每日提示+情绪选择+情绪日历+趋势洞察",
+  "category": "移动端App",
+  "styles": [
+    "心情日记",
+    "心理健康",
+    "日记"
+  ],
+  "scenario": "做私密心情日记/情绪记录 App，需要每日打卡、情绪日历与趋势洞察时",
+  "prompt": "Design a private mood journal and diary app for young adults seeking self-reflection: home opens with a time-aware daily prompt (morning intention, evening reflection, skippable), then a mood selector on a gentle emoji scale with soft animation, tags (grateful, anxious, happy…), an optional photo memory and a rich-text entry. A calendar month view shows mood-colored dots per day — tap to reread that entry — with a gentle ink-fill streak indicator. An insights tab shows mood trends over time as a line chart, most common tags and writing frequency; a gratitude section offers a daily 'three things' prompt and a gratitude jar that fills over time. Local-first with optional encrypted cloud backup, biometric lock, warm paper textures, soft ink colors, handwriting-inspired headers with a clean serif body and generous line height. No social features, no gamification of feelings, no ads, no unencrypted sync.",
+  "prompt_zh": "心情日记 App：按时段的每日提示（晨间意图/晚间反思、可跳过）、表情情绪选择+标签+照片记忆与富文本、月历按情绪着色打点可回读、趋势折线图+常用标签+感恩罐，本地优先+加密备份+生物锁，暖纸质感+墨色+手写风标题，禁社交/禁情绪游戏化/禁广告。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-25T09:30:00+08:00",
+  "source": "Mejba《Claude Prompt to Design a Mood & Diary Journal App Interface》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-25）；https://www.mejba.me/prompts/mood-diary-journal-app-interface"
+}
+```
+
+## 2026-11-26 · 公开渠道收集（跑步追踪/DAW/视频剪辑/设计系统文档站/保险理赔）
+
+来源核对：跑步追踪见 Firevibe《Running Tracker》模板页（已打开原文核对：6 屏结构、深色+珊瑚橙 #FF5733、Barlow Condensed 数字、路线自绘动效）+ Vibecode Strava 克隆提示词；DAW 见 FlowState《Interface Overview》（已打开原文核对：走带条/音轨列表/时间线/底部四面板）+ audio-ui.dev DAW 组件库；视频剪辑见 JSBits《Design a Video Trimmer / Timeline Editor》（已打开原文核对：预览+胶片条时间线+入出点手柄+缩放+J/K/L/逐帧+多轨分割重排+导出）+ CapCut 官方 AI 视频工作流；设计系统文档站见 DesignZig《UI Design System & Component Library Generator》（已打开原文核对：原则/token/组件结构/文档要求/技术规范/治理五节模板，改写为文档站 UI 生成提示词）+ Lenka Studio Storybook 8 搭建；保险理赔见 webdevpuneet《Insurance Claim Status Card》（已打开原文核对：四步 stepper 三态区分、可折叠时间线、金额置顶）+ Topcoder Firefly 理赔门户与 State Farm 理赔追踪改版案例。以上 5 条均为库里没有的场景（跑步追踪/音乐制作/视频剪辑/设计系统文档站/保险理赔），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」。设计系统文档站为新分类「设计系统」。已与正式库 69 条 + 待验证区去重无重复（跑步追踪与 mobile-health 的通用健康总览、DAW 与 music-player 的播放器、视频剪辑与播客后期的纯音频剪辑、设计系统文档站与 detail-* 单条规则、保险理赔与 banking-web/mobile-fintech 的银行/钱包首页场景均不同）。
+
+#### 跑步运动追踪 App：实时配速+路线回放 (`mobile-running-tracker`)
+
+```json
+{
+  "id": "mobile-running-tracker",
+  "title": "跑步运动追踪 App：实时配速+路线回放",
+  "category": "移动端App",
+  "styles": [
+    "运动追踪",
+    "跑步",
+    "深色",
+    "数据仪表"
+  ],
+  "scenario": "做跑步 App，需要实时记录、配速分段与跑后路线回放时",
+  "prompt": "Design a running tracker app (390x844): a Record screen with a live GPS route drawing itself on a dark map as you run, huge current pace in condensed bold numerals (Barlow Condensed style), elapsed time, distance and calories in a row below, and a big pause/stop control in the thumb zone; a run-summary screen with the full route map, per-kilometre splits table, elevation profile, pace-over-time chart and achievements badges; an Activities feed of friends' runs with route thumbnails, distance/pace/time stats and Kudos buttons that pop on tap. Deep near-black background #0D0D0F, coral-orange primary #FF5733 reserved for live data, actions and achievements only, carbon-fibre-like dark cards with razor-thin borders, Inter body text, energetic and precise like a Garmin watch face brought to life as a full app.",
+  "prompt_zh": "跑步追踪 App：记录屏实时 GPS 路线自绘+超大当前配速数字、跑后总结含每公里分段表与海拔曲线、好友跑步动态带路线缩略图与 Kudos 点赞，深黑底+珊瑚橙只用于实时数据与成就。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "即梦"
+  ],
+  "source": "Firevibe《Running Tracker》模板页（已打开原文核对：6 屏结构、深色+珊瑚橙 #FF5733、Barlow Condensed 数字、路线自绘动效；提示词按主题原创改写，同类收集，非原作摘录，2026-11-26）+ Vibecode Strava 克隆提示词（搜索结果核对：活动动态、路线回放、分段成绩）",
+  "added_at": "2026-11-26T08:30:00+08:00"
+}
+```
+
+#### 音乐制作 DAW：多轨时间线+混音台 (`daw-music-studio`)
+
+```json
+{
+  "id": "daw-music-studio",
+  "title": "音乐制作 DAW：多轨时间线+混音台",
+  "category": "内容社交",
+  "styles": [
+    "音乐制作",
+    "DAW",
+    "深色",
+    "专业工具"
+  ],
+  "scenario": "做音乐制作/编曲工具，需要多轨编排、鼓机与混音台同屏时",
+  "prompt": "Design a desktop DAW (digital audio workstation) interface: top transport bar with play/stop/record, loop toggle, BPM readout (click to change 40-300), 4/4 time signature and metronome toggle; left track list with track name, M/S/R buttons (mute, solo, record-arm) and volume slider per track; centre timeline with a bars-and-beats ruler, white playhead, audio clips shown as waveforms on a beat grid, and a yellow-orange loop region; bottom tabbed panel with four tabs — Drums (16-pad drum machine with step sequencer and swing control), Mixer (channel strips with fader, pan, 3-band EQ, reverb/delay sends and a master channel with limiter), Samples (search samples by description, drag onto the timeline) and Vocal (autotune with key selection, compression, EQ and preset chains). Dark studio theme, one warm amber accent for the playhead and record-armed tracks, dense but organised like Ableton/FL Studio, every control reachable without nested menus.",
+  "prompt_zh": "音乐制作 DAW：顶部走带条（播放/录音/循环/BPM/节拍器）、左侧音轨列表（静音/独奏/待命+音量）、中央波形时间线、底部鼓机/混音台/采样库/人声链四标签面板，深色录音棚风、琥珀色只标播放头与录音轨。",
+  "tools": [
+    "v0",
+    "Cursor",
+    "Lovable"
+  ],
+  "source": "FlowState DAW《Interface Overview》（已打开原文核对：走带条/音轨列表/时间线/底部四面板结构与各面板细节；提示词按主题原创改写，同类收集，非原作摘录，2026-11-26）+ audio-ui.dev DAW 组件库（搜索结果核对：编排时间线、钢琴卷帘、混音台通道条）",
+  "added_at": "2026-11-26T08:30:00+08:00"
+}
+```
+
+#### 视频剪辑时间线：预览+胶片条+多轨 (`video-editor-timeline`)
+
+```json
+{
+  "id": "video-editor-timeline",
+  "title": "视频剪辑时间线：预览+胶片条+多轨",
+  "category": "内容社交",
+  "styles": [
+    "视频剪辑",
+    "时间线",
+    "创作工具",
+    "深色"
+  ],
+  "scenario": "做视频剪辑工具，需要预览、裁剪与多轨时间线同屏时",
+  "prompt": "Design a video editor interface (desktop, CapCut/Premiere style): top-left media bin with imported clips as thumbnails; centre video preview with transport controls (play/pause, J/K/L shuttle, frame step, timecode readout); bottom multi-track timeline with a time ruler, a thumbnail filmstrip under each video clip, a playhead synced to playback, draggable in/out trim handles on every clip, and separate tracks for video, audio, text/captions and transitions; a right panel switching between Effects, Transitions, Text, Stickers and Audio. Support split, reorder, delete and ripple edit on clips, zoom on the timeline (pixels-per-second), keyboard shortcuts shown in tooltips, and an Export button with resolution, frame rate and format options. Dark editing theme, one accent colour for the playhead and selected clip, precise and professional like a real NLE, no decorative gradients.",
+  "prompt_zh": "视频剪辑器：左侧素材箱、中央预览+走带/逐帧/时间码、底部多轨时间线（标尺+缩略图胶片条+入出点手柄+视频/音频/字幕/转场分轨）、右侧特效面板，支持分割/重排/波纹编辑与缩放导出，深色专业剪辑风。",
+  "tools": [
+    "v0",
+    "Cursor",
+    "Lovable"
+  ],
+  "source": "JSBits《Design a Video Trimmer / Timeline Editor》（已打开原文核对：预览+胶片条时间线+入出点手柄+缩放+J/K/L/逐帧+多轨分割重排+导出；提示词按主题原创改写，同类收集，非原作摘录，2026-11-26）+ CapCut 官方 AI 视频工作流与 Dreamina 非线性编辑器（搜索结果核对：时间线卡片、字幕/音乐面板、片段自由裁剪重排）",
+  "added_at": "2026-11-26T08:30:00+08:00"
+}
+```
+
+#### 设计系统组件文档站：导航+展示+代码 (`design-system-docs-site`)
+
+```json
+{
+  "id": "design-system-docs-site",
+  "title": "设计系统组件文档站：导航+展示+代码",
+  "category": "设计系统",
+  "styles": [
+    "设计系统",
+    "组件文档",
+    "文档站",
+    "Storybook"
+  ],
+  "scenario": "给团队做设计系统文档站，需要组件展示、token 表与代码片段同站时",
+  "prompt": "Design a design-system documentation website: left sidebar navigation grouped into Foundations (Color, Typography, Spacing, Icons, Elevation), Components (Button, Input, Card, Modal, Table, Toast) and Patterns (Forms, Navigation, Data display), with a search box at the top and the current page highlighted; main content shows one component per page — a live interactive preview with variant and state switchers (default, hover, active, disabled, error), a props table (name, type, default, description), a Do and Don't usage section with paired good/bad examples, and a copyable code snippet tab (React / Vue / plain HTML) with a copy button; a Tokens page displays the color palette with hex values and WCAG contrast ratios, the type scale and the spacing scale as swatch tables. Light theme, one brand accent, generous whitespace, monospace for code, clear hierarchy like Storybook docs or shadcn/ui — the site itself must demonstrate the system it documents.",
+  "prompt_zh": "设计系统文档站：左侧分组导航（基础/组件/模式）+搜索、每组件一页（实时预览+五态切换、属性表、Do/Don't 正反示例、可复制代码片段）、token 页展示色板对比度与字阶间距，站本身就是系统的示范。",
+  "tools": [
+    "v0",
+    "Cursor",
+    "Lovable"
+  ],
+  "source": "DesignZig《UI Design System & Component Library Generator》（已打开原文核对：原则/token/组件结构/文档要求/技术规范/治理五节模板；提示词按模板要点原创改写为文档站 UI 生成提示词，同类收集，非原作摘录，2026-11-26）+ Lenka Studio《Storybook 8 组件库搭建》与 Strapi《Storybook + Next.js 设计系统》（搜索结果核对：autodocs、Controls 面板、MDX 文档页）",
+  "added_at": "2026-11-26T08:30:00+08:00"
+}
+```
+
+#### 保险理赔进度追踪：四步 stepper+时间线 (`fin-insurance-claim-tracker`)
+
+```json
+{
+  "id": "fin-insurance-claim-tracker",
+  "title": "保险理赔进度追踪：四步 stepper+时间线",
+  "category": "金融",
+  "styles": [
+    "保险理赔",
+    "进度追踪",
+    "Stepper",
+    "信任感"
+  ],
+  "scenario": "做保险理赔追踪页，用户只想一眼知道理赔到哪一步、还差什么时",
+  "prompt": "Design an insurance claim tracking page: top card shows claim number, claim type (e.g. auto collision), filed date and the claim amount in large green numerals; below it a connected four-step stepper (Submitted → Under Review → Approved → Paid) where the line between two steps only fills in once the earlier step is complete, a completed step gets a filled dot, the current step gets a hollow dot with a soft glow halo — approved-but-not-yet-paid must look clearly different from paid; a 'Pending actions' inbox lists what the claimant still owes (upload photos, choose repair shop, confirm payout method), each marked Required or Recommended in words, not colour alone; a collapsible timeline below (closed by default, expands with a smooth max-height transition) holds the dated event history (assigned adjuster, inspection completed, approval); a message-the-adjuster button and an estimated completion date for the current step. Calm trustworthy palette (white, deep green or indigo accent), large readable text, no jargon, designed so the two questions 'how much' and 'how far along' are answered in the first half-second.",
+  "prompt_zh": "保险理赔追踪页：顶部理赔单号/类型/金额、四步 stepper（连接线只随已完成步骤填色、进行中为空心光晕）、待办收件箱（必填/推荐用文字标明）、默认收起的日期事件时间线、联系理赔员入口与当前步骤预计完成日，金额与进度半秒内可读。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "webdevpuneet《Insurance Claim Status Card》（已打开原文核对：四步 stepper 三态区分、可折叠时间线、金额置顶、页面自带重建提示词亦已核对；提示词按要点原创改写并扩展为完整追踪页，同类收集，非原作摘录，2026-11-26）+ Topcoder《Firefly Insurance Claims Status Portal》与 State Farm 理赔追踪改版案例（搜索结果核对：待办收件箱、理赔员沟通、任务可见性）",
+  "added_at": "2026-11-26T08:30:00+08:00"
 }
 ```

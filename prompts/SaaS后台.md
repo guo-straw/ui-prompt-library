@@ -95,3 +95,21 @@ Lay out this settings page in three steps: 1) one setting per row — name on th
 ```
 
 **中文说明**：费纸张第5集原作三步：一项一行（左名右控件）、去掉最外层框、分组加标题（组间多留白、组内少留白、行间细线）；并对比表单场景：名称在上、全宽输入。与设置页主从布局同属设置页风格组。
+
+## 登录页：社交登录优先+单主按钮 (`auth-login-page`)
+
+![生成验证效果图](../previews/auth-login-page.png)
+
+生成验证：✅ 2026-11-26 通过 — 生成图为 SaaS 登录页：Google/Apple/GitHub 三按钮在前、Passkey/Magic Link、or with email 分隔线、邮箱+单个密码框带显示切换、密码旁 Forgot password?、具体报错文案'That password is not right. Reset it'、蓝色 Log in 主按钮带加载态'Logging in...'、按钮下隐私说明与 New here? Create an account 链接、左上 Back to site，中性底+单强调色、无紫色渐变，通过
+
+- 风格：登录 / 表单 / 极简
+- 场景：做登录页、默认模板总把注册和登录混在一起时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Design a login page for a SaaS product: sign-in providers first — Google, Apple and GitHub buttons plus a passkey/magic-link option above an 'or with email' divider, so most returning users never type a password. The form: email and one password field with a show-password toggle; no confirm-password field. One primary action: a single solid Log in button; demote sign up to a quiet 'New here? Create an account' link. A 'Forgot password?' link right beside the password field. Specific error copy ('That password is not right. Reset it') and a loading state on the button. Style: neutral base, one accent color on the primary button only, named headline/body typefaces, no purple gradient. A short privacy note under the button and a clear path back to the marketing site.
+```
+
+**中文说明**：登录页：社交/密钥登录放最前、邮箱+单个密码框带显示切换、一个 Log in 主按钮、注册降级为链接、密码旁放找回链接、写清具体报错与加载态，中性底+单强调色。

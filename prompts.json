@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -14,7 +14,8 @@
   "智能家居",
   "车机出行",
   "游戏娱乐",
-  "邮件模板"
+  "邮件模板",
+  "简历文档"
  ],
  "prompts": [
   {
@@ -1736,6 +1737,121 @@
    },
    "added_at": "2026-11-19T08:10:00+08:00",
    "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》主菜单一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
+  },
+  {
+   "id": "game-inventory-rpg",
+   "title": "RPG 背包/装备界面：网格物品栏+角色剪影",
+   "category": "游戏娱乐",
+   "styles": [
+    "游戏UI",
+    "背包",
+    "RPG",
+    "暗黑奇幻"
+   ],
+   "scenario": "做 RPG 游戏，需要物品栏+装备栏的背包界面时",
+   "prompt": "Design an RPG inventory interface. Grid-based item slots on the left, character equipment panel on the right showing equipped items on a character silhouette. Dark fantasy style with stone textures, metallic borders, subtle glow on magical items. Include tabs for Weapons, Armor, Consumables, Quest Items.",
+   "prompt_zh": "RPG 背包界面：左侧网格物品栏、右侧角色剪影装备栏，暗黑奇幻风石材质+金属边框，魔法物品微光，含武器/防具/消耗品/任务物品四个页签。",
+   "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+   ],
+   "preview_img": "previews/game-inventory-rpg.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-26",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 RPG 背包界面：左侧 5 列网格物品栏（冰霜剑/盾/紫水晶/药水/卷轴/戒指等，魔法物品带紫光），顶部 Weapons/Armor/Consumables/Quest Items 四页签；右侧角色剪影装备栏（头/肩/胸/手套/腿/项链/斗篷/腰带/靴/武器/戒指齐全），暗黑奇幻石材质+金属边框+微光，通过（小瑕疵：GLOVES 与 BELT 两格图标疑似互换，不影响主体）"
+   },
+   "added_at": "2026-11-19T08:10:00+08:00",
+   "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》背包/装备一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
+  },
+  {
+   "id": "doc-resume-minimal",
+   "title": "极简双栏简历模板：照片+技能条+时间线",
+   "category": "简历文档",
+   "styles": [
+    "简历",
+    "双栏",
+    "极简",
+    "模板"
+   ],
+   "scenario": "做求职简历模板，需要专业干净的双栏 A4 版式时",
+   "prompt": "A single A4 resume template design viewed from directly above on a light gray marble surface. Clean two-column layout: left sidebar with circular profile photo placeholder, skill bars, and contact icons; right main area with section headers and timeline entries. Professional navy blue and white color scheme with thin gold accent lines. Modern sans-serif typography placeholder blocks. Crisp flat lay photography with even studio lighting and subtle paper shadow. No readable text, no watermark.",
+   "prompt_zh": "极简双栏简历模板：A4 平铺俯拍，左侧圆形照片占位+技能条+联系方式，右侧标题区+时间线条目，藏青白配色+细金线，现代无衬线字体占位块。",
+   "tools": [
+    "即梦",
+    "Midjourney",
+    "GPT Image"
+   ],
+   "preview_img": "previews/doc-resume-minimal.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-26",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为极简双栏简历：A4 平铺于浅灰大理石面，左侧藏青边栏圆形照片占位（金圈）+金色技能条+电话/邮件/地址图标，右侧标题区（藏青标题条+细金线）+金色时间线圆点条目，无可读正文、无水印，通过"
+   },
+   "added_at": "2026-11-19T08:10:00+08:00",
+   "source": "Carat《Resume Design Prompts》Minimal Resume Template（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
+  },
+  {
+   "id": "doc-resume-infographic",
+   "title": "信息图风格简历：环形技能图+时间线",
+   "category": "简历文档",
+   "styles": [
+    "简历",
+    "信息图",
+    "创意",
+    "模板"
+   ],
+   "scenario": "做创意岗简历，想要信息图风格一页讲清经历与技能时",
+   "prompt": "A creative infographic-style resume design on a single A4 page, viewed from above on a concrete desk surface. Visual elements include circular progress charts for skills, timeline graphics for work experience, and icon-based contact section. Modern color palette of teal, charcoal, and soft coral. Clean geometric layout with generous white space. Thin lines connecting sections. Flat lay photography with directional lighting creating soft shadow on one edge. No readable text, no watermark.",
+   "prompt_zh": "信息图风格简历：A4 一页，技能环形进度图+经历时间线+图标联系区，青/炭/珊瑚配色，几何布局大留白，细线连接各区。",
+   "tools": [
+    "即梦",
+    "Midjourney",
+    "GPT Image"
+   ],
+   "preview_img": "previews/doc-resume-infographic.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-26",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为信息图风格简历：A4 一页置于水泥桌面，顶部技能环形进度图三枚（青/珊瑚/炭），中部时间线（竖线+彩色圆点+条目块），底部图标联系区（电话/邮件/地址/网站），青/炭/珊瑚配色、细线连接各区、单侧柔和阴影，无可读正文、无水印，通过（小瑕疵：页面为横向 A4，提示词未限定竖版，不影响特征）"
+   },
+   "added_at": "2026-11-19T08:10:00+08:00",
+   "source": "Carat《Resume Design Prompts》Infographic Resume Design（已打开页面核对原文，提示词为原文摘录，2026-11-19）"
+  },
+  {
+   "id": "auth-login-page",
+   "title": "登录页：社交登录优先+单主按钮",
+   "category": "SaaS后台",
+   "styles": [
+    "登录",
+    "表单",
+    "极简"
+   ],
+   "scenario": "做登录页、默认模板总把注册和登录混在一起时",
+   "prompt": "Design a login page for a SaaS product: sign-in providers first — Google, Apple and GitHub buttons plus a passkey/magic-link option above an 'or with email' divider, so most returning users never type a password. The form: email and one password field with a show-password toggle; no confirm-password field. One primary action: a single solid Log in button; demote sign up to a quiet 'New here? Create an account' link. A 'Forgot password?' link right beside the password field. Specific error copy ('That password is not right. Reset it') and a loading state on the button. Style: neutral base, one accent color on the primary button only, named headline/body typefaces, no purple gradient. A short privacy note under the button and a clear path back to the marketing site.",
+   "prompt_zh": "登录页：社交/密钥登录放最前、邮箱+单个密码框带显示切换、一个 Log in 主按钮、注册降级为链接、密码旁放找回链接、写清具体报错与加载态，中性底+单强调色。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/auth-login-page.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-26",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 SaaS 登录页：Google/Apple/GitHub 三按钮在前、Passkey/Magic Link、or with email 分隔线、邮箱+单个密码框带显示切换、密码旁 Forgot password?、具体报错文案'That password is not right. Reset it'、蓝色 Log in 主按钮带加载态'Logging in...'、按钮下隐私说明与 New here? Create an account 链接、左上 Back to site，中性底+单强调色、无紫色渐变，通过"
+   },
+   "added_at": "2026-11-19T08:18:05+08:00",
+   "source": "Superdesign 登录页提示词库（搜索结果原文核对；提示词按模板要点原创改写，同类收集，2026-11-19）"
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -1852,6 +1852,118 @@
    },
    "added_at": "2026-11-19T08:18:05+08:00",
    "source": "Superdesign 登录页提示词库（搜索结果原文核对；提示词按模板要点原创改写，同类收集，2026-11-19）"
+  },
+  {
+   "id": "mobile-calendar-schedule",
+   "title": "日历/日程：月周切换+彩色事件",
+   "category": "移动端App",
+   "styles": [
+    "日历",
+    "日程",
+    "移动端"
+   ],
+   "scenario": "做日历/排班/内容计划界面时",
+   "prompt": "Design a calendar/scheduling screen: a top bar with month/week toggle, prev/next arrows, current period label, a Today button and a create-event button; an optional mini-month on the left for navigation; the main grid — a 7-column month grid with weekday headers and date cells, or time-slotted columns for week view. Place color-coded event chips across several cells with one color per event type, one day highlighted as today; use realistic event titles. Today, selected and out-of-month days are visually distinct; event chips keep accessible contrast. Responsive and mobile-first, large tap targets, real form labels and visible focus states.",
+   "prompt_zh": "日历/日程屏：顶栏月周切换+前后翻页+今天+新建、左侧可选小月历、主网格 7 列日期格或周视图时间列、事件按类型配色、今天高亮，移动端优先、大点击区。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/mobile-calendar-schedule.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-27",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为手机竖屏日历：Month/Week 切换、前后翻页箭头、November 2024、Today 按钮与 + 新建、左侧 NOV 2024 小月历、7 列日期网格、彩色事件 chips（Workout/Team Meeting/Design Review/Birthday/Gym/Client Sync/Doctor/Holiday 各一色）、14 号蓝色圆圈标今天、月外日期灰显，通过（小瑕疵：星期头缺 THU 一列、部分日期数字错乱如 78、19 重复，不影响版式与功能特征）"
+   },
+   "added_at": "2026-11-19T08:18:05+08:00",
+   "source": "Techpresso《30 Claude Prompts That Design UI Screens》日历/日程节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
+  },
+  {
+   "id": "ecom-checkout-flow",
+   "title": "电商结账：购物车到支付",
+   "category": "电商零售",
+   "styles": [
+    "结账",
+    "电商",
+    "转化"
+   ],
+   "scenario": "做电商购物车/结账/订单确认页时",
+   "prompt": "Design a cart-to-pay checkout page for an online store: a slim checkout header (Cart current, no marketing nav); line items with image placeholder, name, SKU, unit price, quantity stepper, line total and remove; a summary card with subtotal, shipping options, tax line and estimated total; one primary Continue to pay button; an empty-cart state with a reason to stay and recommendations. Keep money honest: mark any unverified price, tax or shipping figure as to-verify instead of inventing it; no real payment fields on the cart screen. Semantic accessible markup, visible focus, labeled inputs.",
+   "prompt_zh": "电商结账：瘦顶栏+商品行（图/名/SKU/单价/数量/小计/删除）+汇总卡（小计/运费/税/预估总价）+继续支付主按钮+空购物车挽留态；金额不确定的标待核对、不编造。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/ecom-checkout-flow.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-27",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为桌面结账页：瘦顶栏 Cart 当前/Shipping/Payment/Review 四步、商品行（图占位/名/SKU/单价/数量步进/小计/Remove）、汇总卡（小计/运费选项/税/预估总价均标 to-verify）、Continue to pay 主按钮、空购物车挽留条与推荐商品、无真实支付字段、金额不确定处均标 to-verify，通过（小瑕疵：首件商品数量框显示 Qty 占位而非数字）"
+   },
+   "added_at": "2026-11-19T08:18:05+08:00",
+   "source": "Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
+  },
+  {
+   "id": "profile-account-page",
+   "title": "个人主页/账号页：封面+数据+标签页",
+   "category": "内容社交",
+   "styles": [
+    "个人主页",
+    "账号",
+    "社交"
+   ],
+   "scenario": "做社交/工具类产品的个人主页或账号页时",
+   "prompt": "Design a user profile/account screen: a cover/banner band with an overlapping avatar, name, role and one primary action button (Follow / Edit / Message) anchored next to the avatar; a stat row of three to four numbers with labels (posts, followers, following, completion); a tab bar (Overview, Activity, Settings) with one visibly active tab; the default tab shows a bio block, an info card (location, joined date, links) and a recent-activity list. Use realistic sample content; keep the primary action visible on scroll.",
+   "prompt_zh": "个人主页：封面横幅+重叠头像+姓名角色+主操作按钮、3–4 项数据行、标签页（概览/动态/设置）、默认页含简介+信息卡+最近动态，主按钮滚动时不丢失。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/profile-account-page.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-27",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为手机竖屏个人主页：封面横幅+重叠头像、Alex Rivera 姓名与 Product Designer · Design Systems 角色、Message 主按钮在头像旁、数据行 42 Posts/3.1k Followers/287 Following/92% Completion、标签页 Overview（激活）/Activity/Settings、简介块+信息卡（San Francisco, CA、Joined March 2023、链接）+最近动态列表，通过"
+   },
+   "added_at": "2026-11-19T08:18:05+08:00",
+   "source": "Techpresso《30 Claude Prompts That Design UI Screens》个人主页/账号节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
+  },
+  {
+   "id": "error-404-page",
+   "title": "404 错误页：品牌插画+找回路径",
+   "category": "细节优化",
+   "styles": [
+    "404",
+    "错误页",
+    "品牌插画"
+   ],
+   "scenario": "网站出现 404/走丢页面，想把负面体验变成品牌时刻时",
+   "prompt": "Design a creative 404 error page for this website that turns a dead end into a brand moment: a friendly one-line apology in plain words ('This page hasn't washed ashore yet' style — say what happened, no error codes as the main text), a small brand-aligned illustration above the message (160-280px on desktop, same illustration style as the site's empty states), a prominent search bar, one clear 'Return to Home' primary button plus links to popular pages, and the site's normal header and footer so it still feels like part of the product. Keep the next step visible without scrolling on a phone, use the site's own colors and typefaces, and return the proper 404 status code.",
+   "prompt_zh": "404 错误页：人话道歉+品牌插画（160–280px、与空状态同风格）+醒目搜索框+回首页主按钮与热门页链接，保留站点头尾、手机首屏可见下一步，正确返回 404 状态码。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/error-404-page.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-27",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为桌面 404 页：人话道歉“This page hasn't washed ashore yet”、品牌插画（Muse 吉祥物水手造型）、醒目搜索框、Return to Home 主按钮与热门页链接、正常站点头尾，通过（小瑕疵：页脚一处链接文字乱码为 Charsglolg；插画尺寸大于 160–280px 建议值，但为单图展示不影响特征）"
+   },
+   "added_at": "2026-11-19T09:12:00+08:00",
+   "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 10 条 + Liniqo《404 page and error page design》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
   }
  ]
 }

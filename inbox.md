@@ -293,7 +293,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7687510825015315712"
+  "source_video": "https://www.douyin.com/video/7687510825015315712",
+  "verify_note": "2026-11-27 尝试验证：浏览器实测来源视频可正常播放（第15集 03:26），扇形展开/纵深叠排/圆柱环绕/球面排布/螺旋排布/波浪矩阵 6 种与提示词逐条一致；但抖音网页未提供下载途径（播放器无下载按钮、分享按钮点不开面板、右键被拦截、DOM 无 <video> 元素、页面无视频直链），无法取得视频文件截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -319,7 +320,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7705257186435403058"
+  "source_video": "https://www.douyin.com/video/7705257186435403058",
+  "verify_note": "2026-11-27 尝试验证：浏览器实测来源视频可正常播放（第32集 01:52），点击范围/热区冲突/点击与拖动区分/点击反馈（按下变化、提交状态、失败提示）与提示词一致；“五查”第 5 项“链接”只在总结章（01:27）出现，未单独成章，提示词所列五查与总结章一致，无实质出入；但抖音网页未提供下载途径（同批 4 条页面结构相同，无下载按钮、无视频直链），无法取得视频文件截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -345,7 +347,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7699718828174937379"
+  "source_video": "https://www.douyin.com/video/7699718828174937379",
+  "verify_note": "2026-11-27 尝试验证：浏览器实测来源视频可正常播放（第29集 01:21），卡片适合展示/列表适合查找/表格适合比数据（以“挑出宽度最大的图，用表格展示名称、尺寸、格式，同种数据上下对齐”为例）/切换布局保留搜索条件与勾选状态，与提示词逐条一致；但抖音网页未提供下载途径（同批 4 条页面结构相同，无下载按钮、无视频直链），无法取得视频文件截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -371,7 +374,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7701961806482279715"
+  "source_video": "https://www.douyin.com/video/7701961806482279715",
+  "verify_note": "2026-11-27 尝试验证：浏览器实测来源视频可正常播放（第31集 01:04），选择器用于选择/菜单用于操作、选项少直展、选项多分组滚动、与 AI 沟通要点（选什么、选完做什么、结果留在哪）与提示词逐条一致；视频另有一节“输入框的使用”（00:42，熟悉信息可直接输入），提示词未列出，不冲突；但抖音网页未提供下载途径（同批 4 条页面结构相同，无下载按钮、无视频直链），无法取得视频文件截取 GIF/关键帧，故留待验证；不许用生成图冒充。"
 }
 ```
 
@@ -547,109 +551,13 @@
 
 来源核对：登录页见 Superdesign 登录页提示词库（搜索结果原文：社交登录优先、单密码框、单主按钮、找回链接、具体报错）；日历/日程与个人主页见 Techpresso《30 Claude Prompts That Design UI Screens》对应节（搜索结果原文）；结账见 Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文）。以上 4 条均为库里没有的页面类型（登录页、日历、结账、个人主页），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」。
 
-#### 日历/日程：月周切换+彩色事件 (`mobile-calendar-schedule`)
 
-```json
-{
-  "id": "mobile-calendar-schedule",
-  "title": "日历/日程：月周切换+彩色事件",
-  "category": "移动端App",
-  "styles": [
-    "日历",
-    "日程",
-    "移动端"
-  ],
-  "scenario": "做日历/排班/内容计划界面时",
-  "prompt": "Design a calendar/scheduling screen: a top bar with month/week toggle, prev/next arrows, current period label, a Today button and a create-event button; an optional mini-month on the left for navigation; the main grid — a 7-column month grid with weekday headers and date cells, or time-slotted columns for week view. Place color-coded event chips across several cells with one color per event type, one day highlighted as today; use realistic event titles. Today, selected and out-of-month days are visually distinct; event chips keep accessible contrast. Responsive and mobile-first, large tap targets, real form labels and visible focus states.",
-  "prompt_zh": "日历/日程屏：顶栏月周切换+前后翻页+今天+新建、左侧可选小月历、主网格 7 列日期格或周视图时间列、事件按类型配色、今天高亮，移动端优先、大点击区。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T08:18:05+08:00",
-  "source": "Techpresso《30 Claude Prompts That Design UI Screens》日历/日程节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
-}
-```
 
-#### 电商结账：购物车到支付 (`ecom-checkout-flow`)
-
-```json
-{
-  "id": "ecom-checkout-flow",
-  "title": "电商结账：购物车到支付",
-  "category": "电商零售",
-  "styles": [
-    "结账",
-    "电商",
-    "转化"
-  ],
-  "scenario": "做电商购物车/结账/订单确认页时",
-  "prompt": "Design a cart-to-pay checkout page for an online store: a slim checkout header (Cart current, no marketing nav); line items with image placeholder, name, SKU, unit price, quantity stepper, line total and remove; a summary card with subtotal, shipping options, tax line and estimated total; one primary Continue to pay button; an empty-cart state with a reason to stay and recommendations. Keep money honest: mark any unverified price, tax or shipping figure as to-verify instead of inventing it; no real payment fields on the cart screen. Semantic accessible markup, visible focus, labeled inputs.",
-  "prompt_zh": "电商结账：瘦顶栏+商品行（图/名/SKU/单价/数量/小计/删除）+汇总卡（小计/运费/税/预估总价）+继续支付主按钮+空购物车挽留态；金额不确定的标待核对、不编造。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T08:18:05+08:00",
-  "source": "Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
-}
-```
-
-#### 个人主页/账号页：封面+数据+标签页 (`profile-account-page`)
-
-```json
-{
-  "id": "profile-account-page",
-  "title": "个人主页/账号页：封面+数据+标签页",
-  "category": "内容社交",
-  "styles": [
-    "个人主页",
-    "账号",
-    "社交"
-  ],
-  "scenario": "做社交/工具类产品的个人主页或账号页时",
-  "prompt": "Design a user profile/account screen: a cover/banner band with an overlapping avatar, name, role and one primary action button (Follow / Edit / Message) anchored next to the avatar; a stat row of three to four numbers with labels (posts, followers, following, completion); a tab bar (Overview, Activity, Settings) with one visibly active tab; the default tab shows a bio block, an info card (location, joined date, links) and a recent-activity list. Use realistic sample content; keep the primary action visible on scroll.",
-  "prompt_zh": "个人主页：封面横幅+重叠头像+姓名角色+主操作按钮、3–4 项数据行、标签页（概览/动态/设置）、默认页含简介+信息卡+最近动态，主按钮滚动时不丢失。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T08:18:05+08:00",
-  "source": "Techpresso《30 Claude Prompts That Design UI Screens》个人主页/账号节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
-}
-```
 
 ## 2026-11-19 · 公开渠道收集（第二轮：404/通知中心/搜索筛选/学习仪表盘/博客阅读/活动票务）
 
 来源核对：404 错误页见 Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》（第 10 条，搜索结果原文）与 Liniqo《404 page and error page design》（AI 生成器提示词与插画尺寸要点，搜索结果原文）；通知中心见 design.dev《Toast Notification Stack》提示词模板（四种类型、自动消失进度条）与 JSBits《Design a Notification Center & Toast System》（Toast + 持久通知中心双面结构，搜索结果原文）；搜索筛选见 21st.dev《Filter Menu》与《Search Results》组件说明（分组筛选、可移除 chips、清空全部、键盘导航，搜索结果原文）；学习仪表盘见 danbyers.ai《Build a Learning Dashboard with AI》（顶部四张数据卡+课程/项目进度+深色主题，搜索结果原文）；博客阅读页见同一 Medium 文第 6 条博客主页提示词与 NotVibesCoded UI 提示词库博客类（单栏阅读视图、吸顶目录，搜索结果原文）；活动票务见 Ticko 票务 App 案例研究（发现→详情→选座→结账→票据流程、分区配色选座）与 Showpass 选座地图指南（按票种分区定价、最佳座位推荐，搜索结果原文）。以上 6 条均为库里没有的页面/功能类型，只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 41 条 + 待验证区 49 条去重：404 与 detail-states-complete（通用空/加载/错误态）不同，是带品牌插画与找回路径的整页；通知中心与 spt-overlay-six（浮层选型）不同，是持久通知列表+Toast 双面系统；学习仪表盘与 saas-dashboard-linear（通用 SaaS 仪表盘）不同，是课程进度/连胜/学习时长场景；博客阅读页与 landing-editorial（杂志风落地页）不同，是长文阅读页而非营销落地页；活动票务与 ecom-checkout-flow（购物车到支付）不同，是选座地图+票种分区流程。
 
-#### 404 错误页：品牌插画+找回路径 (`error-404-page`)
-
-```json
-{
-  "id": "error-404-page",
-  "title": "404 错误页：品牌插画+找回路径",
-  "category": "细节优化",
-  "styles": [
-    "404",
-    "错误页",
-    "品牌插画"
-  ],
-  "scenario": "网站出现 404/走丢页面，想把负面体验变成品牌时刻时",
-  "prompt": "Design a creative 404 error page for this website that turns a dead end into a brand moment: a friendly one-line apology in plain words ('This page hasn't washed ashore yet' style — say what happened, no error codes as the main text), a small brand-aligned illustration above the message (160-280px on desktop, same illustration style as the site's empty states), a prominent search bar, one clear 'Return to Home' primary button plus links to popular pages, and the site's normal header and footer so it still feels like part of the product. Keep the next step visible without scrolling on a phone, use the site's own colors and typefaces, and return the proper 404 status code.",
-  "prompt_zh": "404 错误页：人话道歉+品牌插画（160–280px、与空状态同风格）+醒目搜索框+回首页主按钮与热门页链接，保留站点头尾、手机首屏可见下一步，正确返回 404 状态码。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T09:12:00+08:00",
-  "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 10 条 + Liniqo《404 page and error page design》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
-}
-```
 
 #### 通知中心+Toast 双面系统 (`saas-notification-center`)
 
@@ -2468,5 +2376,324 @@
   ],
   "source": "webdevpuneet《Insurance Claim Status Card》（已打开原文核对：四步 stepper 三态区分、可折叠时间线、金额置顶、页面自带重建提示词亦已核对；提示词按要点原创改写并扩展为完整追踪页，同类收集，非原作摘录，2026-11-26）+ Topcoder《Firefly Insurance Claims Status Portal》与 State Farm 理赔追踪改版案例（搜索结果核对：待办收件箱、理赔员沟通、任务可见性）",
   "added_at": "2026-11-26T08:30:00+08:00"
+}
+```
+
+## 2026-11-26 · 公开渠道收集（空间 09:12 轮次：徒步路线/甘特图/退货售后/植物养护/帮助中心）
+
+来源核对：徒步路线见 Brainy《Hiking Trail App Design: Trail Page Before and After》（三数分栏、海拔填色、路况一行、48px 开始按钮）与 open-design.ai《Offline Hiking Journal》提示词（搜索结果原文核对）；甘特图见 Routine《5 Prompts to Build a Gantt Chart With AI》（五条分工提示词）与 Techpresso《30 Claude Prompts That Build Gantt Charts》（搜索结果原文核对）；退货售后见 Snill《Build a Returns and RMA App》（六态生命周期、原因即数据）与 webdevpuneet《Return Label Generator》（两态卡片、原因下拉+按件勾选、确认页下一步，搜索结果原文核对）；植物养护见 blog.vibecoder.me《Build a Plant Watering Schedule App With AI》（四功能区四条提示词）与 MyPrompt 植物养护提醒 App UI 提示词、Crisp Leafwise 模板（搜索结果原文核对）；帮助中心见 VibeFather《Help Center Knowledge Base》模板（搜索优先首页+六分类+文章页目录/投票/相关文章）与 VibeWeek《In-Product Help Center & Knowledge Base》（搜索结果原文核对）。以上 5 条均为库里没有的页面/功能类型，只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 69 条 + 待验证区 92 条逐一去重：徒步路线与 mobile-running-tracker（跑步运动数据追踪）不同，是路线发现+海拔剖面+当日路况的出门前决策页；甘特图与 saas-kanban（看板列间拖拽）不同，是时间线+依赖+里程碑+关键路径视图；退货售后与 ecom-checkout-flow（下单到支付）不同，是售后退货流程；植物养护与 mobile-medication-reminder（用药提醒）同为提醒模式但场景不同（植物档案/浇水周期/养护日志/生长照片）；帮助中心与 saas-support-ticketing（工单人工处理）不同，是自助文档+AI 问答+转人工的帮助中心。
+
+#### 户外徒步路线详情：三数分栏+海拔填色+路况一行 (`mobile-hiking-trail`)
+
+```json
+{
+  "id": "mobile-hiking-trail",
+  "title": "户外徒步路线详情：三数分栏+海拔填色+路况一行",
+  "category": "移动端App",
+  "styles": [
+    "徒步",
+    "户外",
+    "路线详情",
+    "地图"
+  ],
+  "scenario": "做徒步/户外 App 的路线详情页，用户出门前要快速判断这条线今天能不能走时",
+  "prompt": "Design a hiking trail detail screen that answers 'is this the right trail today' in one glance: a full-width trail photo with the trail name in 24px bold and one quiet line under it (rating, difficulty, loop type, dogs allowed); three numbers a hiker compares between trails — distance, elevation gain and estimated time — each in its own column at 20px semibold with a small label beneath; an elevation profile drawn as a filled shape (light forest green fill, darker line on top, summit named with its height, start/end elevations at the bottom corners) instead of a thin grey line; conditions collapsed to a single 44px row with a chevron that warns about the one thing that matters today (e.g. mud after rain); one 48px Start Hike primary button plus two 48px circular secondary buttons (bookmark, share). Warm ivory background, forest green (#1F5E3B) accent, outdoor photography, generous spacing, large tap targets, offline-friendly — the facts a hiker came for must never be the smallest text on the page.",
+  "prompt_zh": "徒步路线详情页：大图+24px 粗体路线名、三数分栏（里程/爬升/用时 20px 半粗体各占一列）、海拔画成填色形状并标出峰顶高度、路况缩成一行 44px 警示条、48px 开始徒步主按钮，米白+森林绿户外配色，关键数字绝不做成最小字。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "Brainy《Hiking Trail App Design: Trail Page Before and After》（搜索结果原文核对：三数分栏、海拔填色形状、路况一行、48px 开始按钮；提示词按要点原创改写，同类收集，非原作摘录，2026-11-26）+ open-design.ai《Offline Hiking Journal》提示词（搜索结果核对：离线记录/同步队列、三屏结构）",
+  "added_at": "2026-11-26T09:12:00+08:00"
+}
+```
+
+#### 甘特图项目时间线：阶段分栏+依赖+关键路径 (`saas-gantt-chart`)
+
+```json
+{
+  "id": "saas-gantt-chart",
+  "title": "甘特图项目时间线：阶段分栏+依赖+关键路径",
+  "category": "SaaS后台",
+  "styles": [
+    "甘特图",
+    "项目管理",
+    "时间线",
+    "依赖"
+  ],
+  "scenario": "做项目管理工具的时间线/甘特图视图，需要阶段、依赖与关键路径同屏时",
+  "prompt": "Design a Gantt chart project timeline view: left task list grouped into phases (Research, Design, Development, QA, Launch) with owner avatars and progress bars per task; right timeline grid with one row per task, one column per week, bars coloured per phase and a today line cutting across; dependencies drawn as arrows between bars, blocked tasks flagged in red with a short risk note; milestones as diamonds at phase ends; a critical-path toggle that highlights the chain of tasks that decides the launch date; a top bar to switch week/month zoom, filter by team (Engineering, Design, Marketing, QA) and show a mini progress summary (X of Y tasks done, N days to launch). When a date slips, dependent bars shift automatically and at-risk items surface in a side panel with suggested buffer time. Clean SaaS look, one accent colour per phase, readable at 100+ tasks without horizontal scrolling chaos — freeze the task list while the timeline scrolls.",
+  "prompt_zh": "甘特图时间线：左侧阶段分组任务表（负责人+进度条）、右侧周列时间网格（阶段配色条+今日线）、依赖箭头与阻塞标红、里程碑菱形、关键路径开关、顶部周/月缩放与团队筛选，日期一拖依赖自动顺延、风险项进侧栏提示缓冲期。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "Routine《5 Prompts to Build a Gantt Chart With AI》（搜索结果原文核对：阶段/依赖/风险点/多团队配色/里程碑 KPI 五条分工提示词；提示词按要点原创改写，同类收集，非原作摘录，2026-11-26）+ Techpresso《30 Claude Prompts That Build Gantt Charts》（搜索结果核对：多冲刺交付、依赖与评审里程碑、关键路径）",
+  "added_at": "2026-11-26T09:12:00+08:00"
+}
+```
+
+#### 电商退货/售后：原因即数据+六态生命周期 (`ecom-returns-refund`)
+
+```json
+{
+  "id": "ecom-returns-refund",
+  "title": "电商退货/售后：原因即数据+六态生命周期",
+  "category": "电商零售",
+  "styles": [
+    "退货",
+    "售后",
+    "RMA",
+    "流程"
+  ],
+  "scenario": "做电商售后退货页或商家退货管理后台，需要从申请到退款全程可查时",
+  "prompt": "Design a product returns flow as two connected views. Customer side: start from the order, pick the items to return with a checkbox list (whole row clickable, size/quantity shown per item), choose a required reason from a short list (faulty, wrong item, changed mind, damaged, never arrived) and state the wanted outcome (refund, exchange or store credit) — the reason is stored as data, not a free-text note, so the shop can answer 'why are people returning this product'. Before submitting, show the policy branch: within the return window gets a label, final-sale items explain the exclusion and offer human help, damaged items ask for a photo and route to review. After submitting, a confirmation card shows the return number in large tabular numerals, a QR code or printable label, and numbered next steps (pack, drop off, refund timeline). Merchant side: a returns register with six states kept apart — requested, authorised, received, refunded, replaced, rejected — a waiting-to-be-received queue the warehouse cares about, and a return-rate-by-reason summary. Only a supervisor can reject. Clean, calm, honest copy: never promise a refund the policy does not allow.",
+  "prompt_zh": "退货售后双面：用户侧从订单勾选退货商品+必选原因（原因存为数据）+选退款/换货/积分、按政策分支（在窗期内给面单、最终清仓品说明排除、破损要照片转人工），确认卡给退货号+二维码面单+分步指引；商家侧六态登记簿（申请/授权/已收/已退款/已换货/已拒绝）+待收队列+按原因退货率，拒绝仅主管可操作。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "Snill《Build a Returns and RMA App — One Prompt, 48 Seconds》（搜索结果原文核对：六态生命周期、原因即数据、待收队列、仅主管可拒绝；提示词按要点原创改写，同类收集，非原作摘录，2026-11-26）+ webdevpuneet《Return Label Generator》（搜索结果核对：两态一卡片、原因下拉+按件勾选、确认页下一步）",
+  "added_at": "2026-11-26T09:12:00+08:00"
+}
+```
+
+#### 植物养护 App：今日待浇+一键记浇水+紧急度配色 (`mobile-plant-care`)
+
+```json
+{
+  "id": "mobile-plant-care",
+  "title": "植物养护 App：今日待浇+一键记浇水+紧急度配色",
+  "category": "移动端App",
+  "styles": [
+    "植物养护",
+    "提醒",
+    "生活方式",
+    "绿色"
+  ],
+  "scenario": "做植物养护/浇水提醒 App，家里植物总因浇水不规律养死时",
+  "prompt": "Design a plant care app in a fresh green and cream palette: top greeting ('Good morning, Mia') with a small leaf avatar; a hero card with a monstera photo and a circular progress ring labelled 'Water in 2 days' plus a green 'Water Now' button; below, a 'Today's care' list of plant rows — each with a small round thumbnail, plant nickname, and the next action with its time window (e.g. 'Water today, Evening') — sorted by urgency with colour coding (red overdue, yellow due today, green upcoming); one tap on a plant logs the watering and moves its next date on, and a quick-action menu offers Water, Fertilize, Repot, Prune and Mist; a plant detail page shows its schedule, a care-history timeline and a strip of growth photos over time; a calendar tab shows the next fourteen days of care. A care-tip card reads 'Care tip: Rotate plants weekly for even growth'. Bottom tab bar: Home, Plants, Reminders, Profile. Clean spacing, rounded cards, real plant photos, legible short labels — and state plainly that schedules are user-supplied, not plant diagnoses.",
+  "prompt_zh": "植物养护 App：问候+头像、主卡大图+浇水倒计时圆环+立即浇水按钮、今日养护列表按紧急度配色排序（逾期红/今日黄/将至绿）、一键记浇水自动顺延下次日期、详情页含养护时间线与生长照片、14 天养护日历，提醒是用户自定日程而非植物诊断。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "blog.vibecoder.me《Build a Plant Watering Schedule App With AI》（搜索结果原文核对：植物档案/智能提醒/养护日志/推送四功能区与四条提示词；提示词按要点原创改写，同类收集，非原作摘录，2026-11-26）+ MyPrompt 植物养护提醒 App UI 提示词（搜索结果核对：问候区/倒计时圆环/今日养护列表/养护小贴士）+ Crisp Leafwise 模板（搜索结果核对：共享养护、今日列表一键记录、生长照片）",
+  "added_at": "2026-11-26T09:12:00+08:00"
+}
+```
+
+#### 帮助中心/知识库：搜索优先+六分类+文章页目录 (`saas-help-center-kb`)
+
+```json
+{
+  "id": "saas-help-center-kb",
+  "title": "帮助中心/知识库：搜索优先+六分类+文章页目录",
+  "category": "SaaS后台",
+  "styles": [
+    "帮助中心",
+    "知识库",
+    "搜索优先",
+    "自助服务"
+  ],
+  "scenario": "给 SaaS 产品做帮助中心，用户带着问题来、想 30 秒内找到答案时",
+  "prompt": "Design a help center / knowledge base for a SaaS product, search-first: a home page with one large instant-search card at the top (focused within five seconds of arrival), a six-category grid below it with article counts per category, and a popular-articles strip; category pages list their articles with the search kept in context; article pages use a sticky table-of-contents rail, short skimmable sections with numbered steps in plain words, a 'Was this helpful?' vote with a thank-you state, related articles, and a contact-support panel that says honestly what happens next. Add an in-product '?' button in the app header that opens the same knowledge base as a slide-in sidebar (380-420px) with contextual article suggestions based on the page the user is on, plus AI-powered Q&A over the docs that cites its sources and falls back to ticket creation when uncertain. Calm utility look: warm white ground, ink text, one dependable blue accent, hairlines instead of heavy cards. Every article earns its place by being skimmable — a slightly annoyed customer mid-task should reach the step they need within thirty seconds, or a human in two clicks.",
+  "prompt_zh": "帮助中心：搜索优先首页（大搜索框+六分类网格带文章数+热门文章）、分类页保留搜索上下文、文章页吸顶目录+可扫读分步正文+有用投票+相关文章+联系客服面板；产品内「?」按钮滑出同库侧栏并按当前页推荐文章，AI 问答引用来源、不确定时转工单，暖白底+墨字+一抹蓝的冷静工具风。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "source": "VibeFather《Help Center Knowledge Base》模板（搜索结果原文核对：搜索优先首页+六分类+文章页目录/投票/相关文章/联系面板；提示词按要点原创改写，同类收集，非原作摘录，2026-11-26）+ VibeWeek《In-Product Help Center & Knowledge Base》（搜索结果核对：产品内「?」侧栏、上下文推荐、AI 问答+来源引用、转人工兜底）",
+  "added_at": "2026-11-26T09:12:00+08:00"
+}
+```
+
+## 2026-11-27 · Motion Library 试收（8 候选，7 条进待验证区，1 条去重未收）
+
+来源核对：Motion Library（https://kittenjam-motion-library.vercel.app/，2026-11-26 已批准为常驻收集来源）站上 8 个候选均已找到对应卡片并点「複製 AI 提示詞」取原文；提示词原文均为繁体中文，照录未改写。去重：按 id 与「场景+风格」与正式库 73 条 + 待验证区 93 条逐一比对——柔和上浮 Gentle Fade Up（No.125）与正式库 detail-staggered-entrance（错开入场：区块元素依次淡入上浮、间隔约 100ms、无弹跳）同场景同风格，仅参数级差异，按规则不重复收；其余 7 条无重复。7 条均为动效类、无来源视频，按旧法生成验证；本轮验证额度已用满（日历/结账/个人主页/404），7 条留待后续轮次验证。
+
+#### Motion Library：打字机 Typewriter (`ml-typewriter`)
+
+```json
+{
+  "id": "ml-typewriter",
+  "title": "Motion Library：打字机 Typewriter",
+  "category": "细节优化",
+  "styles": [
+    "打字机",
+    "文字动效",
+    "循环切换"
+  ],
+  "scenario": "标题/hero 文字想逐字打出再换句时",
+  "prompt": "文字像打字機一樣一個字一個字出現在兩行，後面有閃爍的游標，打完停留後再快速逐字刪除，換成下一句繼續打。明體字、第二行較淡，打字約每字 0.14 秒。",
+  "prompt_zh": "打字机文字动效：两行文字逐字打出、闪烁光标、停留后逐字删除换下一句，明体字、第二行较淡，每字约 0.14 秒。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.064 打字機 Typewriter（https://kittenjam-motion-library.vercel.app/fx/64/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；参考来源 @ai_tjb「文字動態效果」；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：霓虹呼吸按钮 Neon Glow Button (`ml-neon-glow-button`)
+
+```json
+{
+  "id": "ml-neon-glow-button",
+  "title": "Motion Library：霓虹呼吸按钮 Neon Glow Button",
+  "category": "细节优化",
+  "styles": [
+    "霓虹",
+    "呼吸",
+    "按钮",
+    "悬停"
+  ],
+  "scenario": "按钮想做霓虹呼吸光晕、hover 强发光时",
+  "prompt": "霓虹風格按鈕：外框細線與文字使用強調色，周圍有一圈柔和的外發光與內發光，光暈以約 2.4 秒的週期像呼吸般變亮又變暗；滑鼠滑過時整顆填滿、文字反白，並散發出多層大範圍的強烈光暈。（CSS：多層 box-shadow（含 inset）做發光，keyframes 改變光暈大小與透明度；hover 時停止呼吸動畫、改成更大的多層 box-shadow，transition 0.35 秒）",
+  "prompt_zh": "霓虹呼吸按钮：外框细线+内外发光、光晕约 2.4 秒周期呼吸明暗，hover 填满反白并散发多层强光晕。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.237 霓虹呼吸按鈕 Neon Glow Button（https://kittenjam-motion-library.vercel.app/fx/237/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：果冻弹跳按钮 Jelly Button (`ml-jelly-button`)
+
+```json
+{
+  "id": "ml-jelly-button",
+  "title": "Motion Library：果冻弹跳按钮 Jelly Button",
+  "category": "细节优化",
+  "styles": [
+    "果冻",
+    "弹跳",
+    "按钮",
+    "点击反馈"
+  ],
+  "scenario": "按钮 hover/点击想做 Q 弹果冻挤压回弹时",
+  "prompt": "滑鼠滑過或點擊時，按鈕像果凍一樣先被橫向壓扁（寬 1.18、高 0.82），再縱向拉長（寬 0.85、高 1.15），之後幅度遞減地來回晃動幾次回到原狀，整段約 0.7 秒，Q 彈可愛。（CSS keyframes：依序 scale(1.18,.82) → (.85,1.15) → (1.08,.92) → (.97,1.03) → (1,1)；點擊觸發時先移除 class、強制 reflow 再加回，才能重播）",
+  "prompt_zh": "果冻弹跳按钮：hover/点击先横向压扁再纵向拉长、幅度递减晃动回原状，约 0.7 秒，Q 弹。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.232 果凍彈跳按鈕 Jelly Button（https://kittenjam-motion-library.vercel.app/fx/232/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：全息闪卡 Holographic Card (`ml-holographic-card`)
+
+```json
+{
+  "id": "ml-holographic-card",
+  "title": "Motion Library：全息闪卡 Holographic Card",
+  "category": "细节优化",
+  "styles": [
+    "全息",
+    "卡片",
+    "3D倾斜",
+    "悬停"
+  ],
+  "scenario": "收藏卡/作品卡想跟随鼠标 3D 倾斜、全息箔光流动时",
+  "prompt": "一張收藏卡（上方圖片、下方標題與編號），跟著游標在 3D 空間中傾斜（最大約 13 度）；卡片表面有一層炫彩的全息箔光，箔光的位置跟著游標移動，傾斜越多箔光越明顯，另外還有一團柔和反光跟著游標位置；游標離開時卡片回正、箔光淡化。（CSS + JS：mousemove 計算游標在卡片上的相對位置 0~1，設定 rotateX/rotateY 與 CSS 變數 --px、--py；箔光層是 repeating-linear-gradient 的炫彩條紋、mix-blend-mode:color-dodge，background-position 用 --px/--py；反光層是 radial-gradient 疊 overlay；父層 perspective）",
+  "prompt_zh": "全息闪卡：收藏卡跟随鼠标 3D 倾斜约 13 度，炫彩箔光与反光跟随角度流动，离开回正淡化。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.287 全息閃卡 Holographic Card（https://kittenjam-motion-library.vercel.app/fx/287/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：卡片浮起 Hover Lift Card (`ml-hover-lift-card`)
+
+```json
+{
+  "id": "ml-hover-lift-card",
+  "title": "Motion Library：卡片浮起 Hover Lift Card",
+  "category": "细节优化",
+  "styles": [
+    "卡片",
+    "悬停",
+    "上浮",
+    "缩图放大"
+  ],
+  "scenario": "作品卡片列表 hover 想上浮加深阴影、缩图框内放大时",
+  "prompt": "一排作品卡片（上方縮圖、下方標題與一條文字列）。滑鼠移到某張卡片上時，卡片往上浮起一點並出現更深更大的陰影，縮圖在原本的框內慢慢放大約 1.15 倍（框不變、圖被裁切）；滑鼠離開時平滑回到原位。約 0.45–0.6 秒，緩出。（CSS：卡片 transition transform 與 box-shadow，:hover 時 translateY(-8px)；縮圖外框 overflow:hidden，內層圖 transform:scale(1.14)）",
+  "prompt_zh": "卡片浮起：hover 卡片上浮 translateY(-8px)、阴影加深，缩图框内放大 1.15 倍，0.45–0.6 秒缓出。（原文正文写 1.15 倍、CSS 写 scale(1.14)，照录未统一）",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.112 卡片浮起 Hover Lift Card（https://kittenjam-motion-library.vercel.app/fx/112/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：液态玻璃翻牌 Liquid Glass Flip Card (`ml-liquid-glass-flip-card`)
+
+```json
+{
+  "id": "ml-liquid-glass-flip-card",
+  "title": "Motion Library：液态玻璃翻牌 Liquid Glass Flip Card",
+  "category": "细节优化",
+  "styles": [
+    "液态玻璃",
+    "翻牌",
+    "3D",
+    "卡片"
+  ],
+  "scenario": "玻璃卡片想按鼠标进入方向 3D 翻面、带棱镜光与光带扫过时",
+  "prompt": "放在風景背景上的一張直式霧面玻璃卡片：透過卡片看到的背景被模糊、略微放大，像隔著一片厚玻璃；卡片邊緣有一圈細細的稜鏡彩光，表面有柔和高光並跟著游標位置移動。正面左上是小標籤、右上是翻面圖示、下方是標題；背面是說明文字與按鈕。游標從卡片哪一邊進入，卡片就往那個方向 3D 翻面（從左右進入沿垂直軸翻、從上下進入沿水平軸翻），翻轉時一條斜向光帶掃過、稜鏡光跟著旋轉、底下的影子在翻到側面時變窄；游標在卡片上移動時卡片微微傾斜，離開後以帶彈性的動作翻回正面。觸控裝置改成點一下翻面。沒有互動時每隔幾秒從隨機方向自動翻一次。（GSAP：rotateX／rotateY 用 elastic.out 補間，依進入點相對卡片中心的 dx、dy 決定方向；玻璃不用 backdrop-filter，而是在卡片內放一份對齊位置的背景副本加 blur、saturate、scale 當透鏡，避免 3D 中失效；稜鏡邊框用 conic-gradient 加 mask-composite 只留外框）",
+  "prompt_zh": "液态玻璃翻牌：雾面玻璃卡按鼠标进入方向 3D 翻面，光带扫过、棱镜光旋转、带弹性翻回；与正式库 detail-liquid-glass（材质五要素配方）场景不同，本条是翻面交互。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.332 液態玻璃翻牌 Liquid Glass Flip Card（https://kittenjam-motion-library.vercel.app/fx/332/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；参考来源 Framer Marketplace；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：逐字升起 Split Rise (`ml-split-rise`)
+
+```json
+{
+  "id": "ml-split-rise",
+  "title": "Motion Library：逐字升起 Split Rise",
+  "category": "细节优化",
+  "styles": [
+    "逐字",
+    "入场动画",
+    "文字动效",
+    "遮罩"
+  ],
+  "scenario": "标题文字想逐字从遮罩下方升起、停留再滑出时",
+  "prompt": "文字拆成單字，每個字放在裁切遮罩內，依序從遮罩下方滑上來（每字間隔約 0.06 秒、強烈減速），停留後再往上滑出。（GSAP：SplitText type chars + mask，from yPercent:110，ease power4.out，stagger）",
+  "prompt_zh": "逐字升起：文字拆成单字、每字在裁切遮罩内从下方滑上，间隔约 0.06 秒，停留后向上滑出。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T08:15:00+08:00",
+  "source": "Motion Library No.076 逐字升起 Split Rise（https://kittenjam-motion-library.vercel.app/fx/76/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
 }
 ```

@@ -77,3 +77,21 @@ Design a mobile travel booking app: home opens with a large immersive destinatio
 ```
 
 **中文说明**：旅行预订 App：大图沉浸式首页+底部搜索条、目的地横滑卡片、详情页含日期选择与常驻总价预订栏，航班结果带路线图与最便宜/最快切换，衬线标题+陶土强调色。
+
+## 日历/日程：月周切换+彩色事件 (`mobile-calendar-schedule`)
+
+![生成验证效果图](../previews/mobile-calendar-schedule.png)
+
+生成验证：✅ 2026-11-27 通过 — 生成图为手机竖屏日历：Month/Week 切换、前后翻页箭头、November 2024、Today 按钮与 + 新建、左侧 NOV 2024 小月历、7 列日期网格、彩色事件 chips（Workout/Team Meeting/Design Review/Birthday/Gym/Client Sync/Doctor/Holiday 各一色）、14 号蓝色圆圈标今天、月外日期灰显，通过（小瑕疵：星期头缺 THU 一列、部分日期数字错乱如 78、19 重复，不影响版式与功能特征）
+
+- 风格：日历 / 日程 / 移动端
+- 场景：做日历/排班/内容计划界面时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Design a calendar/scheduling screen: a top bar with month/week toggle, prev/next arrows, current period label, a Today button and a create-event button; an optional mini-month on the left for navigation; the main grid — a 7-column month grid with weekday headers and date cells, or time-slotted columns for week view. Place color-coded event chips across several cells with one color per event type, one day highlighted as today; use realistic event titles. Today, selected and out-of-month days are visually distinct; event chips keep accessible contrast. Responsive and mobile-first, large tap targets, real form labels and visible focus states.
+```
+
+**中文说明**：日历/日程屏：顶栏月周切换+前后翻页+今天+新建、左侧可选小月历、主网格 7 列日期格或周视图时间列、事件按类型配色、今天高亮，移动端优先、大点击区。

@@ -113,3 +113,37 @@ Design a login page for a SaaS product: sign-in providers first — Google, Appl
 ```
 
 **中文说明**：登录页：社交/密钥登录放最前、邮箱+单个密码框带显示切换、一个 Log in 主按钮、注册降级为链接、密码旁放找回链接、写清具体报错与加载态，中性底+单强调色。
+## 通知中心+Toast 双面系统 (`saas-notification-center`)
+
+![生成验证效果图](../previews/saas-notification-center.png)
+
+生成验证：✅ 2026-11-28 通过 — 生成图为 SaaS 通知双面系统：右上堆叠 Toast 三种类型（成功/错误/警告，各带强调色与图标、2px 倒计时进度条、悬停暂停提示、错误不自动消失、Paused 徽标）+ 持久通知中心（4 未读角标、Mark all read、头像+相对时间+已读/未读圆点、Scroll for 23 more），两面共用 notifications_stream 数据源，通过（小瑕疵：Toast 与通知中心面板重叠处“4 unread”角标被部分遮挡、底部三张 KPI 卡为空白；不影响验证特征）
+
+- 风格：通知 / Toast / 消息中心
+- 场景：SaaS 产品需要既即时提醒又可回查的通知系统时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Build a notification system as two surfaces sharing one data source: (1) ephemeral toasts — stacked vertically top-right with 10px gaps, four types (success, error, warning, info) each with its own accent color, icon, title and message; a 2px auto-dismiss progress bar at the bottom of each toast shrinking from 100% to 0% over its duration, hover pauses the countdown, errors never auto-dismiss, each toast has a close button and a simple show API. (2) a persistent notification center — a panel listing every event with read/unread state, actor avatar, relative time, unread count badge, mark-read and mark-all-read actions, and infinite scroll. Keep the visual language consistent across both surfaces and announce new toasts to screen readers without stealing focus.
+```
+
+**中文说明**：通知双面系统：右上堆叠 Toast（四种类型各有强调色、2px 倒计时进度条、悬停暂停、错误不自动消失）+ 持久通知中心（已读/未读态、未读角标、一键已读、无限滚动），两面共用同一数据源。
+## 搜索结果页：筛选侧栏+已选 chips (`search-results-filters`)
+
+![生成验证效果图](../previews/search-results-filters.png)
+
+生成验证：✅ 2026-11-28 通过 — 生成图为搜索结果页：顶部搜索框+查询词与 1,248 results 计数、左侧筛选侧栏（Category/Date/Type/Status 可折叠分组带数量）、已选条件 chips 可逐个移除+Clear all、结果列表关键词加粗、Sort by Relevance 排序与分页，通过（小瑕疵：摘要中匹配词两侧出现字面 ** 标记；不影响验证特征）
+
+- 风格：搜索 / 筛选 / 列表
+- 场景：做内容/商品/文档搜索结果页，需要侧栏筛选时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Design a search results page with a filter sidebar: a search bar at the top with the query and result count ('128 results for "…"'); a left filter sidebar with collapsible checkbox groups (category, date, type, status), each group showing counts; active filters shown as removable chips above the results with a 'Clear all' action; results as a clean list (title, snippet with the matching text in bold, source and date) or an image grid toggle; a sort control (relevance/newest) and pagination or infinite scroll. On mobile the sidebar collapses into a filter button opening a bottom sheet. Full keyboard navigation, visible focus, and never let filters push results below the fold on desktop.
+```
+
+**中文说明**：搜索结果页：顶部搜索框+结果数、左侧可折叠复选框筛选分组（带数量）、已选条件以 chips 显示可逐个移除+清空全部、结果列表关键词加粗或图片网格切换、排序与分页，移动端筛选项收进底部浮层。

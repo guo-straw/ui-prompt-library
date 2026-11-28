@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -15,7 +15,8 @@
   "车机出行",
   "游戏娱乐",
   "邮件模板",
-  "简历文档"
+  "简历文档",
+  "在线教育"
  ],
  "prompts": [
   {
@@ -1964,6 +1965,118 @@
    },
    "added_at": "2026-11-19T09:12:00+08:00",
    "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 10 条 + Liniqo《404 page and error page design》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+  },
+  {
+   "id": "saas-notification-center",
+   "title": "通知中心+Toast 双面系统",
+   "category": "SaaS后台",
+   "styles": [
+    "通知",
+    "Toast",
+    "消息中心"
+   ],
+   "scenario": "SaaS 产品需要既即时提醒又可回查的通知系统时",
+   "prompt": "Build a notification system as two surfaces sharing one data source: (1) ephemeral toasts — stacked vertically top-right with 10px gaps, four types (success, error, warning, info) each with its own accent color, icon, title and message; a 2px auto-dismiss progress bar at the bottom of each toast shrinking from 100% to 0% over its duration, hover pauses the countdown, errors never auto-dismiss, each toast has a close button and a simple show API. (2) a persistent notification center — a panel listing every event with read/unread state, actor avatar, relative time, unread count badge, mark-read and mark-all-read actions, and infinite scroll. Keep the visual language consistent across both surfaces and announce new toasts to screen readers without stealing focus.",
+   "prompt_zh": "通知双面系统：右上堆叠 Toast（四种类型各有强调色、2px 倒计时进度条、悬停暂停、错误不自动消失）+ 持久通知中心（已读/未读态、未读角标、一键已读、无限滚动），两面共用同一数据源。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "added_at": "2026-11-19T09:12:00+08:00",
+   "source": "design.dev《Toast Notification Stack》提示词模板 + JSBits《Design a Notification Center & Toast System》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）",
+   "preview_img": "previews/saas-notification-center.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-28",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 SaaS 通知双面系统：右上堆叠 Toast 三种类型（成功/错误/警告，各带强调色与图标、2px 倒计时进度条、悬停暂停提示、错误不自动消失、Paused 徽标）+ 持久通知中心（4 未读角标、Mark all read、头像+相对时间+已读/未读圆点、Scroll for 23 more），两面共用 notifications_stream 数据源，通过（小瑕疵：Toast 与通知中心面板重叠处“4 unread”角标被部分遮挡、底部三张 KPI 卡为空白；不影响验证特征）"
+   }
+  },
+  {
+   "id": "search-results-filters",
+   "title": "搜索结果页：筛选侧栏+已选 chips",
+   "category": "SaaS后台",
+   "styles": [
+    "搜索",
+    "筛选",
+    "列表"
+   ],
+   "scenario": "做内容/商品/文档搜索结果页，需要侧栏筛选时",
+   "prompt": "Design a search results page with a filter sidebar: a search bar at the top with the query and result count ('128 results for \"…\"'); a left filter sidebar with collapsible checkbox groups (category, date, type, status), each group showing counts; active filters shown as removable chips above the results with a 'Clear all' action; results as a clean list (title, snippet with the matching text in bold, source and date) or an image grid toggle; a sort control (relevance/newest) and pagination or infinite scroll. On mobile the sidebar collapses into a filter button opening a bottom sheet. Full keyboard navigation, visible focus, and never let filters push results below the fold on desktop.",
+   "prompt_zh": "搜索结果页：顶部搜索框+结果数、左侧可折叠复选框筛选分组（带数量）、已选条件以 chips 显示可逐个移除+清空全部、结果列表关键词加粗或图片网格切换、排序与分页，移动端筛选项收进底部浮层。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "added_at": "2026-11-19T09:12:00+08:00",
+   "source": "21st.dev《Filter Menu》与《Search Results》组件说明（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）",
+   "preview_img": "previews/search-results-filters.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-28",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为搜索结果页：顶部搜索框+查询词与 1,248 results 计数、左侧筛选侧栏（Category/Date/Type/Status 可折叠分组带数量）、已选条件 chips 可逐个移除+Clear all、结果列表关键词加粗、Sort by Relevance 排序与分页，通过（小瑕疵：摘要中匹配词两侧出现字面 ** 标记；不影响验证特征）"
+   }
+  },
+  {
+   "id": "edu-learning-dashboard",
+   "title": "在线学习仪表盘：进度+连胜+学习时长",
+   "category": "在线教育",
+   "styles": [
+    "学习仪表盘",
+    "进度",
+    "深色"
+   ],
+   "scenario": "做在线课程/学习平台的个人学习进度仪表盘时",
+   "prompt": "Build a learning progress dashboard: a header with the title 'Learning Dashboard' and today's date; a stats row of 4 cards at the top — total lessons completed (out of 24), total projects completed (out of 11), current streak in days, and total study hours — each card with a large number, a label and a small icon; below, two side-by-side sections: on the left a lesson list with animated progress bars and completion checkmarks, on the right weekly progress and study-hours charts plus a streak counter that tracks consecutive days of activity. Use a dark theme with clean modern styling and clear visual hierarchy, progress bars animate on load, and keep the layout scannable at a glance.",
+   "prompt_zh": "学习仪表盘：顶栏标题+今日日期、四张数据卡（已完成课时/项目/连续天数/学习时长）、左侧课程列表带动画进度条、右侧周进度与学时图表+连胜计数，深色主题、层级清晰、一眼可读。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "added_at": "2026-11-19T09:12:00+08:00",
+   "source": "danbyers.ai《Build a Learning Dashboard with AI》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）",
+   "preview_img": "previews/edu-learning-dashboard.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-28",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为深色学习仪表盘：顶栏标题+今日日期、四张数据卡（16/24 课时、7/11 项目、9 天连胜、84h 学习时长）、左侧课程列表带动画进度条与完成勾选、右侧周进度与学时图表+9 天连胜计数，通过"
+   }
+  },
+  {
+   "id": "content-blog-reading",
+   "title": "博客文章阅读页：单栏+吸顶目录",
+   "category": "内容社交",
+   "styles": [
+    "博客",
+    "阅读页",
+    "长文"
+   ],
+   "scenario": "做博客/长文内容站，需要舒服的文章阅读页时",
+   "prompt": "Design a blog article reading page as a clean single-column reading view: a comfortable measure (around 65-75 characters per line), generous line spacing, warm serif headlines with clean sans-serif body text; a sticky table-of-contents sidebar that highlights the section currently in view as the reader scrolls; a reading-progress bar at the top, author bio block with avatar and follow button, estimated reading time and publish date under the title; at the end, share actions and a 'next article' card. Above the article, a full-width featured-article hero for the latest post, followed by a grid of recent posts with thumbnails, titles and excerpts. Editorial layout, strong spacing, no clutter around the text — reading is the product.",
+   "prompt_zh": "博客阅读页：单栏舒适行宽行距、衬线标题+无衬线正文、吸顶目录随滚动高亮当前节、顶部阅读进度条、作者简介与预计阅读时长，文首通栏精选文章+近期文章网格，阅读本身就是产品。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "added_at": "2026-11-19T09:12:00+08:00",
+   "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 6 条博客主页 + NotVibesCoded UI 提示词库博客类（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）",
+   "preview_img": "previews/content-blog-reading.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-28",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为博客阅读页：通栏精选文章 hero+近期文章网格、单栏舒适行宽行距、衬线标题+无衬线正文、左侧吸顶目录（CONTENTS）随滚动高亮当前节、顶部橙色阅读进度条、作者简介带头像与 Follow 按钮、预计阅读时长与发布日期、文末分享操作与下一篇卡片，通过"
+   }
   }
  ]
 }

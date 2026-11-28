@@ -401,7 +401,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7701274323436227880"
+  "source_video": "https://www.douyin.com/video/7701274323436227880",
+  "verify_note": "2026-11-28 备注：与 2026-11-24/11-27 各批同一阻塞（抖音网页无下载途径，无法取得视频文件截取 GIF/关键帧），本轮未重复尝试下载，留待验证；待用户从手机抖音 App 保存视频文件后补验，不许用生成图冒充。"
 }
 ```
 
@@ -427,7 +428,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7707974421738278187"
+  "source_video": "https://www.douyin.com/video/7707974421738278187",
+  "verify_note": "2026-11-28 备注：与 2026-11-24/11-27 各批同一阻塞（抖音网页无下载途径，无法取得视频文件截取 GIF/关键帧），本轮未重复尝试下载，留待验证；待用户从手机抖音 App 保存视频文件后补验，不许用生成图冒充。"
 }
 ```
 
@@ -453,7 +455,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7707970051038645546"
+  "source_video": "https://www.douyin.com/video/7707970051038645546",
+  "verify_note": "2026-11-28 备注：与 2026-11-24/11-27 各批同一阻塞（抖音网页无下载途径，无法取得视频文件截取 GIF/关键帧），本轮未重复尝试下载，留待验证；待用户从手机抖音 App 保存视频文件后补验，不许用生成图冒充。"
 }
 ```
 
@@ -479,7 +482,8 @@
   ],
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7707976118627798312"
+  "source_video": "https://www.douyin.com/video/7707976118627798312",
+  "verify_note": "2026-11-28 备注：与 2026-11-24/11-27 各批同一阻塞（抖音网页无下载途径，无法取得视频文件截取 GIF/关键帧），本轮未重复尝试下载，留待验证；待用户从手机抖音 App 保存视频文件后补验，不许用生成图冒充。"
 }
 ```
 
@@ -558,106 +562,6 @@
 
 来源核对：404 错误页见 Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》（第 10 条，搜索结果原文）与 Liniqo《404 page and error page design》（AI 生成器提示词与插画尺寸要点，搜索结果原文）；通知中心见 design.dev《Toast Notification Stack》提示词模板（四种类型、自动消失进度条）与 JSBits《Design a Notification Center & Toast System》（Toast + 持久通知中心双面结构，搜索结果原文）；搜索筛选见 21st.dev《Filter Menu》与《Search Results》组件说明（分组筛选、可移除 chips、清空全部、键盘导航，搜索结果原文）；学习仪表盘见 danbyers.ai《Build a Learning Dashboard with AI》（顶部四张数据卡+课程/项目进度+深色主题，搜索结果原文）；博客阅读页见同一 Medium 文第 6 条博客主页提示词与 NotVibesCoded UI 提示词库博客类（单栏阅读视图、吸顶目录，搜索结果原文）；活动票务见 Ticko 票务 App 案例研究（发现→详情→选座→结账→票据流程、分区配色选座）与 Showpass 选座地图指南（按票种分区定价、最佳座位推荐，搜索结果原文）。以上 6 条均为库里没有的页面/功能类型，只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 41 条 + 待验证区 49 条去重：404 与 detail-states-complete（通用空/加载/错误态）不同，是带品牌插画与找回路径的整页；通知中心与 spt-overlay-six（浮层选型）不同，是持久通知列表+Toast 双面系统；学习仪表盘与 saas-dashboard-linear（通用 SaaS 仪表盘）不同，是课程进度/连胜/学习时长场景；博客阅读页与 landing-editorial（杂志风落地页）不同，是长文阅读页而非营销落地页；活动票务与 ecom-checkout-flow（购物车到支付）不同，是选座地图+票种分区流程。
 
-
-#### 通知中心+Toast 双面系统 (`saas-notification-center`)
-
-```json
-{
-  "id": "saas-notification-center",
-  "title": "通知中心+Toast 双面系统",
-  "category": "SaaS后台",
-  "styles": [
-    "通知",
-    "Toast",
-    "消息中心"
-  ],
-  "scenario": "SaaS 产品需要既即时提醒又可回查的通知系统时",
-  "prompt": "Build a notification system as two surfaces sharing one data source: (1) ephemeral toasts — stacked vertically top-right with 10px gaps, four types (success, error, warning, info) each with its own accent color, icon, title and message; a 2px auto-dismiss progress bar at the bottom of each toast shrinking from 100% to 0% over its duration, hover pauses the countdown, errors never auto-dismiss, each toast has a close button and a simple show API. (2) a persistent notification center — a panel listing every event with read/unread state, actor avatar, relative time, unread count badge, mark-read and mark-all-read actions, and infinite scroll. Keep the visual language consistent across both surfaces and announce new toasts to screen readers without stealing focus.",
-  "prompt_zh": "通知双面系统：右上堆叠 Toast（四种类型各有强调色、2px 倒计时进度条、悬停暂停、错误不自动消失）+ 持久通知中心（已读/未读态、未读角标、一键已读、无限滚动），两面共用同一数据源。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T09:12:00+08:00",
-  "source": "design.dev《Toast Notification Stack》提示词模板 + JSBits《Design a Notification Center & Toast System》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
-}
-```
-
-#### 搜索结果页：筛选侧栏+已选 chips (`search-results-filters`)
-
-```json
-{
-  "id": "search-results-filters",
-  "title": "搜索结果页：筛选侧栏+已选 chips",
-  "category": "SaaS后台",
-  "styles": [
-    "搜索",
-    "筛选",
-    "列表"
-  ],
-  "scenario": "做内容/商品/文档搜索结果页，需要侧栏筛选时",
-  "prompt": "Design a search results page with a filter sidebar: a search bar at the top with the query and result count ('128 results for \"…\"'); a left filter sidebar with collapsible checkbox groups (category, date, type, status), each group showing counts; active filters shown as removable chips above the results with a 'Clear all' action; results as a clean list (title, snippet with the matching text in bold, source and date) or an image grid toggle; a sort control (relevance/newest) and pagination or infinite scroll. On mobile the sidebar collapses into a filter button opening a bottom sheet. Full keyboard navigation, visible focus, and never let filters push results below the fold on desktop.",
-  "prompt_zh": "搜索结果页：顶部搜索框+结果数、左侧可折叠复选框筛选分组（带数量）、已选条件以 chips 显示可逐个移除+清空全部、结果列表关键词加粗或图片网格切换、排序与分页，移动端筛选项收进底部浮层。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T09:12:00+08:00",
-  "source": "21st.dev《Filter Menu》与《Search Results》组件说明（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
-}
-```
-
-#### 在线学习仪表盘：进度+连胜+学习时长 (`edu-learning-dashboard`)
-
-```json
-{
-  "id": "edu-learning-dashboard",
-  "title": "在线学习仪表盘：进度+连胜+学习时长",
-  "category": "在线教育",
-  "styles": [
-    "学习仪表盘",
-    "进度",
-    "深色"
-  ],
-  "scenario": "做在线课程/学习平台的个人学习进度仪表盘时",
-  "prompt": "Build a learning progress dashboard: a header with the title 'Learning Dashboard' and today's date; a stats row of 4 cards at the top — total lessons completed (out of 24), total projects completed (out of 11), current streak in days, and total study hours — each card with a large number, a label and a small icon; below, two side-by-side sections: on the left a lesson list with animated progress bars and completion checkmarks, on the right weekly progress and study-hours charts plus a streak counter that tracks consecutive days of activity. Use a dark theme with clean modern styling and clear visual hierarchy, progress bars animate on load, and keep the layout scannable at a glance.",
-  "prompt_zh": "学习仪表盘：顶栏标题+今日日期、四张数据卡（已完成课时/项目/连续天数/学习时长）、左侧课程列表带动画进度条、右侧周进度与学时图表+连胜计数，深色主题、层级清晰、一眼可读。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T09:12:00+08:00",
-  "source": "danbyers.ai《Build a Learning Dashboard with AI》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
-}
-```
-
-#### 博客文章阅读页：单栏+吸顶目录 (`content-blog-reading`)
-
-```json
-{
-  "id": "content-blog-reading",
-  "title": "博客文章阅读页：单栏+吸顶目录",
-  "category": "内容社交",
-  "styles": [
-    "博客",
-    "阅读页",
-    "长文"
-  ],
-  "scenario": "做博客/长文内容站，需要舒服的文章阅读页时",
-  "prompt": "Design a blog article reading page as a clean single-column reading view: a comfortable measure (around 65-75 characters per line), generous line spacing, warm serif headlines with clean sans-serif body text; a sticky table-of-contents sidebar that highlights the section currently in view as the reader scrolls; a reading-progress bar at the top, author bio block with avatar and follow button, estimated reading time and publish date under the title; at the end, share actions and a 'next article' card. Above the article, a full-width featured-article hero for the latest post, followed by a grid of recent posts with thumbnails, titles and excerpts. Editorial layout, strong spacing, no clutter around the text — reading is the product.",
-  "prompt_zh": "博客阅读页：单栏舒适行宽行距、衬线标题+无衬线正文、吸顶目录随滚动高亮当前节、顶部阅读进度条、作者简介与预计阅读时长，文首通栏精选文章+近期文章网格，阅读本身就是产品。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-19T09:12:00+08:00",
-  "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 6 条博客主页 + NotVibesCoded UI 提示词库博客类（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
-}
-```
 
 #### 活动票务：分区选座+订单汇总 (`event-ticket-seat-picker`)
 
@@ -2695,5 +2599,238 @@
   ],
   "added_at": "2026-11-27T08:15:00+08:00",
   "source": "Motion Library No.076 逐字升起 Split Rise（https://kittenjam-motion-library.vercel.app/fx/76/，2026-11-27 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+## 2026-11-27 · 公开渠道收集（空间轮次：流媒体浏览/赛博朋克落地页/按钮层级/航班值机/团课预约）
+
+来源核对：5 条来源页面均已打开全文核对，提示词按要点原创改写（同类收集，非原作摘录），不冒充原作逐字摘录；与正式库 73 条 + 待验证区 100 条逐一去重，无重复（航班值机与 mobile-flight-status 航班状态查询不同，是值机选座+登机牌流程；团课预约与 mobile-gym-workout-logger 健身记录打卡不同，是课表占位+名额/候补规则；流媒体浏览与 music-player 音乐播放器、video-editor-timeline 剪辑时间线场景不同）。只进待验证区，added_at 统一记本轮时间 2026-11-27T09:12:00+08:00。
+
+#### 流媒体视频浏览页：深色影院风横排片库 (`content-streaming-browse`)
+
+```json
+{
+  "id": "content-streaming-browse",
+  "title": "流媒体视频浏览页：深色影院风横排片库",
+  "category": "内容社交",
+  "styles": [
+    "流媒体",
+    "深色",
+    "横排片库"
+  ],
+  "scenario": "做视频点播/课程片库类产品，需要 Netflix 风格的浏览首页时",
+  "prompt": "Design a streaming browse page in Netflix style: a near-black canvas (#0D0D0D) so poster art carries all the color; a top hero banner for one featured title with its name, short description, year and duration, and a large Play button; below it, horizontal scrollable rows grouped by category (Trending, Originals, Top Rated), each row with the category name above and title cards showing thumbnail, name and a Play icon on hover — rows bleed off the right edge so a partial card hints at more, and on mobile cards are 140px wide with snap scrolling. Add a 'Continue Watching' row with a progress bar on each card, a title detail view with the poster as a large hero background under a gradient overlay plus metadata and a Related row, and a full-screen search overlay filtering by title with an empty state when nothing matches. Keep the chrome minimal: a slim top nav with logo, search icon and avatar; Inter for headings and body; one accent color for the Play button and active states.",
+  "prompt_zh": "流媒体浏览页：近黑底色+海报即导航，顶部精选横幅配大播放键，下方按分类横排滚动片库（右侧溢出暗示更多），续看行带进度条、详情页渐变海报+相关推荐、全屏搜索带空态。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T09:12:00+08:00",
+  "source": "Greta《Build a Netflix Clone with AI in 30 Minutes》（浏览页/详情页/搜索提示词原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-27）"
+}
+```
+
+#### 赛博朋克风落地页：霓虹终端 HUD (`landing-cyberpunk`)
+
+```json
+{
+  "id": "landing-cyberpunk",
+  "title": "赛博朋克风落地页：霓虹终端 HUD",
+  "category": "落地页官网",
+  "styles": [
+    "赛博朋克",
+    "霓虹",
+    "深色"
+  ],
+  "scenario": "给极客/游戏/加密类产品做一张霓虹科幻风落地页时",
+  "prompt": "Design a cyberpunk landing page: a pure dark-first canvas (#0D0D0D) with neon accents covering only 10-15% of the surface — matrix green #00FF00, magenta #FF00FF and cyan #00FFFF, each color assigned a fixed meaning (one for CTAs, one for data, one for alerts) and never swapped. Monospace type throughout for the terminal feel (bold tight-tracked headings, 16px/1.6 body), with HUD overlays, stat readouts and coordinate displays treated as decoration that is also information; one controlled glitch effect per view at most (chromatic aberration or a 0.3s skew glitch), a subtle scanline overlay at 0.1 opacity, angular clipped shapes and zero or near-zero border radius. Page structure: navbar with logo, links and CTA; asymmetric hero with a huge headline, subtitle, two buttons and an abstract CSS visual; features as an asymmetric grid (never three equal columns); testimonials, three-tier pricing with the middle tier highlighted, a final CTA and a full footer. Dark mode only — no light variant; neon glow via text-shadow, no emojis, Lucide-style line icons only.",
+  "prompt_zh": "赛博朋克落地页：#0D0D0D 纯黑底、霓虹三色各有固定语义且只占 10-15% 面积、等宽终端字体+HUD 数据叠层、每屏至多一个克制故障特效、扫描线 0.1 透明度、非对称布局，专供极客/游戏/加密类产品。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T09:12:00+08:00",
+  "source": "designmd.app《Cyberpunk UI》DESIGN.md（配色/字体/动效/落地页结构原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-27）"
+}
+```
+
+#### 按钮层级五级制：每屏只一个主按钮 (`detail-button-hierarchy`)
+
+```json
+{
+  "id": "detail-button-hierarchy",
+  "title": "按钮层级五级制：每屏只一个主按钮",
+  "category": "细节优化",
+  "styles": [
+    "按钮",
+    "层级",
+    "组件规范"
+  ],
+  "scenario": "界面上按钮全是同款填充色、用户不知道先点哪个时",
+  "prompt": "Apply a five-level button hierarchy with exactly one primary action per view (One Primary Action): Primary — the single filled, full-saturation button carrying the action that moves the user's main job forward ('Create project', 'Save changes'), one per view, never two; Secondary — outlined or lightly tinted fill with colored text for supporting actions ('Cancel' next to 'Save'); Tertiary — no fill, no border, colored text only, for low-stakes actions ('Skip for now', 'Learn more'); Ghost — the quietest interactive element, transparent background with neutral text and a faint hover state, for toolbar icons, dismiss controls and table row actions; Destructive — orthogonal to the ladder, a meaning not a loudness: red signals consequence and can sit at any level (filled red in a confirm dialog, quiet red text in a list). Ship all six states for every level: default, hover (slightly darker/lighter), focus-visible (a visible 2px focus ring with 2px offset — never remove the outline without replacing it), active (a touch darker, translateY 1px), disabled (muted, no pointer, no hover) and loading (spinner plus aria-busy, locked against double-submit). Sizes on the 8pt grid — sm 6px 12px/13px, md 10px 16px/14px, lg 14px 24px/16px; every hit target at least 44x44px even if the visual is smaller; 16px gaps between buttons (8px when stacked). Label the outcome, not the mechanism: 'Send invite', not 'Submit'.",
+  "prompt_zh": "按钮五级制：每屏只一个填充主按钮（推进主任务的动作），其余降级为描边次要/纯文字三级/最安静幽灵按钮，危险色是语义而非音量；六态齐全（默认/悬停/可见焦点环/按下/禁用/加载防重复提交），三档尺寸走 8pt 网格、点击热区不小于 44px，文案写结果不写机制。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T09:12:00+08:00",
+  "source": "hesham.us《Buttons: The Atom of the Interface》（五级层级/每屏一主按钮/六态/尺寸与热区原文核对）+ PatternFly Button 设计指南（主/次/三级/链接按钮层级与间距原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-27）"
+}
+```
+
+#### 航班值机：选座+登机牌两屏 (`mobile-flight-checkin`)
+
+```json
+{
+  "id": "mobile-flight-checkin",
+  "title": "航班值机：选座+登机牌两屏",
+  "category": "移动端App",
+  "styles": [
+    "值机",
+    "登机牌",
+    "选座"
+  ],
+  "scenario": "做航司 App 的在线值机流程，需要从确认乘客到登机牌的完整两屏时",
+  "prompt": "Design a mobile airline check-in flow as two screens. Screen 1 — Check-in: a check-in status badge and a flight summary (route, date, flight number, departure/arrival local times on a 24-hour clock with terminals); passenger rows each showing name and a 'passport checked' line; a seat map grid for the cabin (3-3 on narrow-body) with five seat states — available, selected, reserved, extra legroom, exit-row disabled — plus a legend, per-passenger seat assignment, and a 120-second hold countdown once a seat is picked; optional extras (checked bags, priority boarding) as add-on rows with prices, then one primary 'Confirm check-in' button. Screen 2 — Boarding pass: a ticket-style card with the airline wordmark and booking reference (with copy button), big airport codes with local times and a dashed route line with a plane icon and flight duration, gate, date, seat and class, and a scannable code area at the bottom; wallet ('Add to Wallet') and share buttons below. Keep the pass legible offline at the gate: high contrast, no reliance on color alone to convey seat state, and all times shown in each airport's own local time.",
+  "prompt_zh": "航班值机两屏：值机屏（状态徽章+航程摘要+乘客护照已核行+五态座位图+120 秒锁座倒计时+行李附加项）→登机牌卡（航司+预订号可复制、大字机场代码与本地时间、登机口座位舱位、可扫码区、加钱包/分享），离线可读、不只靠颜色区分座位态。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T09:12:00+08:00",
+  "source": "ProFigma《Boarding Pass and Check-in Screens UI》（值机屏/登机牌两屏构成原文核对）+ UIReady《Design an Airline Seat-Selection UI》（座位五态/临时锁座/无障碍原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-27）"
+}
+```
+
+#### 健身团课预约：课表+名额+候补 (`mobile-fitness-class-booking`)
+
+```json
+{
+  "id": "mobile-fitness-class-booking",
+  "title": "健身团课预约：课表+名额+候补",
+  "category": "移动端App",
+  "styles": [
+    "团课预约",
+    "课表",
+    "健身"
+  ],
+  "scenario": "给健身房/瑜伽/普拉提工作室做团课预约 App，课有名额上限、要管候补和课包时",
+  "prompt": "Build a fitness class booking app around a weekly timetable with a live counter on every class: each class row shows class type, coach (with photo), time, duration, room, and spots left out of capacity — capacity set by what actually limits it (15 mats, 24 bikes in four rows, 10 reformers), and for spin/Pilates let members pick a specific bike or mat spot from a room map. Filters by class type, coach and time of day; a class detail page with places left, a Book button, and a waitlist when full — when someone cancels, the first person on the waitlist is promoted automatically with a push notification, up to a cutoff (e.g. 1 hour before class), after which the spot stays open for walk-ins. Payment by drop-in, class packs (e.g. 10-class pack, 3-month expiry) or unlimited monthly membership, with a visible credit balance that drops per booking; cancellation before the cutoff returns the credit, later cancels and no-shows lose it. A 'My bookings' screen lists upcoming and past bookings with cancel and add-to-calendar actions, and coaches get a per-class check-in list with client notes (e.g. injuries). Keep booking to a few taps and never let a full class accept a booking silently.",
+  "prompt_zh": "团课预约：周课表每节课带实时剩余名额（名额按垫子/单车/器械数定，动感单车可选具体车位），满员进候补（有人取消按序自动递补+推送，截止前 1 小时停止递补）、课包余额随订课扣减（截止前取消返还、逾期与爽约扣课时）、教练端点名表带学员备注。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-27T09:12:00+08:00",
+  "source": "Gappsy《Fitness Class Booking Prompts: 12 Studio Ideas》（课表名额/按器械定容量/候补递补/取消扣课时规则原文核对）+ GrowApps《How to make a gym class booking app with AI》（课表/课包余额/教练点名表原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-27）"
+}
+```
+
+## 2026-11-28 · Motion Library 收集（5 候选，4 条进待验证区，1 条去重未收）
+
+来源核对：Motion Library（https://kittenjam-motion-library.vercel.app/，常驻收集来源）站上 5 个候选均已打开详情页点「複製 AI 提示詞」取原文；提示词原文均为繁体中文，照录未改写。去重：按 id 与「场景+风格」与正式库 77 条 + 待验证区 101 条逐一比对——骨架载入 Skeleton Shimmer（No.114）与待验证区 detail-skeleton-loading（骨架屏加载占位：与真实内容同尺寸同间距的灰块占位、1.4 秒柔和微光按列错峰扫过、数据一到逐块替换）同场景同风格，仅载体（整页 vs 单卡片）与入场细节级差异，按规则不重复收；其余 4 条无重复。4 条均为动效类、无来源视频，按旧法生成验证；本轮验证额度已用满（通知中心/搜索筛选/学习仪表盘/博客阅读），4 条留待后续轮次验证。通知堆叠与正式库 saas-notification-center（通知双面系统整页）场景不同：前者是 Toast 进退场动效，后者是通知系统页面，保留。
+
+#### Motion Library：选单滑块跟随 Sliding Nav Highlight (`ml-sliding-nav-highlight`)
+
+```json
+{
+  "id": "ml-sliding-nav-highlight",
+  "title": "Motion Library：选单滑块跟随 Sliding Nav Highlight",
+  "category": "细节优化",
+  "styles": [
+    "导航滑块",
+    "悬停跟随",
+    "胶囊导航"
+  ],
+  "scenario": "导航栏想让选中态滑块跟随鼠标平滑滑动时",
+  "prompt": "膠囊形導覽列，滑鼠移到某個項目時，一顆膠囊背景滑塊從原本位置平滑滑過去並改變寬度貼合該項目，文字同時切換成與滑塊反差的顏色；滑鼠離開整個選單時滑塊回到目前所在的頁面項目。約 0.4 秒，帶一點點過衝。（做法：pointerenter 時讀取項目的 offsetLeft 與 offsetWidth，設定滑塊的 translateX 與 width，transition cubic-bezier(.2,.9,.3,1.1)）",
+  "prompt_zh": "胶囊导航滑块跟随：鼠标移到某项，胶囊背景滑块平滑滑过去并贴合该项宽度、文字切换反差色，离开菜单滑回当前页项目，约 0.4 秒带一点过冲。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-28T08:05:00+08:00",
+  "source": "Motion Library No.167 選單滑塊跟隨 Sliding Nav Highlight（https://kittenjam-motion-library.vercel.app/fx/167/，2026-11-28 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：步骤进度条 Step Progress (`ml-step-progress`)
+
+```json
+{
+  "id": "ml-step-progress",
+  "title": "Motion Library：步骤进度条 Step Progress",
+  "category": "细节优化",
+  "styles": [
+    "步骤指示",
+    "多步骤表单",
+    "进度线"
+  ],
+  "scenario": "多步骤表单（注册/结账）上方需要步骤指示时",
+  "prompt": "多步驟表單（例如註冊或結帳）上方的步驟指示：一排圓形步驟編號以一條線連接，已完成的步驟圓點填滿並以回彈出現勾勾，目前這一步外圈亮起並略為放大，未到的步驟維持淡色；連接線的填滿長度跟著步驟平滑延伸；下方有「上一步／下一步」按鈕。（CSS：連接線內層 transform:scaleX(目前索引 / (總數 − 1))，transition 0.5 秒；步驟以 .done / .on class 切換樣式，勾勾用 scale 0 → 1 的 keyframes）",
+  "prompt_zh": "步骤进度条：圆形步骤编号以连线连接，已完成填满并回弹出现勾勾、当前步外圈亮起略放大、未到步骤淡色，连接线填满长度随步骤平滑延伸，配上一步/下一步按钮。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-28T08:05:00+08:00",
+  "source": "Motion Library No.309 步驟進度條 Step Progress（https://kittenjam-motion-library.vercel.app/fx/309/，2026-11-28 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：通知堆叠 Toast Stack (`ml-toast-stack`)
+
+```json
+{
+  "id": "ml-toast-stack",
+  "title": "Motion Library：通知堆叠 Toast Stack",
+  "category": "细节优化",
+  "styles": [
+    "通知堆叠",
+    "Toast",
+    "进退场"
+  ],
+  "scenario": "操作完成需要右下角弹出可堆叠的通知时",
+  "prompt": "操作完成時，畫面右下角彈出一則通知（左邊打勾圓形圖示、中間訊息、右邊「剛剛」時間），從下方帶一點縮放彈性地進場；新通知會疊在下面，舊的往上推；最多同時顯示 3 則，每則約 3.4 秒後往右滑出淡掉，其餘通知平滑補位。（CSS + JS：通知外層用 display:grid + grid-template-rows 1fr→0fr 做高度收合，讓補位平滑；進場用 keyframes translateY + scale；離場加 .out class 後再移除元素）",
+  "prompt_zh": "通知堆叠：右下角弹出通知（勾选图标+讯息+时间），带缩放弹性进场、新通知叠在下面旧的往上推，最多 3 则、约 3.4 秒后右滑淡出、其余平滑补位。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-28T08:05:00+08:00",
+  "source": "Motion Library No.118 通知堆疊 Toast Stack（https://kittenjam-motion-library.vercel.app/fx/118/，2026-11-28 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
+}
+```
+
+#### Motion Library：滑动确认 Slide to Confirm (`ml-slide-to-confirm`)
+
+```json
+{
+  "id": "ml-slide-to-confirm",
+  "title": "Motion Library：滑动确认 Slide to Confirm",
+  "category": "细节优化",
+  "styles": [
+    "滑动确认",
+    "拖曳手势",
+    "确认操作"
+  ],
+  "scenario": "支付/删除等高风险操作需要滑动确认防误触时",
+  "prompt": "膠囊形滑軌，左側是一顆圓形把手（內有向右箭頭），中間的提示文字有一道光從左往右掃過；使用者拖曳把手時，把手經過的軌道被填滿、提示文字逐漸淡出；拖到接近最右側放開才算確認，軌道整個填滿、文字變成「完成 ✓」；未拖到底放開時把手帶彈性彈回起點。（GSAP Draggable type:\"x\"、bounds 限制在軌道內，onDrag 更新填滿寬度，onRelease 判斷是否超過 85%；流光用 background-clip:text 加移動的漸層）",
+  "prompt_zh": "滑动确认：胶囊滑轨+圆形把手，拖曳时轨道填满、提示文字淡出，拖到 85% 以上放开才确认、文字变“完成 ✓”，未拖到底弹性弹回起点。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-28T08:05:00+08:00",
+  "source": "Motion Library No.234 滑動確認 Slide to Confirm（https://kittenjam-motion-library.vercel.app/fx/234/，2026-11-28 打开详情页点「複製 AI 提示詞」取原文；原文为繁体中文，照录；站上注明复制时会自动附加「依照網站既有主題色搭配」说明，该附加句未在页面显示；该站无源码与授权说明，只当收集来源与参考）"
 }
 ```
